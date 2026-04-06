@@ -74,11 +74,11 @@ export default function Header() {
             <Link
               href="/"
               className="flex items-center gap-2 text-[#1a365d] hover:opacity-90 transition-opacity"
-              aria-label="Lainavertailu — Etusivu"
+              aria-label="Valitse Laina — Etusivu"
             >
               <ShieldCheck className="h-7 w-7 text-[#1a365d]" strokeWidth={2.2} />
               <span className="text-xl font-bold tracking-tight">
-                Lainavertailu
+                Valitse Laina
               </span>
             </Link>
             {/* Trust badge — desktop only */}

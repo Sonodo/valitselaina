@@ -2,7 +2,7 @@ import type { BlogPost } from '@/types';
 
 // Blog category definitions
 export const BLOG_CATEGORIES: Record<string, string> = {
-  lainavertailu: 'Lainavertailu',
+  lainavertailu: 'Lainavertailu',  // Category name (descriptive, not brand)
   asuntolaina: 'Asuntolaina',
   kulutusluotto: 'Kulutusluotto',
   yrityslaina: 'Yrityslaina',
@@ -19,7 +19,7 @@ export const blogPosts: BlogPost[] = [
     description:
       'Kattava katsaus Suomen lainamarkkinoihin vuonna 2026. Korkotaso, pankkien kilpailutilanne ja konkreettiset vinkit edullisimman lainan löytämiseen.',
     category: 'lainavertailu',
-    author: 'Lainavertailu-toimitus',
+    author: 'Valitse-toimitus',
     publishedAt: '2026-01-15',
     readTime: 9,
     tags: ['lainavertailu', 'korot', 'kulutusluotto', 'asuntolaina', '2026'],
@@ -81,7 +81,7 @@ export const blogPosts: BlogPost[] = [
     description:
       'Milloin kulutusluotto on parempi valinta ja milloin luottokortti riittää? Vertailemme korkoja, joustavuutta ja kokonaiskustannuksia käytännön esimerkeillä.',
     category: 'kulutusluotto',
-    author: 'Lainavertailu-toimitus',
+    author: 'Valitse-toimitus',
     publishedAt: '2026-01-28',
     readTime: 8,
     tags: ['kulutusluotto', 'luottokortti', 'korot', 'vertailu'],
@@ -152,7 +152,7 @@ export const blogPosts: BlogPost[] = [
     description:
       'Asuntolainan marginaalit vaihtelevat pankkien välillä merkittävästi. Käymme läpi vuoden 2026 marginaalitasot ja neuvotteluvinkit.',
     category: 'asuntolaina',
-    author: 'Lainavertailu-toimitus',
+    author: 'Valitse-toimitus',
     publishedAt: '2026-02-05',
     readTime: 10,
     tags: ['asuntolaina', 'marginaali', 'pankit', 'neuvottelu', '2026'],
@@ -231,7 +231,7 @@ export const blogPosts: BlogPost[] = [
     description:
       'Positiivinen luottorekisteri otettiin käyttöön 2024. Selitämme selkeästi mitä rekisteri sisältää, miten se vaikuttaa lainansaantiin ja miksi se on useimmille hyvä asia.',
     category: 'talousvinkit',
-    author: 'Lainavertailu-toimitus',
+    author: 'Valitse-toimitus',
     publishedAt: '2026-02-12',
     readTime: 8,
     tags: ['luottorekisteri', 'luottotiedot', 'lainsäädäntö', 'lainanhaku'],
@@ -300,7 +300,7 @@ export const blogPosts: BlogPost[] = [
     description:
       'Laskemme konkreettisesti, milloin lainan ennenaikainen takaisinmaksu säästää rahaa ja milloin se ei kannata. Mukana laskuesimerkit.',
     category: 'talousvinkit',
-    author: 'Lainavertailu-toimitus',
+    author: 'Valitse-toimitus',
     publishedAt: '2026-02-20',
     readTime: 9,
     tags: ['takaisinmaksu', 'säästäminen', 'korot', 'laskuesimerkit'],
@@ -375,7 +375,7 @@ export const blogPosts: BlogPost[] = [
     description:
       'Pikalaina ja kulutusluotto ovat eri tuotteita eri tilanteisiin. Selitämme erot rehellisesti ja kerromme, miksi kulutusluotto on lähes aina parempi valinta.',
     category: 'kulutusluotto',
-    author: 'Lainavertailu-toimitus',
+    author: 'Valitse-toimitus',
     publishedAt: '2026-03-01',
     readTime: 7,
     tags: ['pikalaina', 'pikavippi', 'kulutusluotto', 'riskit', 'vertailu'],
@@ -446,7 +446,7 @@ export const blogPosts: BlogPost[] = [
     description:
       'Analysoimme euribor-korkojen kehitystä ja EKP:n korkopolitiikkaa. Mitä lainanottajan kannattaa tietää vuoden 2026 korkonäkymistä?',
     category: 'asuntolaina',
-    author: 'Lainavertailu-toimitus',
+    author: 'Valitse-toimitus',
     publishedAt: '2026-03-05',
     readTime: 10,
     tags: ['euribor', 'korot', 'EKP', 'ennuste', 'asuntolaina', '2026'],
@@ -532,7 +532,7 @@ export const blogPosts: BlogPost[] = [
     description:
       'Yhdistelylaina voi olla pelastus tai uusi ongelma. Analysoimme rehellisesti, milloin lainojen yhdistely auttaa ja milloin se vain piilottaa ongelman.',
     category: 'kulutusluotto',
-    author: 'Lainavertailu-toimitus',
+    author: 'Valitse-toimitus',
     publishedAt: '2026-03-08',
     readTime: 9,
     tags: ['yhdistelylaina', 'velkojen yhdistely', 'velkakierre', 'talousvinkit'],
@@ -617,7 +617,7 @@ export const blogPosts: BlogPost[] = [
     description:
       'Vertailemme autolainaa ja osamaksua konkreettisilla esimerkeillä. Kumpi tulee halvemmaksi ja milloin kumpikin vaihtoehto kannattaa?',
     category: 'talousvinkit',
-    author: 'Lainavertailu-toimitus',
+    author: 'Valitse-toimitus',
     publishedAt: '2026-03-12',
     readTime: 8,
     tags: ['autolaina', 'osamaksu', 'autokauppa', 'vertailu', 'rahoitus'],
@@ -709,7 +709,7 @@ export const blogPosts: BlogPost[] = [
     description:
       'Lainahakemuksen hylkäys ei ole maailmanloppu. Käymme läpi yleisimmät syyt hylkäykselle ja konkreettiset askeleet tilanteen parantamiseksi.',
     category: 'talousvinkit',
-    author: 'Lainavertailu-toimitus',
+    author: 'Valitse-toimitus',
     publishedAt: '2026-03-15',
     readTime: 8,
     tags: ['lainahakemus', 'hylkäys', 'luottokelpoisuus', 'vinkit'],
@@ -793,7 +793,7 @@ export const blogPosts: BlogPost[] = [
     description:
       'Aloittavan yrittäjän rahoitusvaihtoehdot 2026: pankit, Finnvera, Business Finland, ELY-keskus ja muut. Käymme läpi mitä on tarjolla ja miten hakea.',
     category: 'yrityslaina',
-    author: 'Lainavertailu-toimitus',
+    author: 'Valitse-toimitus',
     publishedAt: '2026-03-18',
     readTime: 11,
     tags: ['yrityslaina', 'yrittäjyys', 'Finnvera', 'Business Finland', 'rahoitus'],
@@ -922,7 +922,7 @@ export const blogPosts: BlogPost[] = [
     description:
       'Lainan korkojen verovähennysoikeus on pääosin poistunut, mutta joitakin poikkeuksia on. Selvitämme nykytilanteen ja milloin korkovähennys vielä on mahdollinen.',
     category: 'talousvinkit',
-    author: 'Lainavertailu-toimitus',
+    author: 'Valitse-toimitus',
     publishedAt: '2026-03-22',
     readTime: 7,
     tags: ['verotus', 'korkovähennys', 'asuntolaina', 'tulonhankkimislaina'],

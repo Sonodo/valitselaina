@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { providers } from '@/data/providers';
 
-const BASE_URL = 'https://lainavertailu.fi';
+const BASE_URL = 'https://valitselaina.fi';
 
 // Guide slugs — must match /src/data/guides.ts
 const guideSlugs = [

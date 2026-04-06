@@ -326,7 +326,7 @@ export default async function BlogPostPage({
                     {post.author}
                   </p>
                   <p className="text-xs text-gray-500 mt-1 leading-relaxed">
-                    Lainavertailun toimitustiimi tuottaa puolueetonta ja
+                    Valitse Lainan toimitustiimi tuottaa puolueetonta ja
                     tutkittua sisältöä lainoista, koroista ja
                     taloudenhallinnasta.
                   </p>

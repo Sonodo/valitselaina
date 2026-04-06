@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description:
     'Ilmainen lainanlaskuri: laske lainan kuukausierä, kokonaiskulut, korot ja katso yksityiskohtainen lyhennyssuunnitelma. Visuaaliset kaaviot.',
   alternates: {
-    canonical: 'https://lainavertailu.fi/tyokalut/lainanlaskuri',
+    canonical: 'https://valitselaina.fi/tyokalut/lainanlaskuri',
   },
   openGraph: {
     title: 'Lainanlaskuri — Laske kuukausierä ja kokonaiskulut',
     description:
       'Laske lainan kuukausierä, kokonaiskulut ja korot. Katso lyhennyssuunnitelma ja visuaaliset kaaviot.',
-    url: 'https://lainavertailu.fi/tyokalut/lainanlaskuri',
+    url: 'https://valitselaina.fi/tyokalut/lainanlaskuri',
     type: 'website',
   },
 };

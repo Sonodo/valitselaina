@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description:
     'Luo yksityiskohtainen lyhennyssuunnitelma annuiteetilla tai tasalyhennyksellä. Vie CSV-tiedostoksi tai tulosta. Näe maksujen rakenne kaaviona.',
   alternates: {
-    canonical: 'https://lainavertailu.fi/tyokalut/lyhennyssuunnitelma',
+    canonical: 'https://valitselaina.fi/tyokalut/lyhennyssuunnitelma',
   },
   openGraph: {
     title: 'Lyhennyssuunnitelma — Luo ja tulosta',
     description:
       'Luo lyhennyssuunnitelma annuiteetilla tai tasalyhennyksellä. Vie CSV-tiedostoksi.',
-    url: 'https://lainavertailu.fi/tyokalut/lyhennyssuunnitelma',
+    url: 'https://valitselaina.fi/tyokalut/lyhennyssuunnitelma',
     type: 'website',
   },
 };

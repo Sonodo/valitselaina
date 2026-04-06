@@ -3,9 +3,9 @@ import Link from 'next/link';
 import { Cookie, Settings, BarChart3, Handshake, ShieldCheck, Info } from 'lucide-react';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
-const pageTitle = 'Evastekäytäntö — Lainavertailu';
+const pageTitle = 'Evästekäytäntö — Valitse Laina';
 const pageDescription =
-  'Lainavertailun evästekäytäntö. Lue mitä evästeitä käytämme, mihin niitä käytetään ja miten voit hallita evästeasetuksiasi.';
+  'Valitse Lainan evästekäytäntö. Lue mitä evästeitä käytämme, mihin niitä käytetään ja miten voit hallita evästeasetuksiasi.';
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -31,14 +31,14 @@ const cookies: CookieInfo[] = [
   {
     name: 'Istuntoeväste',
     purpose: 'Sivuston perustoiminnallisuus ja tietoturva',
-    provider: 'Lainavertailu',
+    provider: 'Valitse Laina',
     duration: 'Istunnon ajan',
     type: 'necessary',
   },
   {
     name: 'Evästeasetukset',
     purpose: 'Muistaa käyttäjän evästevalinta',
-    provider: 'Lainavertailu',
+    provider: 'Valitse Laina',
     duration: '12 kuukautta',
     type: 'necessary',
   },
@@ -105,7 +105,7 @@ export default function EvasteetPage() {
         {/* Intro */}
         <div className="text-gray-700 leading-relaxed space-y-4 mb-10">
           <p>
-            Tämä evästekäytäntö kertoo, mitä evästeitä (cookies) lainavertailu.fi käyttää,
+            Tämä evästekäytäntö kertoo, mitä evästeitä (cookies) valitselaina.fi käyttää,
             mihin niitä käytetään ja miten voit hallita evästeasetuksiasi.
           </p>
         </div>
@@ -158,7 +158,7 @@ export default function EvasteetPage() {
             </div>
             <p className="text-sm text-gray-700 mb-2">
               Nämä evästeet asettavat affiliate-kumppaniverkostot. Niiden avulla
-              kumppanimme tunnistavat, että liikenne on tullut Lainavertailun kautta.
+              kumppanimme tunnistavat, että liikenne on tullut Valitse Lainan kautta.
               Tämä mahdollistaa palvelumme ilmaisuuden käyttäjille.
             </p>
           </div>
@@ -281,8 +281,8 @@ export default function EvasteetPage() {
           <h3 className="font-semibold text-gray-900 mb-2">Kysyttävää evästeistä?</h3>
           <p className="text-sm text-gray-700">
             Evästekäytäntöä koskevat kysymykset voi lähettää osoitteeseen{' '}
-            <a href="mailto:info@lainavertailu.fi" className="text-[#1a365d] underline font-medium">
-              info@lainavertailu.fi
+            <a href="mailto:info@valitse.fi" className="text-[#1a365d] underline font-medium">
+              info@valitse.fi
             </a>. Lue myös{' '}
             <Link href="/tietosuoja" className="text-[#1a365d] underline font-medium">
               tietosuojaselosteemme

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const quickLinks = [
   {
     icon: Search,
-    label: 'Lainavertailu',
+    label: 'Vertailu',
     href: '/vertailu',
     desc: 'Vertaa lainoja yli 28 lainanantajalta',
   },

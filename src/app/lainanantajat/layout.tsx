@@ -8,11 +8,11 @@ export const metadata: Metadata = {
     title: 'Lainanantajat Suomessa — Vertaa 28+ pankkia ja rahoitusyhtiötä',
     description:
       'Kattava lista Suomen lainanantajista. Vertaa pankkeja, fintech-yhtiöitä ja vertaislainoja.',
-    url: 'https://lainavertailu.fi/lainanantajat',
+    url: 'https://valitselaina.fi/lainanantajat',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://lainavertailu.fi/lainanantajat',
+    canonical: 'https://valitselaina.fi/lainanantajat',
   },
 };
 

@@ -14,9 +14,10 @@ export const INTEREST_DEDUCTION_RATE = 0; // Interest deduction for consumer loa
 export const MORTGAGE_INTEREST_DEDUCTION = 0; // Phased out completely by 2023
 
 // Site config
-export const SITE_NAME = 'Lainavertailu';
-export const SITE_URL = 'https://lainavertailu.fi';
-export const SITE_DESCRIPTION = 'Suomen luotettavin lainavertailu. Vertaa lainoja rehellisesti — näytämme kaikki lainat, myös ne joista emme saa komissiota.';
+export const SITE_NAME = 'Valitse Laina';
+export const SITE_URL = 'https://valitselaina.fi';
+export const SITE_DESCRIPTION = 'Vertaa lainoja helposti yhdestä paikasta. Valitse Laina näyttää kaikki lainanantajat — myös ne, joista emme saa komissiota.';
+export const SITE_TAGLINE = 'Vertaa ja valitse paras laina';
 
 // Loan type labels (Finnish)
 export const LOAN_TYPE_LABELS: Record<string, string> = {

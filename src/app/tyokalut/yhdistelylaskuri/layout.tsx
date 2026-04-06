@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description:
     'Laske kannattaako lainojen yhdistäminen. Syötä nykyiset lainasi ja vertaa yhdistelylainan kuukausierää ja kokonaiskuluja. Rehellinen laskelma.',
   alternates: {
-    canonical: 'https://lainavertailu.fi/tyokalut/yhdistelylaskuri',
+    canonical: 'https://valitselaina.fi/tyokalut/yhdistelylaskuri',
   },
   openGraph: {
     title: 'Yhdistelylaskuri — Kannattaako lainojen yhdistäminen?',
     description:
       'Laske kannattaako usean lainan yhdistäminen yhdeksi. Rehellinen vertailu kokonaiskuluista.',
-    url: 'https://lainavertailu.fi/tyokalut/yhdistelylaskuri',
+    url: 'https://valitselaina.fi/tyokalut/yhdistelylaskuri',
     type: 'website',
   },
 };

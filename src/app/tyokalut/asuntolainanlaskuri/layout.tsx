@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description:
     'Laske asuntolainan kuukausierä marginaalilla ja Euribor-korolla. Stressitestaa eri korkoskenaariot. Ensiasunnon ostajalle ilman varainsiirtoveroa.',
   alternates: {
-    canonical: 'https://lainavertailu.fi/tyokalut/asuntolainanlaskuri',
+    canonical: 'https://valitselaina.fi/tyokalut/asuntolainanlaskuri',
   },
   openGraph: {
     title: 'Asuntolainanlaskuri — Laske asuntolainan kuukausierä',
     description:
       'Asuntolainanlaskuri Euribor-korolla ja marginaalilla. Stressitesti koronnousulle. Ensiasunnon ostajan tuki.',
-    url: 'https://lainavertailu.fi/tyokalut/asuntolainanlaskuri',
+    url: 'https://valitselaina.fi/tyokalut/asuntolainanlaskuri',
     type: 'website',
   },
 };

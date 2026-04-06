@@ -14,9 +14,9 @@ import {
 } from 'lucide-react';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
-const pageTitle = 'Tietoa Lainavertailusta — Keitä olemme';
+const pageTitle = 'Tietoa Valitse Lainasta — Keitä olemme';
 const pageDescription =
-  'Lainavertailu on riippumaton suomalainen lainavertailupalvelu. Tehtävämme on tehdä lainojen vertailusta rehellistä ja läpinäkyvää.';
+  'Valitse Laina on riippumaton suomalainen lainavertailupalvelu. Tehtävämme on tehdä lainojen vertailusta rehellistä ja läpinäkyvää.';
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'AboutPage',
-  name: 'Tietoa Lainavertailusta',
+  name: 'Tietoa Valitse Lainasta',
   description: pageDescription,
   mainEntity: {
     '@type': 'Organization',
@@ -97,7 +97,7 @@ export default function TietoaPage() {
             Rehellinen lainavertailu — se on meidän juttumme
           </h1>
           <p className="text-lg text-blue-200 max-w-2xl">
-            Lainavertailu on riippumaton suomalainen palvelu, joka auttaa sinua löytämään
+            Valitse Laina on riippumaton suomalainen palvelu, joka auttaa sinua löytämään
             edullisimman lainan vertaamalla yli 28 lainanantajan tuotteita puolueettomasti.
           </p>
         </div>
@@ -129,7 +129,7 @@ export default function TietoaPage() {
           </div>
           <div className="text-gray-700 leading-relaxed space-y-4">
             <p>
-              Lainavertailu on suomalainen, riippumaton vertailupalvelu. Emme ole pankki,
+              Valitse Laina on suomalainen, riippumaton vertailupalvelu. Emme ole pankki,
               rahoituslaitos tai lainanvälittäjä — olemme tietopalvelu, joka auttaa
               kuluttajia tekemään parempia päätöksiä.
             </p>

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     'Ajankohtaisia artikkeleita lainoista, koroista ja taloudenhallinnasta. Puolueetonta tietoa parempien rahoituspäätösten tueksi.',
   alternates: {
-    canonical: 'https://lainavertailu.fi/blogi',
+    canonical: 'https://valitselaina.fi/blogi',
   },
 };
 

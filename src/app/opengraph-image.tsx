@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'Lainavertailu — Vertaa lainoja rehellisesti';
+export const alt = 'Valitse Laina — Vertaa lainoja rehellisesti';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -70,7 +70,7 @@ export default async function Image() {
             marginBottom: '16px',
           }}
         >
-          Lainavertailu
+          Valitse Laina
         </div>
 
         {/* Tagline */}
@@ -134,7 +134,7 @@ export default async function Image() {
             color: 'rgba(255, 255, 255, 0.4)',
           }}
         >
-          lainavertailu.fi
+          valitselaina.fi
         </div>
       </div>
     ),

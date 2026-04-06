@@ -1,17 +1,17 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Lainavertailu — Vertaa lainoja ja löydä edullisin',
+  title: 'Vertaa lainoja ja löydä edullisin',
   description:
     'Vertaa kulutusluottoja, asuntolainoja ja autolainoja reaaliajassa. Näe todellinen vuosikorko ja kokonaiskustannukset. 28+ lainanantajaa.',
   alternates: {
-    canonical: 'https://lainavertailu.fi/vertailu',
+    canonical: 'https://valitselaina.fi/vertailu',
   },
   openGraph: {
-    title: 'Lainavertailu — Vertaa lainoja ja löydä edullisin',
+    title: 'Vertaa lainoja ja löydä edullisin',
     description:
       'Vertaa kulutusluottoja, asuntolainoja ja autolainoja reaaliajassa. 28+ lainanantajaa.',
-    url: 'https://lainavertailu.fi/vertailu',
+    url: 'https://valitselaina.fi/vertailu',
     type: 'website',
   },
 };
@@ -20,10 +20,10 @@ export const metadata: Metadata = {
 const comparisonJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
-  name: 'Lainavertailu — Lainalaskuri',
+  name: 'Valitse Laina — Lainalaskuri',
   description:
     'Vertaa lainoja reaaliajassa. Näytä todellinen vuosikorko, kuukausiera ja kokonaiskustannukset.',
-  url: 'https://lainavertailu.fi/vertailu',
+  url: 'https://valitselaina.fi/vertailu',
   applicationCategory: 'FinanceApplication',
   operatingSystem: 'Any',
   offers: {

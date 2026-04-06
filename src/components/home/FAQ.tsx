@@ -10,19 +10,19 @@ interface FAQItem {
 
 const FAQ_ITEMS: FAQItem[] = [
   {
-    question: 'Onko Lainavertailun käyttö ilmaista?',
+    question: 'Onko Valitse Lainan käyttö ilmaista?',
     answer:
-      'Kyllä, aina. Lainavertailun käyttö on täysin ilmaista eikä sido sinua mihinkään. Voit vertailla lainoja niin paljon kuin haluat ilman kustannuksia.',
+      'Kyllä, aina. Valitse Lainan käyttö on täysin ilmaista eikä sido sinua mihinkään. Voit vertailla lainoja niin paljon kuin haluat ilman kustannuksia.',
   },
   {
-    question: 'Miten Lainavertailu ansaitsee rahaa?',
+    question: 'Miten Valitse Laina ansaitsee rahaa?',
     answer:
       'Ansaitsemme affiliate-linkkien kautta: kun klikkaat tietyille lainanantajille johtavia linkkejä ja haet lainaa, saatamme saada korvauksen. Jokainen affiliate-linkki on selkeästi merkitty. Tämä ei vaikuta siihen, mitä lainoja näytämme tai miten ne järjestetään.',
   },
   {
     question: 'Vaikuttaako vertailu luottotietoihini?',
     answer:
-      'Ei. Lainojen vertailu Lainavertailussa ei vaikuta luottotietoihisi millään tavalla. Luottotietoja tarkistetaan vasta, kun haet lainaa suoraan lainanantajalta.',
+      'Ei. Lainojen vertailu Valitse Lainassa ei vaikuta luottotietoihisi millään tavalla. Luottotietoja tarkistetaan vasta, kun haet lainaa suoraan lainanantajalta.',
   },
   {
     question: 'Miksi näytätte myös lainoja, joista ette saa komissiota?',
@@ -35,9 +35,9 @@ const FAQ_ITEMS: FAQItem[] = [
       'Todellinen vuosikorko (TAV) on EU-lainsäädännön mukainen mittari, joka sisältää nimelliskoron lisäksi kaikki lainan pakolliset kulut: avausmaksun, kuukausimaksut ja muut käsittelykulut. Se ilmaistaan vuositasolla prosentteina, joten voit vertailla eri lainoja suoraan keskenään. Mitä alhaisempi todellinen vuosikorko, sitä edullisempi laina.',
   },
   {
-    question: 'Onko Lainavertailu lainanantaja?',
+    question: 'Onko Valitse Laina lainanantaja?',
     answer:
-      'Ei. Lainavertailu on puolueeton vertailupalvelu, emme lainanantaja. Emme myönnä lainoja, emmekä tee luottopäätöksiä. Ohjaamme sinut suoraan lainanantajan sivuille, jossa varsinainen lainahakemus tehdään.',
+      'Ei. Valitse Laina on puolueeton vertailupalvelu, emme lainanantaja. Emme myönnä lainoja, emmekä tee luottopäätöksiä. Ohjaamme sinut suoraan lainanantajan sivuille, jossa varsinainen lainahakemus tehdään.',
   },
   {
     question: 'Kuinka usein tiedot päivitetään?',

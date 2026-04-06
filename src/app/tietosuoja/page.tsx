@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { ShieldCheck, Eye, Database, Globe, UserX, Mail, Lock } from 'lucide-react';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
-const pageTitle = 'Tietosuojaseloste — Lainavertailu';
+const pageTitle = 'Tietosuojaseloste — Valitse Laina';
 const pageDescription =
-  'Lainavertailun tietosuojaseloste. Lue mitä tietoja keräämme, mitä emme kerää, ja miten käsittelemme tietojasi GDPR:n mukaisesti.';
+  'Valitse Lainan tietosuojaseloste. Lue mitä tietoja keräämme, mitä emme kerää, ja miten käsittelemme tietojasi GDPR:n mukaisesti.';
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -60,7 +60,7 @@ export default function TietosuojaPage() {
             <div>
               <h3 className="font-semibold text-gray-900 mb-1">Tärkeää</h3>
               <p className="text-sm text-gray-700">
-                Lainavertailu <strong>ei kerää lainahakemus- tai henkilökohtaisia taloustietoja</strong>.
+                Valitse Laina <strong>ei kerää lainahakemus- tai henkilökohtaisia taloustietoja</strong>.
                 Emme tiedä tulojasi, velkojasi, luottotietojasi tai muita taloudellisia tietojasi.
                 Olemme vertailupalvelu — emme käsittele lainahakemuksia.
               </p>
@@ -76,8 +76,8 @@ export default function TietosuojaPage() {
               <strong>Sonodo — Henri Linnainmaa</strong><br />
               Y-tunnus: 2887416-4<br />
               Helsinki, Suomi<br />
-              Sähköposti: info@lainavertailu.fi<br />
-              Verkkosivusto: https://lainavertailu.fi
+              Sähköposti: info@valitse.fi<br />
+              Verkkosivusto: https://valitselaina.fi
             </p>
           </SubSection>
 
@@ -209,8 +209,8 @@ export default function TietosuojaPage() {
             </ul>
             <p>
               Toteuta oikeutesi lähettämällä sähköpostia osoitteeseen{' '}
-              <a href="mailto:info@lainavertailu.fi" className="text-[#1a365d] underline font-medium">
-                info@lainavertailu.fi
+              <a href="mailto:info@valitse.fi" className="text-[#1a365d] underline font-medium">
+                info@valitse.fi
               </a>.
               Vastaamme pyyntöihin 30 päivän kuluessa.
             </p>

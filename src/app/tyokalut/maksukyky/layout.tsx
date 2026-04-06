@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description:
     'Laske kuinka paljon lainaa tulosi kattavat. Maksukykylaskuri huomioi tulot, menot ja nykyiset lainat. Sisältää stressitestin koronnousulle.',
   alternates: {
-    canonical: 'https://lainavertailu.fi/tyokalut/maksukyky',
+    canonical: 'https://valitselaina.fi/tyokalut/maksukyky',
   },
   openGraph: {
     title: 'Maksukykylaskuri — Kuinka paljon lainaa voin saada?',
     description:
       'Laske maksukykysi ja selvitä kuinka paljon lainaa voit vastuullisesti ottaa.',
-    url: 'https://lainavertailu.fi/tyokalut/maksukyky',
+    url: 'https://valitselaina.fi/tyokalut/maksukyky',
     type: 'website',
   },
 };

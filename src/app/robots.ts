@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/admin/'],
       },
     ],
-    sitemap: 'https://lainavertailu.fi/sitemap.xml',
+    sitemap: 'https://valitselaina.fi/sitemap.xml',
   };
 }

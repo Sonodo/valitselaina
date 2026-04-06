@@ -183,7 +183,7 @@ export const guides: Guide[] = [
   <li><strong>Lainaa vain sen verran kuin tarvitset</strong> — Suurempi laina tarkoittaa enemmän korkoja.</li>
   <li><strong>Huolehdi maksuista ajallaan</strong> — Maksuhäiriömerkintä vaikeuttaa elämää vuosiksi.</li>
 </ol>
-<p>Lainavertailu.fi auttaa sinua löytämään edullisimman lainan. <a href="/vertailu">Vertaa lainoja nyt</a> ja katso, paljonko voit säästää.</p>
+<p>Valitse Laina auttaa sinua löytämään edullisimman lainan. <a href="/vertailu">Vertaa lainoja nyt</a> ja katso, paljonko voit säästää.</p>
 `,
   },
 
@@ -696,7 +696,7 @@ export const guides: Guide[] = [
 <p>Pyydä aina tarjous kirjallisena — mieluiten virallisena SECCI-lomakkeena (Vakiomuotoiset eurooppalaiset kuluttajaluottotiedot). Tämä lomake sisältää kaikki lainan tiedot standardoidussa muodossa, joten vertailu on helppoa. Suullinen lupaus "hyvästä korosta" ei riitä.</p>
 
 <h2 id="vertailupalvelun-kaytto">Milloin käyttää vertailupalvelua?</h2>
-<p>Lainavertailupalvelu, kuten Lainavertailu.fi, on hyödyllisin näissä tilanteissa:</p>
+<p>Lainavertailupalvelu, kuten Valitse Laina, on hyödyllisin näissä tilanteissa:</p>
 <ul>
   <li><strong>Haluat säästää aikaa</strong> — Yksi hakemus, useita tarjouksia. Sinun ei tarvitse täyttää jokaisen pankin lomaketta erikseen.</li>
   <li><strong>Et tunne markkinaa</strong> — Vertailupalvelu näyttää, mitä eri lainanantajat tarjoavat, jolloin saat kuvan markkinahinnasta.</li>
@@ -714,7 +714,7 @@ export const guides: Guide[] = [
   <li>Vertailet tarjouksia rinnakkain ja valitset parhaan.</li>
   <li>Hyväksyt tarjouksen suoraan lainanantajan palvelussa.</li>
 </ol>
-<p>Vertailupalvelu saa tulonsa lainanantajilta provisiona, ei sinulta. Hyvä vertailupalvelu näyttää kuitenkin myös lainat, joista se ei saa provisiota — kuten me Lainavertailu.fi:ssä teemme.</p>
+<p>Vertailupalvelu saa tulonsa lainanantajilta provisiona, ei sinulta. Hyvä vertailupalvelu näyttää kuitenkin myös lainat, joista se ei saa provisiota — kuten me Valitse Lainassa teemme.</p>
 
 <h2 id="yleiset-virheet">Yleisimmät virheet</h2>
 <p>Vältä nämä tyypilliset sudenkuopat lainan kilpailutuksessa:</p>

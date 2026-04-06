@@ -38,7 +38,7 @@ export default function WhyTrustUs() {
         {/* Heading */}
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-            Miksi Lainavertailu on erilainen?
+            Miksi Valitse Laina on erilainen?
           </h2>
           <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
             Rakennettu rehellisyydelle — emme kilpaile temppujen vaan

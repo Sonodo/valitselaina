@@ -59,7 +59,7 @@ export default function HeroSection() {
             </h1>
 
             <p className="mt-5 text-lg sm:text-xl text-blue-100/90 leading-relaxed max-w-xl">
-              Suomen ainoa lainavertailu, joka näyttää{' '}
+              Suomen ainoa lainojen vertailupalvelu, joka näyttää{' '}
               <strong className="text-white font-semibold">kaikki lainat</strong>{' '}
               — myös ne, joista emme saa komissiota. Vertaa todellisia vuosikorkoja
               ilman piilotettua agendaa.

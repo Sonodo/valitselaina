@@ -1,9 +1,9 @@
 export function GET() {
-  const content = `# Lainavertailu
-> Suomen luotettavin lainavertailupalvelu
+  const content = `# Valitse Laina
+> Vertaa lainoja helposti yhdestä paikasta
 
 ## About
-Lainavertailu on suomalainen, riippumaton lainavertailupalvelu, joka vertailee yli 28 lainanantajan tuotteita puolueettomasti. Palvelu kattaa kulutusluotot, asuntolainat, autolainat, yhdistelylainat, yrityslainat ja pikavipit.
+Valitse Laina on suomalainen, riippumaton lainavertailupalvelu, joka vertailee yli 28 lainanantajan tuotteita puolueettomasti. Palvelu kattaa kulutusluotot, asuntolainat, autolainat, yhdistelylainat, yrityslainat ja pikavipit.
 
 ## Key Features
 - Honest comparison of 28+ Finnish loan providers
@@ -52,9 +52,9 @@ Lainavertailu on suomalainen, riippumaton lainavertailupalvelu, joka vertailee y
 - Site uses affiliate links (clearly disclosed) but rankings are never influenced by affiliate status
 
 ## Contact
-- Website: https://lainavertailu.fi
-- General inquiries: info@lainavertailu.fi
-- Press: media@lainavertailu.fi
+- Website: https://valitselaina.fi
+- General inquiries: info@valitse.fi
+- Press: media@valitse.fi
 `;
 
   return new Response(content, {

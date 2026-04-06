@@ -14,24 +14,24 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Lainavertailu — Suomen luotettavin lainavertailu',
-    template: '%s | Lainavertailu',
+    default: 'Valitse Laina — Vertaa lainoja rehellisesti',
+    template: '%s | Valitse Laina',
   },
   description:
     'Vertaa lainoja rehellisesti. Näytämme kaikki lainat — myös ne, joista emme saa komissiota. Löydä edullisin kulutusluotto, asuntolaina tai autolaina.',
-  metadataBase: new URL('https://lainavertailu.fi'),
+  metadataBase: new URL('https://valitselaina.fi'),
   openGraph: {
     type: 'website',
     locale: 'fi_FI',
-    url: 'https://lainavertailu.fi',
-    siteName: 'Lainavertailu',
-    title: 'Lainavertailu — Suomen luotettavin lainavertailu',
+    url: 'https://valitselaina.fi',
+    siteName: 'Valitse Laina',
+    title: 'Valitse Laina — Vertaa lainoja rehellisesti',
     description:
       'Vertaa lainoja rehellisesti. Näytämme kaikki lainat — myös ne, joista emme saa komissiota.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Lainavertailu — Suomen luotettavin lainavertailu',
+    title: 'Valitse Laina — Vertaa lainoja rehellisesti',
     description:
       'Vertaa lainoja rehellisesti. Näytämme kaikki lainat — myös ne, joista emme saa komissiota.',
   },
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://lainavertailu.fi',
+    canonical: 'https://valitselaina.fi',
   },
 };
 
@@ -55,10 +55,10 @@ export const metadata: Metadata = {
 const organizationJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Lainavertailu',
-  url: 'https://lainavertailu.fi',
+  name: 'Valitse Laina',
+  url: 'https://valitselaina.fi',
   description:
-    'Suomen luotettavin lainavertailupalvelu. Vertaa kulutusluottoja, asuntolainoja ja autolainoja puolueettomasti.',
+    'Vertaa lainoja helposti yhdestä paikasta. Valitse Laina näyttää kaikki lainanantajat puolueettomasti.',
   sameAs: [],
   contactPoint: {
     '@type': 'ContactPoint',
@@ -71,8 +71,8 @@ const organizationJsonLd = {
 const websiteJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Lainavertailu',
-  url: 'https://lainavertailu.fi',
+  name: 'Valitse Laina',
+  url: 'https://valitselaina.fi',
 };
 
 export default function RootLayout({

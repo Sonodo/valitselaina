@@ -221,7 +221,7 @@ export default function LainanantajatPage() {
           <p>
             Suomessa toimii kymmeniä lainanantajia perinteisistä pankeista
             moderneihin fintech-yhtiöihin ja vertaislainapalveluihin.
-            Lainavertailu.fi kokoaa kaikki merkittävät lainanantajat yhteen
+            Valitse Laina kokoaa kaikki merkittävät lainanantajat yhteen
             paikkaan, jotta voit helposti vertailla palveluita, korkoja ja
             ehtoja.
           </p>

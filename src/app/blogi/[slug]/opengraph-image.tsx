@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'Lainavertailu — Blogi';
+export const alt = 'Valitse Laina — Blogi';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -100,11 +100,11 @@ export default async function Image({ params }: { params: Promise<{ slug: string
               <path d="M9 12l2 2 4-4" />
             </svg>
             <span style={{ fontSize: '24px', fontWeight: 'bold', color: 'white' }}>
-              Lainavertailu
+              Valitse Laina
             </span>
           </div>
           <span style={{ fontSize: '16px', color: 'rgba(255, 255, 255, 0.4)' }}>
-            lainavertailu.fi
+            valitselaina.fi
           </span>
         </div>
       </div>

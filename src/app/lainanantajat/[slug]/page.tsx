@@ -49,11 +49,11 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      url: `https://lainavertailu.fi/lainanantajat/${slug}`,
+      url: `https://valitselaina.fi/lainanantajat/${slug}`,
       type: 'website',
     },
     alternates: {
-      canonical: `https://lainavertailu.fi/lainanantajat/${slug}`,
+      canonical: `https://valitselaina.fi/lainanantajat/${slug}`,
     },
   };
 }
@@ -443,7 +443,7 @@ export default async function ProviderDetailPage({
                     Tämä on mainosyhteistyö
                   </h3>
                   <p className="text-sm text-amber-700 leading-relaxed">
-                    Lainavertailu.fi saa korvauksen, kun klikkaat tämän
+                    Valitse Laina saa korvauksen, kun klikkaat tämän
                     lainanantajan linkkiä ja haet lainaa. Tämä ei vaikuta
                     arvosteluumme, arvosanaan tai vertailun tuloksiin. Näytämme
                     aina myös lainanantajat, joista emme saa komissiota.

@@ -3,7 +3,7 @@ import { ShieldCheck, Scale, Users } from 'lucide-react';
 
 // Footer link sections
 const palvelut = [
-  { label: 'Lainavertailu', href: '/vertailu' },
+  { label: 'Vertailu', href: '/vertailu' },
   { label: 'Kulutusluotto', href: '/kulutusluotto' },
   { label: 'Asuntolaina', href: '/asuntolaina' },
   { label: 'Autolaina', href: '/autolaina' },
@@ -56,14 +56,14 @@ export default function Footer() {
             <Link
               href="/"
               className="inline-flex items-center gap-2 text-white hover:opacity-90 transition-opacity"
-              aria-label="Lainavertailu — Etusivu"
+              aria-label="Valitse Laina — Etusivu"
             >
               <ShieldCheck className="h-6 w-6" strokeWidth={2.2} />
-              <span className="text-lg font-bold tracking-tight">Lainavertailu</span>
+              <span className="text-lg font-bold tracking-tight">Valitse Laina</span>
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-blue-200/80">
-              Suomen luotettavin lainavertailu. Vertaamme lainoja puolueettomasti
-              ja näytämme myös ne lainat, joista emme saa komissiota.
+              Vertaa lainoja helposti yhdestä paikasta. Näytämme kaikki lainat puolueettomasti
+              — myös ne, joista emme saa komissiota.
             </p>
             {/* Trust badges */}
             <div className="mt-4 flex flex-wrap gap-2">
@@ -99,9 +99,9 @@ export default function Footer() {
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-2">
             {[
-              { name: 'Energiavertailu', url: 'https://energiavertailu.vercel.app', desc: 'Sähkön hintavertailu' },
-              { name: 'Vakuutusvertailu', url: 'https://vakuutusvertailu.vercel.app', desc: 'Vakuutusten vertailu' },
-              { name: 'Puhelinvertailu', url: 'https://puhelinvertailu.vercel.app', desc: 'Liittymien vertailu' },
+              { name: 'Valitse Sähkö', url: 'https://valitsesahko.fi', desc: 'Sähkön hintavertailu' },
+              { name: 'Valitse Vakuutus', url: 'https://valitsevakuutus.fi', desc: 'Vakuutusten vertailu' },
+              { name: 'Valitse Puhelin', url: 'https://valitsepuhelin.fi', desc: 'Liittymien vertailu' },
               { name: 'Asuntomaatti', url: 'https://asuntomaatti.fi', desc: 'Asuntojen vertailu' },
               { name: 'Alennuskartta', url: 'https://alennuskartta.fi', desc: 'Tarjoukset kartalla' },
               { name: 'Valitse', url: 'https://valitse.fi', desc: 'Kaikki vertailupalvelut' },
@@ -140,7 +140,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             {/* Copyright */}
             <p className="text-xs text-blue-200/60">
-              &copy; {new Date().getFullYear()} Lainavertailu
+              &copy; {new Date().getFullYear()} Valitse Laina
             </p>
 
             {/* Legal links */}
