@@ -83,6 +83,7 @@ export default function RootLayout({
   return (
     <html lang="fi" className={`${inter.variable} h-full antialiased`}>
       <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         {/* JSON-LD structured data */}
         <script
           type="application/ld+json"
