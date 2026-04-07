@@ -1098,12 +1098,12 @@ export const guides: Guide[] = [
 <p>Asunnon hinta on vain osa kokonaiskustannusta. Muista budjetoida myös nämä:</p>
 
 <h3>Varainsiirtovero</h3>
-<p><strong>Ensiasunnon ostajat: 0 %!</strong> Jos ostat ensiasuntosi ja olet 18–39-vuotias, et maksa varainsiirtoveroa lainkaan. Tämä on merkittävä etu — muuten vero on:</p>
+<p><strong>Ensiasunnon ostajat: 0 %!</strong> Jos ostat ensiasuntosi, et maksa varainsiirtoveroa lainkaan. Tämä on merkittävä etu — muuten vero on vuoden 2024 alusta:</p>
 <ul>
-  <li>Asunto-osakkeet: 2 % kauppahinnasta</li>
-  <li>Kiinteistöt: 4 % kauppahinnasta</li>
+  <li>Asunto-osakkeet: 1,5 % kauppahinnasta</li>
+  <li>Kiinteistöt: 3 % kauppahinnasta</li>
 </ul>
-<p>200 000 euron asunto-osakkeessa tämä tarkoittaa 4 000 euron säästöä ensiasunnon ostajalle.</p>
+<p>200 000 euron asunto-osakkeessa tämä tarkoittaa 3 000 euron säästöä ensiasunnon ostajalle.</p>
 
 <h3>Muut kustannukset</h3>
 <ul>

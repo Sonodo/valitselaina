@@ -14,9 +14,9 @@ import {
 } from 'lucide-react';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
-const pageTitle = 'Media — Valitse Laina lehdistölle';
+const pageTitle = 'Media — Lainavertailu lehdistölle';
 const pageDescription =
-  'Valitse Lainan mediasivu: avainluvut, brändimateriaalit ja lehdistöyhteydenotot. Valitse Laina on Suomen riippumaton lainavertailupalvelu.';
+  'Lainavertailun mediasivun: avainluvut, brändimateriaalit ja lehdistöyhteydenotot. Lainavertailu on Suomen riippumaton lainavertailupalvelu.';
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -85,7 +85,7 @@ export default function MediaPage() {
             Lehdistö ja media
           </h1>
           <p className="text-lg text-blue-200 max-w-2xl">
-            Valitse Laina on suomalainen, riippumaton lainavertailupalvelu.
+            Lainavertailu on suomalainen, riippumaton lainavertailupalvelu.
             Tältä sivulta löydät avainluvut, tietoa palvelusta ja mediayhteydenottokanavat.
           </p>
         </div>
@@ -116,18 +116,18 @@ export default function MediaPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Tietoa palvelusta</h2>
           <div className="text-gray-700 leading-relaxed space-y-4">
             <p>
-              <strong>Valitse Laina</strong> on suomalainen, riippumaton lainavertailupalvelu,
+              <strong>Lainavertailu</strong> on suomalainen, riippumaton lainavertailupalvelu,
               joka vertailee yli 28 lainanantajan tuotteita puolueettomasti. Palvelu kattaa
               kulutusluotot, asuntolainat, autolainat, yhdistelylainat, yrityslainat ja pikavipit.
             </p>
             <p>
-              Valitse Lainan ydinperiaate on läpinäkyvyys: lainat järjestetään aina
+              Lainavertailun ydinperiaate on läpinäkyvyys: lainat järjestetään aina
               kokonaiskustannuksen mukaan, eikä affiliate-status koskaan vaikuta järjestykseen.
-              Vertailutulokset sisältävät myös lainanantajia, joiden kanssa Valitse Lainalla
+              Vertailutulokset sisältävät myös lainanantajia, joiden kanssa Lainavertailulla
               ei ole kaupallista yhteistyötä.
             </p>
             <p>
-              Palvelu on kuluttajille täysin ilmainen. Valitse Laina ansaitsee tuloja
+              Palvelu on kuluttajille täysin ilmainen. Lainavertailu ansaitsee tuloja
               affiliate-linkkien kautta, jotka merkitään aina selkeästi.
             </p>
           </div>
@@ -162,15 +162,15 @@ export default function MediaPage() {
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Nimi ja kirjoitusasu</h3>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>Oikea kirjoitusasu: <strong>Valitse Laina</strong> (kaksi sanaa, molemmat isolla)</li>
+                <li>Oikea kirjoitusasu: <strong>Lainavertailu</strong> (iso alkukirjain, yksi sana)</li>
                 <li>Verkkosivusto: <strong>valitselaina.fi</strong></li>
-                <li>Älä käytä: &quot;ValitseLaina&quot;, &quot;VALITSE LAINA&quot;, &quot;valitse-laina&quot;</li>
+                <li>Älä käytä: &quot;Laina Vertailu&quot;, &quot;LAINAVERTAILU&quot;, &quot;laina-vertailu&quot;</li>
               </ul>
             </div>
             <p className="text-sm text-gray-600">
               Logot ja brändimateriaalit mediakäyttöön: pyydä osoitteesta{' '}
-              <a href="mailto:media@valitse.fi" className="text-[#1a365d] underline font-medium">
-                media@valitse.fi
+              <a href="mailto:media@valitselaina.fi" className="text-[#1a365d] underline font-medium">
+                media@valitselaina.fi
               </a>.
             </p>
           </div>
@@ -192,10 +192,10 @@ export default function MediaPage() {
               <div>
                 <p className="text-sm text-blue-300">Sähköposti</p>
                 <a
-                  href="mailto:media@valitse.fi"
+                  href="mailto:media@valitselaina.fi"
                   className="text-white font-semibold hover:text-[#d69e2e] transition-colors"
                 >
-                  media@valitse.fi
+                  media@valitselaina.fi
                 </a>
               </div>
               <div>
@@ -213,7 +213,7 @@ export default function MediaPage() {
             {[
               { href: '/menetelma', label: 'Menetelmämme', desc: 'Miten vertailu toimii ja miten ansaitsemme' },
               { href: '/tietoa', label: 'Tietoa meistä', desc: 'Keitä olemme ja miksi teemme tätä' },
-              { href: '/vertailu', label: 'Vertailu', desc: 'Kokeile vertailutyökalua' },
+              { href: '/vertailu', label: 'Lainavertailu', desc: 'Kokeile vertailutyökalua' },
               { href: '/yhteystiedot', label: 'Yhteystiedot', desc: 'Kaikki yhteydenottokanavat' },
             ].map((link) => (
               <Link

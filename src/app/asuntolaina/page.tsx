@@ -68,11 +68,11 @@ const faqs = [
   },
   {
     q: 'Paljonko omaa rahaa tarvitsen asunnon ostoon?',
-    a: 'Suomessa omarahoitusosuus on tyypillisesti 5-15 % asunnon hinnasta. Ensiasunnon ostajat voivat hyödyntää ASP-järjestelmää, jossa omia säästöjä kertyy vähintään 10 % ja valtio takaa lainan 600 000 euroon asti (pääkaupunkiseudulla). Omarahoitusosuuden lisäksi kannattaa varata rahaa varainsiirtoveroon (2 % asunto-osakkeista, 3 % kiinteistöistä — ensiasunnon ostajat vapautettu) ja muihin kuluihin.',
+    a: 'Suomessa omarahoitusosuus on tyypillisesti 5-15 % asunnon hinnasta. Ensiasunnon ostajat voivat hyödyntää ASP-järjestelmää, jossa omia säästöjä kertyy vähintään 10 % ja valtio takaa lainan 600 000 euroon asti (pääkaupunkiseudulla). Omarahoitusosuuden lisäksi kannattaa varata rahaa varainsiirtoveroon (1,5 % asunto-osakkeista, 3 % kiinteistöistä — ensiasunnon ostajat vapautettu) ja muihin kuluihin.',
   },
   {
     q: 'Mikä on ASP-laina?',
-    a: 'ASP-laina (asuntosäästöpalkkiolaina) on nuorille 18–44-vuotiaille ensiasunnon ostajille tarkoitettu edullinen lainamuoto. ASP-tilille säästetään vähintään 8 vuosineljänneksenä ja kertyneille säästöille maksetaan 1 %:n korko sekä 2-4 %:n lisäkorko. Valtio takaa ASP-lainan tiettyyn rajaan asti ja koron noustessa valtio voi maksaa osan korkokuluista.',
+    a: 'ASP-laina (asuntosäästöpalkkiolaina) on nuorille 15–44-vuotiaille ensiasunnon ostajille tarkoitettu edullinen lainamuoto. ASP-tilille säästetään vähintään 8 vuosineljänneksenä ja kertyneille säästöille maksetaan 1 %:n korko sekä 2-4 %:n lisäkorko. Valtio takaa ASP-lainan tiettyyn rajaan asti ja koron noustessa valtio voi maksaa osan korkokuluista.',
   },
   {
     q: 'Miten asuntolainan korko määräytyy?',
@@ -437,7 +437,7 @@ export default function AsuntolainaPage() {
               {[
                 {
                   title: '1. Aloita ASP-säästäminen ajoissa',
-                  desc: 'ASP-tili on ensiasunnon ostajan paras työkalu. Säästä vähintään 150 euroa/kk 8 vuosineljänneksenä ja saat valtiontakauksen lainalle sekä lisäkoron säästöille. Tilin voi avata 18–39-vuotiaana.',
+                  desc: 'ASP-tili on ensiasunnon ostajan paras työkalu. Säästä vähintään 150 euroa/kk 8 vuosineljänneksenä ja saat valtiontakauksen lainalle sekä lisäkoron säästöille. Tilin voi avata 15–44-vuotiaana.',
                 },
                 {
                   title: '2. Selvitä maksukykysi realistisesti',
@@ -449,7 +449,7 @@ export default function AsuntolainaPage() {
                 },
                 {
                   title: '4. Älä unohda sivukuluja',
-                  desc: 'Varaa rahaa varainsiirtoveroon (2 % osakeasunnosta — ensiasunnon ostaja vapautettu), muuttokuluihin, kodinkoneiden hankintaan ja mahdollisiin remontteihin. Peukalosääntö: 3–5 % asunnon hinnasta.',
+                  desc: 'Varaa rahaa varainsiirtoveroon (1,5 % osakeasunnosta — ensiasunnon ostaja vapautettu), muuttokuluihin, kodinkoneiden hankintaan ja mahdollisiin remontteihin. Peukalosääntö: 3–5 % asunnon hinnasta.',
                 },
                 {
                   title: '5. Harkitse lainasuojausta',

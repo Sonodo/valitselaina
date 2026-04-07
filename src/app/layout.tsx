@@ -14,8 +14,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Valitse Laina — Vertaa lainoja rehellisesti',
-    template: '%s | Valitse Laina',
+    default: 'Lainavertailu — Suomen luotettavin lainavertailu',
+    template: '%s | Lainavertailu',
   },
   description:
     'Vertaa lainoja rehellisesti. Näytämme kaikki lainat — myös ne, joista emme saa komissiota. Löydä edullisin kulutusluotto, asuntolaina tai autolaina.',
@@ -24,14 +24,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'fi_FI',
     url: 'https://valitselaina.fi',
-    siteName: 'Valitse Laina',
-    title: 'Valitse Laina — Vertaa lainoja rehellisesti',
+    siteName: 'Lainavertailu',
+    title: 'Lainavertailu — Suomen luotettavin lainavertailu',
     description:
       'Vertaa lainoja rehellisesti. Näytämme kaikki lainat — myös ne, joista emme saa komissiota.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Valitse Laina — Vertaa lainoja rehellisesti',
+    title: 'Lainavertailu — Suomen luotettavin lainavertailu',
     description:
       'Vertaa lainoja rehellisesti. Näytämme kaikki lainat — myös ne, joista emme saa komissiota.',
   },
@@ -49,16 +49,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://valitselaina.fi',
   },
+  verification: {
+    google: 'T6yw61oyDmwPNfWLUOZlEvbeME_y95F2Ayy33PDXzO0',
+  },
 };
 
 // JSON-LD Organization structured data
 const organizationJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Valitse Laina',
+  name: 'Lainavertailu',
   url: 'https://valitselaina.fi',
   description:
-    'Vertaa lainoja helposti yhdestä paikasta. Valitse Laina näyttää kaikki lainanantajat puolueettomasti.',
+    'Suomen luotettavin lainavertailupalvelu. Vertaa kulutusluottoja, asuntolainoja ja autolainoja puolueettomasti.',
   sameAs: [],
   contactPoint: {
     '@type': 'ContactPoint',
@@ -71,7 +74,7 @@ const organizationJsonLd = {
 const websiteJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Valitse Laina',
+  name: 'Lainavertailu',
   url: 'https://valitselaina.fi',
 };
 
@@ -83,7 +86,6 @@ export default function RootLayout({
   return (
     <html lang="fi" className={`${inter.variable} h-full antialiased`}>
       <head>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         {/* JSON-LD structured data */}
         <script
           type="application/ld+json"

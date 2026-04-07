@@ -10,9 +10,9 @@ import {
 } from 'lucide-react';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
-const pageTitle = 'Yhteystiedot — Ota yhteyttä Valitse Lainaan';
+const pageTitle = 'Yhteystiedot — Ota yhteyttä Lainavertailuun';
 const pageDescription =
-  'Ota yhteyttä Valitse Lainaan. Yleinen palaute, median yhteydenotot, virheiden raportointi — löydä oikea kanava.';
+  'Ota yhteyttä Lainavertailuun. Yleinen palaute, median yhteydenotot, virheiden raportointi — löydä oikea kanava.';
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -35,18 +35,18 @@ const jsonLd = {
     '@type': 'Organization',
     name: SITE_NAME,
     url: SITE_URL,
-    email: 'info@valitse.fi',
+    email: 'info@valitselaina.fi',
     contactPoint: [
       {
         '@type': 'ContactPoint',
         contactType: 'customer service',
-        email: 'info@valitse.fi',
+        email: 'info@valitselaina.fi',
         availableLanguage: 'Finnish',
       },
       {
         '@type': 'ContactPoint',
         contactType: 'media',
-        email: 'media@valitse.fi',
+        email: 'media@valitselaina.fi',
         availableLanguage: 'Finnish',
       },
     ],
@@ -57,7 +57,7 @@ const channels = [
   {
     icon: MessageCircle,
     title: 'Yleinen palaute ja kysymykset',
-    email: 'info@valitse.fi',
+    email: 'info@valitselaina.fi',
     desc: 'Palaute palvelusta, yleisiä kysymyksiä, yhteistyöehdotukset.',
     color: 'bg-blue-50 border-blue-100',
     iconColor: 'text-[#1a365d]',
@@ -65,7 +65,7 @@ const channels = [
   {
     icon: Newspaper,
     title: 'Median yhteydenotot',
-    email: 'media@valitse.fi',
+    email: 'media@valitselaina.fi',
     desc: 'Haastattelupyynnöt, tiedotusvälineiden kysymykset, tietopyynnöt.',
     color: 'bg-purple-50 border-purple-100',
     iconColor: 'text-purple-700',
@@ -73,7 +73,7 @@ const channels = [
   {
     icon: AlertTriangle,
     title: 'Virheiden raportointi',
-    email: 'korjaukset@valitse.fi',
+    email: 'korjaukset@valitselaina.fi',
     desc: 'Ilmoita väärästä lainatiedosta, vanhentuneesta korosta tai muusta virheestä.',
     color: 'bg-amber-50 border-amber-100',
     iconColor: 'text-amber-700',
@@ -86,16 +86,16 @@ const faqs = [
     a: 'Pyrimme vastaamaan kaikkiin viesteihin 1–2 arkipäivän kuluessa. Kiireelliset virheilmoitukset käsitellään ensisijaisesti.',
   },
   {
-    q: 'Voiko Valitse Lainaan ilmoittaa oman lainatuotteen?',
-    a: 'Kyllä! Jos edustat lainanantajaa ja haluaisit tuotteesi mukaan vertailuun, ota yhteyttä osoitteeseen info@valitse.fi. Sisällytämme kaikki luotettavat suomalaiset lainanantajat.',
+    q: 'Voiko Lainavertailuun ilmoittaa oman lainatuotteen?',
+    a: 'Kyllä! Jos edustat lainanantajaa ja haluaisit tuotteesi mukaan vertailuun, ota yhteyttä osoitteeseen info@valitselaina.fi. Sisällytämme kaikki luotettavat suomalaiset lainanantajat.',
   },
   {
-    q: 'Tarjoaako Valitse Laina taloudellista neuvontaa?',
+    q: 'Tarjoaako Lainavertailu taloudellista neuvontaa?',
     a: 'Ei. Olemme vertailupalvelu, emme rahoitusneuvojia. Jos tarvitset henkilökohtaista taloudellista neuvontaa, suosittelemme kääntymään pankkisi tai riippumattoman talousasiantuntijan puoleen.',
   },
   {
     q: 'Miten voin pyytää tietojeni poistamista?',
-    a: 'Emme kerää henkilökohtaisia taloustietoja. Jos haluat tietää, mitä evästetietoja keräämme, lue tietosuojaselosteemme. Tietojenpoistoyynnöt osoitteeseen info@valitse.fi.',
+    a: 'Emme kerää henkilökohtaisia taloustietoja. Jos haluat tietää, mitä evästetietoja keräämme, lue tietosuojaselosteemme. Tietojenpoistoyynnöt osoitteeseen info@valitselaina.fi.',
   },
 ];
 

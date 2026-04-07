@@ -28,8 +28,8 @@ const EURIBOR_OPTIONS = [
   { label: 'Euribor 3 kk', value: EURIBOR_3M },
 ];
 
-const TRANSFER_TAX_RATE = 0.03; // 3% for apartments
-const TRANSFER_TAX_RATE_HOUSE = 0.04; // 4% for houses
+const TRANSFER_TAX_RATE = 0.015; // 1.5% for apartments (asunto-osakkeet, since 2024)
+const TRANSFER_TAX_RATE_HOUSE = 0.03; // 3% for houses/real estate (kiinteistöt, since 2024)
 
 export default function AsuntolainanlaskuriPage() {
   const [propertyPrice, setPropertyPrice] = useState(250000);
@@ -326,7 +326,7 @@ export default function AsuntolainanlaskuriPage() {
                   <span className="relative group ml-1 inline-block">
                     <Info className="w-3.5 h-3.5 text-gray-400 inline" />
                     <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-52 rounded-lg bg-gray-900 px-3 py-2 text-xs text-white opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-10">
-                      Ensiasunnon ostaja on vapautettu varainsiirtoverosta (3 % osakeasunnoista).
+                      Ensiasunnon ostaja on vapautettu varainsiirtoverosta (1,5 % osakeasunnoista).
                     </span>
                   </span>
                 </label>

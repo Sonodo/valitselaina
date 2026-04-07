@@ -23,14 +23,14 @@ export const providers: LoanProvider[] = [
     name: 'Nordea Bank Oyj',
     shortName: 'Nordea',
     type: 'bank',
-    founded: 1820,
+    founded: 2001,
     headquarters: 'Helsinki',
     country: 'FI',
     finFsaRegulated: true,
     website: 'https://www.nordea.fi',
     customerServicePhone: '0200 3000',
     description:
-      'Nordea on Pohjoismaiden suurin finanssipalvelukonserni ja Suomen johtava pankki. Nordea tarjoaa kattavan valikoiman lainatuotteita asuntolainoista kulutusluottoihin. Pankilla on vahva digitaalinen palvelutarjonta ja laaja konttoriverkosto.',
+      'Nordea on Pohjoismaiden suurin finanssipalvelukonserni ja Suomen johtava pankki. Nordea syntyi vuonna 2001 pohjoismaisten pankkien yhdistymisestä (juuret ulottuvat 1800-luvulle). Nordea tarjoaa kattavan valikoiman lainatuotteita asuntolainoista kulutusluottoihin. Pankilla on vahva digitaalinen palvelutarjonta ja laaja konttoriverkosto.',
     pros: [
       'Suomen suurin pankki — vakaa ja luotettava',
       'Kilpailukykyiset asuntolainakorot pitkäaikaisille asiakkaille',
@@ -249,7 +249,7 @@ export const providers: LoanProvider[] = [
     website: 'https://www.danskebank.fi',
     customerServicePhone: '0200 2590',
     description:
-      'Danske Bank on tanskalainen pankki, joka on yksi Suomen suurimmista pankeista. Pankki tunnetaan hyvistä digitaalisista palveluistaan ja kilpailukykyisistä asuntolainakoroista. Danske Bankin mobiilipankki on arvostettu käyttäjäystävällisyydestään.',
+      'Danske Bank on tanskalaisen Danske Bank -konsernin suomalainen tytäryhtiö ja yksi Suomen suurimmista pankeista (ent. Sampo Pankki). Pankki tunnetaan hyvistä digitaalisista palveluistaan ja kilpailukykyisistä asuntolainakoroista. Danske Bankin mobiilipankki on arvostettu käyttäjäystävällisyydestään.',
     pros: [
       'Erinomaiset digitaaliset palvelut',
       'Kilpailukykyiset asuntolainakorot',
@@ -1486,7 +1486,7 @@ export const providers: LoanProvider[] = [
     website: 'https://www.gfmoney.fi',
     customerServicePhone: '09 4245 1780',
     description:
-      'GF Money on suomalainen fintech-yritys, joka tarjoaa pieniä ja keskisuuria kulutusluottoja. Yritys keskittyy nopeaan ja digitaaliseen lainapalveluun. GF Money on Garantia Finance -konsernin osa.',
+      'GF Money on suomalainen fintech-yritys, joka tarjoaa pieniä ja keskisuuria kulutusluottoja. Yritys keskittyy nopeaan ja digitaaliseen lainapalveluun.',
     pros: [
       'Suomalainen yritys — paikallinen palvelu',
       'Nopea hakemus ja päätös',
@@ -1642,7 +1642,7 @@ export const providers: LoanProvider[] = [
       {
         id: 'collector-kulutusluotto',
         providerId: 'collector-bank',
-        name: 'Collector Kulutusluotto',
+        name: 'Walley Kulutusluotto',
         type: 'kulutusluotto',
         minAmount: 1000,
         maxAmount: 30000,
@@ -1665,7 +1665,7 @@ export const providers: LoanProvider[] = [
       {
         id: 'collector-yrityslaina',
         providerId: 'collector-bank',
-        name: 'Collector Yrityslaina',
+        name: 'Walley Yrityslaina',
         type: 'yrityslaina',
         minAmount: 10000,
         maxAmount: 500000,
@@ -1973,7 +1973,7 @@ export const providers: LoanProvider[] = [
     finFsaRegulated: false,
     website: 'https://www.fundingcircle.com',
     description:
-      'Funding Circle on kansainvälinen vertaislainauspalvelu, joka keskittyy pk-yritysten rahoitukseen. Palvelu yhdistää sijoittajia ja rahoitusta tarvitsevia yrityksiä. Funding Circle on yksi maailman suurimmista yritysten vertaislainauspalveluista.',
+      'Funding Circle on kansainvälinen vertaislainauspalvelu, joka keskittyy pk-yritysten rahoitukseen. Palvelu yhdistää sijoittajia ja rahoitusta tarvitsevia yrityksiä. Huomaa: Funding Circle ei toimi suoraan Suomessa, mutta palvelu on saatavilla englanninkielisenä kansainvälisenä alustana.',
     pros: [
       'Suuri kansainvälinen yrityslainauspalvelu',
       'Keskittyy pk-yritysten rahoitukseen',
@@ -2117,7 +2117,7 @@ export const providers: LoanProvider[] = [
     website: 'https://www.lahitapiola.fi',
     customerServicePhone: '09 453 8000',
     description:
-      'LähiTapiola on Suomen johtava vakuutusryhmä, jonka rahoituspalvelut tarjoavat kulutusluottoja ja sijoituspalveluja. LähiTapiolan vahvuus on kattava vakuutus- ja pankkipalvelujen kokonaisuus, joka palvelee erityisesti vakuutusasiakkaita.',
+      'LähiTapiola on Suomen johtava keskinäinen vakuutusryhmä, jonka rahoituspalvelut tarjoavat kulutusluottoja vakuutusasiakkaille. LähiTapiolan vahvuus on kattava vakuutus- ja rahoituspalvelujen kokonaisuus. Pankkipalvelut toteutetaan S-Pankin kumppanuuden kautta.',
     pros: [
       'Vahva vakuutusryhmä taustalla — kokonaispalvelu',
       'Laaja konttoriverko vakuutustoimipisteiden kautta',

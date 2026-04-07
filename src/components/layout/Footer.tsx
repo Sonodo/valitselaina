@@ -32,6 +32,13 @@ const tietoa = [
   { label: 'Yhteystiedot', href: '/yhteystiedot' },
 ];
 
+const verkosto = [
+  { label: 'Valitse.fi — Vertaa ja valitse', href: 'https://valitse.fi' },
+  { label: 'Valitse Sähkö — Sähkövertailu', href: 'https://valitsesahko.fi' },
+  { label: 'Valitse Vakuutus — Vakuutusvertailu', href: 'https://valitsevakuutus.fi' },
+  { label: 'Valitse Puhelin — Puhelinliittymät', href: 'https://valitsepuhelin.fi' },
+];
+
 const legalLinks = [
   { label: 'Tietosuoja', href: '/tietosuoja' },
   { label: 'Käyttöehdot', href: '/kayttoehdot' },
@@ -50,7 +57,7 @@ export default function Footer() {
     <footer className="bg-[#1a365d] text-white" role="contentinfo">
       {/* Main footer content */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5 lg:gap-12">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6 lg:gap-12">
           {/* Brand column */}
           <div className="col-span-2 md:col-span-3 lg:col-span-1 mb-4 lg:mb-0">
             <Link
@@ -90,6 +97,9 @@ export default function Footer() {
 
           {/* Tietoa */}
           <FooterLinkSection title="Tietoa" links={tietoa} />
+
+          {/* Valitse-verkosto */}
+          <FooterExternalLinkSection title="Valitse-verkosto" links={verkosto} />
         </div>
 
         {/* Valitse-verkosto */}
@@ -182,6 +192,35 @@ function FooterLinkSection({
             >
               {link.label}
             </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+// Footer link section for external links
+function FooterExternalLinkSection({
+  title,
+  links,
+}: {
+  title: string;
+  links: { label: string; href: string }[];
+}) {
+  return (
+    <div>
+      <h3 className="text-sm font-semibold text-white tracking-wide">{title}</h3>
+      <ul className="mt-3 space-y-2.5" role="list">
+        {links.map((link) => (
+          <li key={link.href}>
+            <a
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-blue-200/70 hover:text-white transition-colors"
+            >
+              {link.label}
+            </a>
           </li>
         ))}
       </ul>

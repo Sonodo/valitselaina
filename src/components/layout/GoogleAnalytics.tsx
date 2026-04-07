@@ -24,7 +24,8 @@ export default function GoogleAnalytics() {
   }, []);
 
   const gaId = process.env.NEXT_PUBLIC_GA_ID;
-  if (!gaId || !consentGiven) return null;
+  if (!gaId) return null; // GA4 not configured yet
+  if (!consentGiven) return null;
 
   return (
     <>

@@ -966,7 +966,7 @@ export const blogPosts: BlogPost[] = [
   </ul>
 
   <h3>3. Ensiasunnon varainsiirtoverovapaus</h3>
-  <p>Vaikka tämä ei ole suoraan korkovähennys, on hyvä muistaa, että ensiasunnon ostajat (18–39-vuotiaat) ovat vapautettuja varainsiirtoverosta. Tämä on merkittävä etu: 2 % kauppahinnasta asunto-osakkeissa tai 4 % kiinteistöissä.</p>
+  <p>Vaikka tämä ei ole suoraan korkovähennys, on hyvä muistaa, että ensiasunnon ostajat ovat vapautettuja varainsiirtoverosta. Tämä on merkittävä etu: muuten vero on 1,5 % kauppahinnasta asunto-osakkeissa tai 3 % kiinteistöissä (vuoden 2024 alusta alennetut verot).</p>
 
   <h2>Alijäämähyvitys — miten se toimii?</h2>
   <p>Vähennyskelpoisten korkojen osalta mekanismi toimii näin:</p>

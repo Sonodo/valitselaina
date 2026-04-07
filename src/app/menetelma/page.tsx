@@ -16,9 +16,9 @@ import {
 } from 'lucide-react';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
-const pageTitle = 'Menetelmämme — Näin Valitse Laina toimii';
+const pageTitle = 'Menetelmämme — Näin Lainavertailu toimii';
 const pageDescription =
-  'Valitse Lainan menetelmä: miten keräämme tiedot, miten vertailualgoritmi toimii, miten ansaitsemme ja mitä emme tee. Täysi läpinäkyvyys.';
+  'Lainavertailun menetelma: miten keräämme tiedot, miten vertailualgoritmi toimii, miten ansaitsemme ja mitä emme tee. Täysi läpinäkyvyys.';
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Näin Valitse Laina toimii — Menetelmämme',
+  headline: 'Näin Lainavertailu toimii — Menetelmämme',
   description: pageDescription,
   publisher: {
     '@type': 'Organization',
@@ -85,7 +85,7 @@ export default function MenetelmaPage() {
             </span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            Näin Valitse Laina toimii
+            Näin Lainavertailu toimii
           </h1>
           <p className="text-lg text-blue-200 max-w-2xl">
             Uskomme täyteen läpinäkyvyyteen. Tällä sivulla kerromme tarkalleen,
@@ -177,7 +177,7 @@ export default function MenetelmaPage() {
 
         <Section icon={Coins} title="Miten ansaitsemme — ansaintamalli" id="ansaintamalli">
           <p>
-            Valitse Laina on käyttäjille täysin ilmainen. Ansaitsemme tuloja
+            Lainavertailu on käyttäjille täysin ilmainen. Ansaitsemme tuloja
             affiliate-linkkien kautta: kun klikkaat lainanantajan linkkiä ja haet lainaa,
             saatamme saada korvauksen lainanantajalta.
           </p>
@@ -287,8 +287,8 @@ export default function MenetelmaPage() {
             <ul className="space-y-2 text-sm">
               <li>
                 <strong>Sähköposti:</strong>{' '}
-                <a href="mailto:korjaukset@valitse.fi" className="text-[#1a365d] underline">
-                  korjaukset@valitse.fi
+                <a href="mailto:korjaukset@valitselaina.fi" className="text-[#1a365d] underline">
+                  korjaukset@valitselaina.fi
                 </a>
               </li>
               <li>
