@@ -98,7 +98,7 @@ export default function TietoaPage() {
           </h1>
           <p className="text-lg text-blue-200 max-w-2xl">
             Valitse Laina on riippumaton suomalainen palvelu, joka auttaa sinua löytämään
-            edullisimman lainan vertaamalla yli 28 lainanantajan tuotteita puolueettomasti.
+            edullisimman lainan vertaamalla yli 27 lainanantajan tuotteita puolueettomasti.
           </p>
         </div>
       </div>
@@ -134,7 +134,7 @@ export default function TietoaPage() {
               kuluttajia tekemään parempia päätöksiä.
             </p>
             <p>
-              Palvelumme kattaa yli 28 suomalaista lainanantajaa: perinteisistä pankeista
+              Palvelumme kattaa yli 27 suomalaista lainanantajaa: perinteisistä pankeista
               fintech-yhtiöihin ja vertaislaina-alustoihin. Vertailemme kulutusluottoja,
               asuntolainoja, autolainoja, yhdistelylainoja, yrityslainoja ja pikavippejä.
             </p>

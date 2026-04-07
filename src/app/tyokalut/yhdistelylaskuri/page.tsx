@@ -486,7 +486,7 @@ export default function YhdistelylaskuriPage() {
                     Vertaa yhdistelylainatarjouksia
                   </h3>
                   <p className="mt-2 text-sm text-gray-600">
-                    Löydä paras yhdistelylaina vertailemalla oikeita tarjouksia.
+                    Löydä edullisin yhdistelylaina vertailemalla oikeita tarjouksia.
                   </p>
                   <Link
                     href="/vertailu"

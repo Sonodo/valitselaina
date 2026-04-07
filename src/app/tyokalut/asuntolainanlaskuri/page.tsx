@@ -551,7 +551,7 @@ export default function AsuntolainanlaskuriPage() {
                     Vertaa asuntolainoja
                   </h3>
                   <p className="mt-2 text-sm text-gray-600">
-                    Löydä paras asuntolainan marginaali vertailemalla pankkien tarjouksia.
+                    Löydä edullisin asuntolainan marginaali vertailemalla pankkien tarjouksia.
                   </p>
                   <Link
                     href="/vertailu"

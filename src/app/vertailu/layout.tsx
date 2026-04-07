@@ -3,14 +3,14 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Vertaa lainoja ja löydä edullisin',
   description:
-    'Vertaa kulutusluottoja, asuntolainoja ja autolainoja reaaliajassa. Näe todellinen vuosikorko ja kokonaiskustannukset. 28+ lainanantajaa.',
+    'Vertaa kulutusluottoja, asuntolainoja ja autolainoja reaaliajassa. Näe todellinen vuosikorko ja kokonaiskustannukset. 27+ lainanantajaa.',
   alternates: {
     canonical: 'https://valitselaina.fi/vertailu',
   },
   openGraph: {
     title: 'Vertaa lainoja ja löydä edullisin',
     description:
-      'Vertaa kulutusluottoja, asuntolainoja ja autolainoja reaaliajassa. 28+ lainanantajaa.',
+      'Vertaa kulutusluottoja, asuntolainoja ja autolainoja reaaliajassa. 27+ lainanantajaa.',
     url: 'https://valitselaina.fi/vertailu',
     type: 'website',
   },

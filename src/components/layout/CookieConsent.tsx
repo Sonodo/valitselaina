@@ -17,11 +17,19 @@ export default function CookieConsent() {
 
   function handleAccept() {
     localStorage.setItem(STORAGE_KEY, 'accepted');
+    localStorage.setItem('analytics_consent', 'granted');
+    // Update Google Analytics consent if gtag is available
+    if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+      window.gtag('consent', 'update', {
+        analytics_storage: 'granted',
+      });
+    }
     setVisible(false);
   }
 
   function handleReject() {
     localStorage.setItem(STORAGE_KEY, 'rejected');
+    localStorage.setItem('analytics_consent', 'denied');
     setVisible(false);
   }
 

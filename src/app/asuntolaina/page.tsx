@@ -30,7 +30,7 @@ import { formatCurrency, formatPercentage } from '@/lib/utils';
 // Metadata
 // ---------------------------------------------------------------------------
 
-const pageTitle = 'Asuntolaina — Vertaa marginaalit ja löydä paras';
+const pageTitle = 'Asuntolaina — Vertaa marginaalit ja löydä edullisin';
 const pageDescription =
   'Vertaa asuntolainoja rehellisesti. Marginaalit alkaen 0,33 %. Seuraa Euribor-korkoja ja löydä edullisin asuntolaina ensiasunnon ostajille ja vaihtajille.';
 
@@ -168,7 +168,7 @@ export default function AsuntolainaPage() {
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
               Asuntolaina{' '}
               <span className="block text-[#ecc94b]">
-                Vertaa marginaalit ja löydä paras
+                Vertaa marginaalit ja löydä edullisin
               </span>
             </h1>
             <p className="mt-5 text-lg sm:text-xl text-blue-100/90 leading-relaxed max-w-2xl">

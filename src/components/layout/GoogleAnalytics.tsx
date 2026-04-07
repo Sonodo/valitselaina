@@ -25,6 +25,14 @@ export default function GoogleAnalytics() {
             'ad_personalization': 'denied'
           });
           gtag('config', '${GA_ID}');
+
+          // Restore consent from previous session if user already accepted
+          try {
+            var stored = localStorage.getItem('analytics_consent');
+            if (stored === 'granted') {
+              gtag('consent', 'update', { 'analytics_storage': 'granted' });
+            }
+          } catch(e) {}
         `}
       </Script>
     </>

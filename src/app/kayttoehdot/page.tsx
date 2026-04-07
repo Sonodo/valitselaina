@@ -3,9 +3,9 @@ import Link from 'next/link';
 import { FileText, AlertTriangle } from 'lucide-react';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
-const pageTitle = 'Käyttöehdot — Lainavertailu';
+const pageTitle = 'Käyttöehdot — Valitse Laina';
 const pageDescription =
-  'Lainavertailun käyttöehdot. Palvelun käyttöä koskevat ehdot, vastuunrajoitukset ja immateriaalioikeudet.';
+  'Valitse Lainan käyttöehdot. Palvelun käyttöä koskevat ehdot, vastuunrajoitukset ja immateriaalioikeudet.';
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -61,7 +61,7 @@ export default function KayttoehdotPage() {
             <div>
               <h3 className="font-semibold text-gray-900 mb-1">Tärkeät huomautukset</h3>
               <ul className="text-sm text-gray-700 space-y-2">
-                <li><strong>Lainavertailu on vertailupalvelu, ei lainanantaja.</strong> Emme myönnä lainoja, emme käsittele lainahakemuksia emmekä tee luottopäätöksiä.</li>
+                <li><strong>Valitse Laina on vertailupalvelu, ei lainanantaja.</strong> Emme myönnä lainoja, emme käsittele lainahakemuksia emmekä tee luottopäätöksiä.</li>
                 <li><strong>Emme anna taloudellista neuvontaa.</strong> Sivustollamme oleva tieto on tarkoitettu yleiseksi tiedoksi, ei henkilökohtaiseksi taloudelliseksi neuvonnaksi.</li>
               </ul>
             </div>
@@ -73,7 +73,7 @@ export default function KayttoehdotPage() {
           <SectionTitle id="soveltaminen">1. Ehtojen soveltaminen</SectionTitle>
           <SubSection>
             <p>
-              Nämä käyttöehdot koskevat Lainavertailu-palvelun (valitselaina.fi) käyttöä.
+              Nämä käyttöehdot koskevat Valitse Laina -palvelun (valitselaina.fi) käyttöä.
               Käyttämällä palvelua hyväksyt nämä ehdot. Jos et hyväksy ehtoja,
               älä käytä palvelua.
             </p>
@@ -87,7 +87,7 @@ export default function KayttoehdotPage() {
           <SectionTitle id="palvelun-kuvaus">2. Palvelun kuvaus</SectionTitle>
           <SubSection>
             <p>
-              Lainavertailu on ilmainen verkkopalvelu, joka tarjoaa lainatuotteiden
+              Valitse Laina on ilmainen verkkopalvelu, joka tarjoaa lainatuotteiden
               vertailutietoja Suomessa toimivista lainanantajista. Palvelu sisältää:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -149,7 +149,7 @@ export default function KayttoehdotPage() {
           <SectionTitle id="vastuunrajoitus">6. Vastuunrajoitus</SectionTitle>
           <SubSection>
             <p>
-              Lainavertailu tarjotaan &quot;sellaisenaan&quot; ilman minkäänlaisia takuita.
+              Valitse Laina tarjotaan &quot;sellaisenaan&quot; ilman minkäänlaisia takuita.
               Emme vastaa:
             </p>
             <ul className="list-disc list-inside space-y-1">

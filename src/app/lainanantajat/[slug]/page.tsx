@@ -70,6 +70,17 @@ const typeLabels: Record<LoanProvider['type'], string> = {
   other: 'Muu rahoitusyhtiö',
 };
 
+// Map ISO country codes to Finnish names
+const countryNames: Record<string, string> = {
+  'FI': 'Suomi',
+  'NO': 'Norja',
+  'SE': 'Ruotsi',
+  'EE': 'Viro',
+  'GB': 'Iso-Britannia',
+  'DK': 'Tanska',
+  'DE': 'Saksa',
+};
+
 // Map loan product type to Finnish label
 const productTypeLabels: Record<string, string> = {
   kulutusluotto: 'Kulutusluotto',
@@ -336,7 +347,7 @@ export default async function ProviderDetailPage({
             <KeyFact
               icon={<Building2 className="h-5 w-5 text-[#1a365d]" />}
               label="Maa"
-              value={provider.country === 'FI' ? 'Suomi' : provider.country}
+              value={countryNames[provider.country] || provider.country}
             />
             <KeyFact
               icon={<Globe className="h-5 w-5 text-[#1a365d]" />}

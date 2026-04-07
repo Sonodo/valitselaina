@@ -14,7 +14,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Lainavertailu — Suomen luotettavin lainavertailu',
+    default: 'Lainavertailu — Luotettava lainavertailu',
     template: '%s | Lainavertailu',
   },
   description:
@@ -25,13 +25,13 @@ export const metadata: Metadata = {
     locale: 'fi_FI',
     url: 'https://valitselaina.fi',
     siteName: 'Lainavertailu',
-    title: 'Lainavertailu — Suomen luotettavin lainavertailu',
+    title: 'Lainavertailu — Luotettava lainavertailu',
     description:
       'Vertaa lainoja rehellisesti. Näytämme kaikki lainat — myös ne, joista emme saa komissiota.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Lainavertailu — Suomen luotettavin lainavertailu',
+    title: 'Lainavertailu — Luotettava lainavertailu',
     description:
       'Vertaa lainoja rehellisesti. Näytämme kaikki lainat — myös ne, joista emme saa komissiota.',
   },
@@ -58,10 +58,10 @@ export const metadata: Metadata = {
 const organizationJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Lainavertailu',
+  name: 'Valitse Laina',
   url: 'https://valitselaina.fi',
   description:
-    'Suomen luotettavin lainavertailupalvelu. Vertaa kulutusluottoja, asuntolainoja ja autolainoja puolueettomasti.',
+    'Luotettava lainavertailupalvelu. Vertaa kulutusluottoja, asuntolainoja ja autolainoja puolueettomasti.',
   sameAs: [],
   contactPoint: {
     '@type': 'ContactPoint',
@@ -74,7 +74,7 @@ const organizationJsonLd = {
 const websiteJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Lainavertailu',
+  name: 'Valitse Laina',
   url: 'https://valitselaina.fi',
 };
 

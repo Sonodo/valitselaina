@@ -1,5 +1,5 @@
 // =============================================================================
-// Finnish Loan Provider Data — Comprehensive database of 28+ providers
+// Finnish Loan Provider Data — Comprehensive database of 27+ providers
 // All descriptions and user-facing text in Finnish
 // All rates represent realistic 2026 Finnish market conditions
 // =============================================================================
@@ -1960,67 +1960,7 @@ export const providers: LoanProvider[] = [
     ],
   },
 
-  // 25. Funding Circle --------------------------------------------------------
-  {
-    id: 'funding-circle',
-    slug: 'funding-circle',
-    name: 'Funding Circle Ltd',
-    shortName: 'Funding Circle',
-    type: 'p2p',
-    founded: 2010,
-    headquarters: 'Lontoo',
-    country: 'GB',
-    finFsaRegulated: false,
-    website: 'https://www.fundingcircle.com',
-    description:
-      'Funding Circle on kansainvälinen vertaislainauspalvelu, joka keskittyy pk-yritysten rahoitukseen. Palvelu yhdistää sijoittajia ja rahoitusta tarvitsevia yrityksiä. Huomaa: Funding Circle ei toimi suoraan Suomessa, mutta palvelu on saatavilla englanninkielisenä kansainvälisenä alustana.',
-    pros: [
-      'Suuri kansainvälinen yrityslainauspalvelu',
-      'Keskittyy pk-yritysten rahoitukseen',
-      'Mahdollisuus suurempiin lainasummiin',
-      'Vakiintunut toimija globaalisti',
-    ],
-    cons: [
-      'Ei suomalainen — palvelu pääosin englanniksi',
-      'Ei Finanssivalvonnan alainen',
-      'Rajoitettu toiminta Suomessa',
-      'Korot voivat olla korkeampia pienille yrityksille',
-    ],
-    isAffiliate: false,
-    products: [
-      {
-        id: 'funding-circle-yrityslaina',
-        providerId: 'funding-circle',
-        name: 'Funding Circle Yrityslaina',
-        type: 'yrityslaina',
-        minAmount: 10000,
-        maxAmount: 500000,
-        minTermMonths: 6,
-        maxTermMonths: 60,
-        nominalRate: { min: 4.5, max: 14.0 },
-        effectiveRate: { min: 5.5, max: 16.0 },
-        setupFee: 500,
-        monthlyFee: 0,
-        requiresCollateral: false,
-        requiresGuarantor: false,
-        processingTime: '3–7 arkipäivää',
-        features: [
-          'Vertaislainaus pk-yrityksille',
-          'Suuria lainasummia saatavilla',
-          'Nopea hakemus verkossa',
-          'Kiinteä korko ja kuukausierä',
-        ],
-        restrictions: [
-          'Vähintään 2 vuoden liiketoiminta',
-          'Liikevaihto yli 50 000 €',
-          'Palvelu pääosin englanniksi',
-        ],
-        lastUpdated: '2026-04-01',
-      },
-    ],
-  },
-
-  // 26. Lainaaja --------------------------------------------------------------
+  // 25. Lainaaja --------------------------------------------------------------
   {
     id: 'lainaaja',
     slug: 'lainaaja',
@@ -2100,10 +2040,10 @@ export const providers: LoanProvider[] = [
   },
 
   // =========================================================================
-  // OTHER (27–28)
+  // OTHER (26–27)
   // =========================================================================
 
-  // 27. LähiTapiola Finance ---------------------------------------------------
+  // 26. LähiTapiola Finance ---------------------------------------------------
   {
     id: 'lahitapiola-finance',
     slug: 'lahitapiola',
@@ -2158,7 +2098,7 @@ export const providers: LoanProvider[] = [
     ],
   },
 
-  // 28. Avida Finance ---------------------------------------------------------
+  // 27. Avida Finance ---------------------------------------------------------
   {
     id: 'avida-finance',
     slug: 'avida-finance',

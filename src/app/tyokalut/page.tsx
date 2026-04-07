@@ -122,7 +122,7 @@ export default function TyokalutPage() {
               Haluatko vertailla lainoja?
             </h2>
             <p className="mt-2 text-gray-600">
-              Laskureiden lisäksi voit vertailla oikeita lainatarjouksia yli 28
+              Laskureiden lisäksi voit vertailla oikeita lainatarjouksia yli 27
               lainanantajalta.
             </p>
             <Link

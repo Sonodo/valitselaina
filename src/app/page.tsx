@@ -11,7 +11,7 @@ import CTASection from '@/components/home/CTASection';
 export const metadata: Metadata = {
   title: 'Valitse Laina — Vertaa lainoja rehellisesti | Löydä edullisin laina',
   description:
-    'Vertaa kulutusluottoja, asuntolainoja ja autolainoja. Näytämme kaikki lainat — myös ne, joista emme saa komissiota. 28+ lainanantajaa, todelliset vuosikorot.',
+    'Vertaa kulutusluottoja, asuntolainoja ja autolainoja. Näytämme kaikki lainat — myös ne, joista emme saa komissiota. 27+ lainanantajaa, todelliset vuosikorot.',
   alternates: { canonical: 'https://valitselaina.fi' },
 };
 

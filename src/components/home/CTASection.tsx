@@ -18,7 +18,7 @@ export default function CTASection() {
         </h2>
 
         <p className="mt-4 text-lg text-blue-100/90 max-w-2xl mx-auto leading-relaxed">
-          Vertaa 28+ lainanantajan tarjouksia yhdellä haulla. Näet todelliset
+          Vertaa 27+ lainanantajan tarjouksia yhdellä haulla. Näet todelliset
           vuosikorot ja kaikki kulut — ilman piilotettua agendaa.
         </p>
 

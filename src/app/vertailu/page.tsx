@@ -14,7 +14,7 @@ export default function VertailuPage() {
             Vertaa lainoja ja löydä edullisin
           </h1>
           <p className="text-lg text-white/80 max-w-2xl mx-auto mb-4">
-            Syötä lainan tiedot ja vertaa yli 28 lainanantajan tuotteita reaaliajassa.
+            Syötä lainan tiedot ja vertaa yli 27 lainanantajan tuotteita reaaliajassa.
             Näkyviin todellinen vuosikorko ja kokonaiskustannukset.
           </p>
           <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm text-white/90 border border-white/20">

@@ -423,7 +423,7 @@ export default function LainanlaskuriPage() {
                     Löydä edullisin laina
                   </h3>
                   <p className="mt-2 text-sm text-gray-600">
-                    Vertaa oikeita lainatarjouksia ja löydä paras korko sinulle.
+                    Vertaa oikeita lainatarjouksia ja löydä edullisin korko sinulle.
                   </p>
                   <Link
                     href={`/vertailu?summa=${amount}&aika=${termMonths}`}

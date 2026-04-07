@@ -24,7 +24,7 @@ const TERM_OPTIONS = [
 ];
 
 const TRUST_INDICATORS = [
-  { icon: Users, text: '28+ lainanantajaa' },
+  { icon: Users, text: '27+ lainanantajaa' },
   { icon: ShieldCheck, text: 'Puolueeton' },
   { icon: Eye, text: 'Kaikki lainat näkyvissä' },
 ];
@@ -59,8 +59,8 @@ export default function HeroSection() {
             </h1>
 
             <p className="mt-5 text-lg sm:text-xl text-blue-100/90 leading-relaxed max-w-xl">
-              Suomen ainoa lainojen vertailupalvelu, joka näyttää{' '}
-              <strong className="text-white font-semibold">kaikki lainat</strong>{' '}
+              Lainojen vertailupalvelu, joka näyttää myös{' '}
+              <strong className="text-white font-semibold">ei-kumppaneiden lainat</strong>{' '}
               — myös ne, joista emme saa komissiota. Vertaa todellisia vuosikorkoja
               ilman piilotettua agendaa.
             </p>

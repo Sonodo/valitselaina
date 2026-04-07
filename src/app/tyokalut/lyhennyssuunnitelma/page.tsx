@@ -434,7 +434,7 @@ export default function LyhennyssuunnitelmaPage() {
                 {/* CTA */}
                 <div className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm text-center">
                   <h3 className="text-lg font-semibold text-gray-900">
-                    Löydä paras korko
+                    Löydä edullisin korko
                   </h3>
                   <p className="mt-2 text-sm text-gray-600">
                     Vertaa lainatarjouksia ja minimoi kokonaiskulusi.

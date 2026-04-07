@@ -25,7 +25,7 @@ import { formatCurrency, formatPercentage } from '@/lib/utils';
 
 const pageTitle = 'Yrityslaina — Rahoitusta yritystoimintaan';
 const pageDescription =
-  'Vertaa yrityslainoja Suomessa. Investointilainat, käyttöpääomalainat ja yrittäjälainat alkaen 4,5 %. Löydä paras rahoitus yrityksellesi.';
+  'Vertaa yrityslainoja Suomessa. Investointilainat, käyttöpääomalainat ja yrittäjälainat alkaen 4,5 %. Löydä sopiva rahoitus yrityksellesi.';
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -546,7 +546,7 @@ export default function YrityslainaPage() {
       <section className="py-12 sm:py-16 bg-[#1a365d]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
-            Löydä paras rahoitus yrityksellesi
+            Löydä sopiva rahoitus yrityksellesi
           </h2>
           <p className="text-blue-100/80 mb-8 max-w-xl mx-auto">
             Vertaa yrityslainoja pankeista ja vaihtoehtoisista rahoittajista.

@@ -121,6 +121,10 @@ export default function PopularLoans() {
             </div>
           ))}
         </div>
+
+        <p className="mt-4 text-sm text-gray-500">
+          Korot ja ehdot ovat toimituksellisia arvioita. Tarkista aina ajantasaiset tiedot lainanantajan sivuilta.
+        </p>
       </div>
     </section>
   );

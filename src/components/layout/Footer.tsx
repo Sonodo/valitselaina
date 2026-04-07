@@ -48,7 +48,7 @@ const legalLinks = [
 // Trust badges displayed in the brand column
 const trustBadges = [
   { icon: ShieldCheck, label: 'Puolueeton' },
-  { icon: Users, label: '28+ lainanantajaa' },
+  { icon: Users, label: '27+ lainanantajaa' },
   { icon: Scale, label: 'Ilmainen' },
 ];
 

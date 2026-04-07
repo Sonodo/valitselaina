@@ -12,7 +12,7 @@ const quickLinks = [
     icon: Search,
     label: 'Vertailu',
     href: '/vertailu',
-    desc: 'Vertaa lainoja yli 28 lainanantajalta',
+    desc: 'Vertaa lainoja yli 27 lainanantajalta',
   },
   {
     icon: BookOpen,

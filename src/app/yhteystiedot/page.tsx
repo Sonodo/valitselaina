@@ -10,9 +10,9 @@ import {
 } from 'lucide-react';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
-const pageTitle = 'Yhteystiedot — Ota yhteyttä Lainavertailuun';
+const pageTitle = 'Yhteystiedot — Ota yhteyttä Valitse Lainaan';
 const pageDescription =
-  'Ota yhteyttä Lainavertailuun. Yleinen palaute, median yhteydenotot, virheiden raportointi — löydä oikea kanava.';
+  'Ota yhteyttä Valitse Lainaan. Yleinen palaute, median yhteydenotot, virheiden raportointi — löydä oikea kanava.';
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -86,16 +86,16 @@ const faqs = [
     a: 'Pyrimme vastaamaan kaikkiin viesteihin 1–2 arkipäivän kuluessa. Kiireelliset virheilmoitukset käsitellään ensisijaisesti.',
   },
   {
-    q: 'Voiko Lainavertailuun ilmoittaa oman lainatuotteen?',
+    q: 'Voiko Valitse Lainaan ilmoittaa oman lainatuotteen?',
     a: 'Kyllä! Jos edustat lainanantajaa ja haluaisit tuotteesi mukaan vertailuun, ota yhteyttä osoitteeseen info@valitselaina.fi. Sisällytämme kaikki luotettavat suomalaiset lainanantajat.',
   },
   {
-    q: 'Tarjoaako Lainavertailu taloudellista neuvontaa?',
+    q: 'Tarjoaako Valitse Laina taloudellista neuvontaa?',
     a: 'Ei. Olemme vertailupalvelu, emme rahoitusneuvojia. Jos tarvitset henkilökohtaista taloudellista neuvontaa, suosittelemme kääntymään pankkisi tai riippumattoman talousasiantuntijan puoleen.',
   },
   {
     q: 'Miten voin pyytää tietojeni poistamista?',
-    a: 'Emme kerää henkilökohtaisia taloustietoja. Jos haluat tietää, mitä evästetietoja keräämme, lue tietosuojaselosteemme. Tietojenpoistoyynnöt osoitteeseen info@valitselaina.fi.',
+    a: 'Emme kerää henkilökohtaisia taloustietoja. Jos haluat tietää, mitä evästetietoja keräämme, lue tietosuojaselosteemme. Tietojenpoistopyynnöt osoitteeseen info@valitselaina.fi.',
   },
 ];
 

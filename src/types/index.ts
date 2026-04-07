@@ -1,3 +1,11 @@
+// Global type declarations
+declare global {
+  interface Window {
+    gtag: (...args: unknown[]) => void;
+    dataLayer: unknown[];
+  }
+}
+
 // Loan provider
 export interface LoanProvider {
   id: string;

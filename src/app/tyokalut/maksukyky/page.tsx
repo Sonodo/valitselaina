@@ -471,7 +471,7 @@ export default function MaksukykyPage() {
                     Valmis hakemaan lainaa?
                   </h3>
                   <p className="mt-2 text-sm text-gray-600">
-                    Vertaa lainatarjouksia ja löydä paras korko juuri sinulle.
+                    Vertaa lainatarjouksia ja löydä edullisin korko juuri sinulle.
                   </p>
                   <Link
                     href="/vertailu"
