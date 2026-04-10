@@ -1,10 +1,13 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import CookieConsent from '@/components/layout/CookieConsent';
 import GoogleAnalytics from '@/components/layout/GoogleAnalytics';
+
+const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID || '';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -62,12 +65,6 @@ const organizationJsonLd = {
   url: 'https://valitselaina.fi',
   description:
     'Luotettava lainavertailupalvelu. Vertaa kulutusluottoja, asuntolainoja ja autolainoja puolueettomasti.',
-  sameAs: [],
-  contactPoint: {
-    '@type': 'ContactPoint',
-    contactType: 'customer service',
-    availableLanguage: 'Finnish',
-  },
 };
 
 // JSON-LD WebSite structured data
@@ -107,6 +104,16 @@ export default function RootLayout({
         <Footer />
         <CookieConsent />
         <GoogleAnalytics />
+        {CLARITY_ID && (
+          <>
+            <Script id="ms-clarity" strategy="afterInteractive">
+              {`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","${CLARITY_ID}");`}
+            </Script>
+            <Script id="clarity-consent-default" strategy="afterInteractive">
+              {`(function w(){if(window.clarity){var c=localStorage.getItem("analytics_consent");clarity("consentv2",{analytics_storage:c==="granted"?"granted":"denied",ad_storage:"denied"})}else{setTimeout(w,100)}})();`}
+            </Script>
+          </>
+        )}
       </body>
     </html>
   );

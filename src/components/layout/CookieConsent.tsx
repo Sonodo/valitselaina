@@ -4,13 +4,27 @@ import { useState, useEffect } from 'react';
 
 const STORAGE_KEY = 'lainavertailu-cookie-consent';
 
+function updateClarityConsent(granted: boolean) {
+  const w = window as unknown as { clarity?: (...args: unknown[]) => void };
+  if (!w.clarity) return;
+  w.clarity('consentv2', {
+    analytics_storage: granted ? 'granted' : 'denied',
+    ad_storage: 'denied',
+  });
+}
+
 export default function CookieConsent() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     // Show banner only if no choice has been stored yet
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (!stored) {
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (!stored) {
+        setVisible(true);
+      }
+    } catch {
+      // localStorage may be unavailable (SSR, private browsing, etc.)
       setVisible(true);
     }
   }, []);
@@ -24,12 +38,14 @@ export default function CookieConsent() {
         analytics_storage: 'granted',
       });
     }
+    updateClarityConsent(true);
     setVisible(false);
   }
 
   function handleReject() {
     localStorage.setItem(STORAGE_KEY, 'rejected');
     localStorage.setItem('analytics_consent', 'denied');
+    updateClarityConsent(false);
     setVisible(false);
   }
 

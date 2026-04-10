@@ -15,9 +15,11 @@ const LOAN_TYPE_CONFIG: Record<
   }
 > = {
   kulutusluotto: { minAmount: 500, maxAmount: 60000, amountStep: 500, minTerm: 12, maxTerm: 180 },
-  asuntolaina: { minAmount: 10000, maxAmount: 500000, amountStep: 5000, minTerm: 12, maxTerm: 360 },
+  asuntolaina: { minAmount: 10000, maxAmount: 1000000, amountStep: 5000, minTerm: 12, maxTerm: 360 },
   autolaina: { minAmount: 1000, maxAmount: 80000, amountStep: 500, minTerm: 12, maxTerm: 96 },
   yhdistelylaina: { minAmount: 2000, maxAmount: 60000, amountStep: 500, minTerm: 12, maxTerm: 180 },
+  yrityslaina: { minAmount: 5000, maxAmount: 250000, amountStep: 1000, minTerm: 12, maxTerm: 120 },
+  pikavippi: { minAmount: 100, maxAmount: 2000, amountStep: 50, minTerm: 1, maxTerm: 12 },
 };
 
 const PURPOSE_OPTIONS = [
@@ -37,6 +39,8 @@ const WIZARD_LOAN_TYPES: LoanType[] = [
   'asuntolaina',
   'autolaina',
   'yhdistelylaina',
+  'yrityslaina',
+  'pikavippi',
 ];
 
 interface LoanDetailsStepProps {
@@ -75,9 +79,11 @@ export default function LoanDetailsStep({
   const termYears = Math.floor(clampedTerm / 12);
   const termRemainder = clampedTerm % 12;
   const termLabel =
-    termRemainder === 0
-      ? `${termYears} v`
-      : `${termYears} v ${termRemainder} kk`;
+    clampedTerm < 12
+      ? `${clampedTerm} kk`
+      : termRemainder === 0
+        ? `${termYears} v`
+        : `${termYears} v ${termRemainder} kk`;
 
   return (
     <div className="space-y-8">
@@ -168,7 +174,7 @@ export default function LoanDetailsStep({
             type="range"
             min={config.minTerm}
             max={config.maxTerm}
-            step={6}
+            step={config.minTerm < 12 ? 1 : 6}
             value={clampedTerm}
             onChange={(e) => onTermChange(Number(e.target.value))}
             className="flex-1 h-2 rounded-full appearance-none bg-gray-200 accent-[#1a365d] cursor-pointer"
@@ -179,20 +185,29 @@ export default function LoanDetailsStep({
               onChange={(e) => onTermChange(Number(e.target.value))}
               className="w-full rounded-lg border border-gray-300 px-2 py-2 text-sm font-semibold text-gray-900 focus:border-[#1a365d] focus:ring-1 focus:ring-[#1a365d] focus:outline-none"
             >
-              {Array.from(
-                { length: Math.floor((config.maxTerm - config.minTerm) / 12) + 1 },
-                (_, i) => config.minTerm + i * 12
-              ).map((m) => (
-                <option key={m} value={m}>
-                  {m / 12} v ({m} kk)
-                </option>
-              ))}
+              {config.minTerm < 12
+                ? Array.from(
+                    { length: config.maxTerm - config.minTerm + 1 },
+                    (_, i) => config.minTerm + i
+                  ).map((m) => (
+                    <option key={m} value={m}>
+                      {m} kk
+                    </option>
+                  ))
+                : Array.from(
+                    { length: Math.floor((config.maxTerm - config.minTerm) / 12) + 1 },
+                    (_, i) => config.minTerm + i * 12
+                  ).map((m) => (
+                    <option key={m} value={m}>
+                      {m / 12} v ({m} kk)
+                    </option>
+                  ))}
             </select>
           </div>
         </div>
         <div className="mt-1 flex justify-between text-xs text-gray-400">
-          <span>{config.minTerm / 12} vuosi</span>
-          <span>{config.maxTerm / 12} vuotta</span>
+          <span>{config.minTerm >= 12 ? `${config.minTerm / 12} vuosi` : `${config.minTerm} kk`}</span>
+          <span>{config.maxTerm >= 12 ? `${config.maxTerm / 12} vuotta` : `${config.maxTerm} kk`}</span>
         </div>
       </div>
 

@@ -37,6 +37,8 @@ const verkosto = [
   { label: 'Valitse Sähkö — Sähkövertailu', href: 'https://valitsesahko.fi' },
   { label: 'Valitse Vakuutus — Vakuutusvertailu', href: 'https://valitsevakuutus.fi' },
   { label: 'Valitse Puhelin — Puhelinliittymät', href: 'https://valitsepuhelin.fi' },
+  { label: 'Asuntomaatti — Asuntojen vertailu', href: 'https://asuntomaatti.fi' },
+  { label: 'Alennuskartta — Tarjoukset kartalla', href: 'https://alennuskartta.fi' },
 ];
 
 const legalLinks = [
@@ -102,33 +104,6 @@ export default function Footer() {
           <FooterExternalLinkSection title="Valitse-verkosto" links={verkosto} />
         </div>
 
-        {/* Valitse-verkosto */}
-        <div className="mt-12 pt-8 border-t border-slate-700">
-          <div className="mb-4">
-            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Osa Valitse-verkostoa</p>
-          </div>
-          <div className="flex flex-wrap gap-x-6 gap-y-2">
-            {[
-              { name: 'Valitse Sähkö', url: 'https://valitsesahko.fi', desc: 'Sähkön hintavertailu' },
-              { name: 'Valitse Vakuutus', url: 'https://valitsevakuutus.fi', desc: 'Vakuutusten vertailu' },
-              { name: 'Valitse Puhelin', url: 'https://valitsepuhelin.fi', desc: 'Liittymien vertailu' },
-              { name: 'Asuntomaatti', url: 'https://asuntomaatti.fi', desc: 'Asuntojen vertailu' },
-              { name: 'Alennuskartta', url: 'https://alennuskartta.fi', desc: 'Tarjoukset kartalla' },
-              { name: 'Valitse', url: 'https://valitse.fi', desc: 'Kaikki vertailupalvelut' },
-            ].map((site) => (
-              <a
-                key={site.name}
-                href={site.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-slate-400 hover:text-cyan-400 transition-colors"
-                title={site.desc}
-              >
-                {site.name}
-              </a>
-            ))}
-          </div>
-        </div>
       </div>
 
       {/* Bottom bar */}

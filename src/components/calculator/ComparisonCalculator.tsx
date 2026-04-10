@@ -153,6 +153,14 @@ export default function ComparisonCalculator() {
         setAmount(15000);
         setTermMonths(60);
         break;
+      case 'yrityslaina':
+        setAmount(50000);
+        setTermMonths(60);
+        break;
+      case 'pikavippi':
+        setAmount(500);
+        setTermMonths(6);
+        break;
       default:
         setAmount(10000);
         setTermMonths(60);

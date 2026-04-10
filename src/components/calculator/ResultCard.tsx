@@ -5,18 +5,8 @@ import { ComparisonResult, AmortizationRow } from '@/types';
 import {
   formatCurrency,
   formatPercentage,
-  classifyRate,
   generateAmortizationSchedule,
 } from '@/lib/utils';
-
-// Rate classification labels and colors (Finnish)
-const RATE_LABELS: Record<string, { label: string; bg: string; text: string }> = {
-  excellent: { label: 'Erinomainen', bg: 'bg-emerald-100', text: 'text-emerald-800' },
-  good: { label: 'Hyvä', bg: 'bg-green-100', text: 'text-green-800' },
-  average: { label: 'Keskimääräinen', bg: 'bg-yellow-100', text: 'text-yellow-800' },
-  high: { label: 'Korkea', bg: 'bg-orange-100', text: 'text-orange-800' },
-  'very-high': { label: 'Erittäin korkea', bg: 'bg-red-100', text: 'text-red-800' },
-};
 
 // Provider type labels (Finnish)
 const PROVIDER_TYPE_LABELS: Record<string, string> = {
@@ -42,10 +32,6 @@ export default function ResultCard({
   const [expanded, setExpanded] = useState(false);
 
   const { product, provider, monthlyPayment, totalCost, totalInterest, effectiveRate, isAffiliate } = result;
-
-  // Rate classification
-  const rateClass = classifyRate(effectiveRate, product.type);
-  const rateStyle = RATE_LABELS[rateClass];
 
   // Setup fee and monthly fee
   const setupFee = product.setupFee || 0;
@@ -122,12 +108,6 @@ export default function ResultCard({
             </div>
           </div>
 
-          {/* Rate classification badge */}
-          <span
-            className={`inline-flex items-center rounded-lg px-3 py-1.5 text-xs font-bold ${rateStyle.bg} ${rateStyle.text}`}
-          >
-            {rateStyle.label}
-          </span>
         </div>
 
         {/* Key numbers grid */}
