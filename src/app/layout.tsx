@@ -7,7 +7,7 @@ import Footer from '@/components/layout/Footer';
 import CookieConsent from '@/components/layout/CookieConsent';
 import GoogleAnalytics from '@/components/layout/GoogleAnalytics';
 
-const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID || '';
+const CLARITY_ID = process.env.NODE_ENV === 'production' ? 'w9nbvt7m3n' : '';
 
 const inter = Inter({
   variable: '--font-inter',

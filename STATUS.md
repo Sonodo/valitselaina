@@ -5,7 +5,7 @@
 **Health**: GREEN
 **Domain**: valitselaina.fi (custom domain)
 **GA4**: G-DB1138LVS1 (needs NEXT_PUBLIC_GA_ID env var in Vercel)
-**Last Updated**: Session #079 — 2026-04-07
+**Last Updated**: Session #080 — 2026-04-07
 
 ## Overview
 Finland's most trusted, transparent loan comparison site. Consumer-first approach: shows ALL loans including from non-affiliate providers, real total costs (todellinen vuosikorko), no dark patterns. Covers consumer loans, mortgages, car loans, business loans, consolidation loans, and quick loans. Built as a Vertailu Hub spoke from day one.
@@ -19,6 +19,12 @@ Finland's most trusted, transparent loan comparison site. Consumer-first approac
 - All content verified and corrected
 
 ## Recent Changes
+
+### Session #080 — Compliance Audit (2026-04-07)
+- **Cookie consent added**: GDPR-compliant cookie banner implemented
+- **Funding Circle removed**: Non-operating-in-Finland provider cleaned from data
+- **Brand unified to Valitse**: Consistent branding across all pages
+- **Deployed**: Changes pushed to production at valitselaina.fi
 
 ### Session #079 — Live Deployment + Data Corrections (2026-04-07)
 - **LIVE at valitselaina.fi**: Custom domain configured and working
