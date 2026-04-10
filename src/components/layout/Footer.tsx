@@ -36,7 +36,7 @@ const verkosto = [
   { label: 'Valitse.fi — Vertaa ja valitse', href: 'https://valitse.fi' },
   { label: 'Valitse Sähkö — Sähkövertailu', href: 'https://valitsesahko.fi' },
   { label: 'Valitse Vakuutus — Vakuutusvertailu', href: 'https://valitsevakuutus.fi' },
-  { label: 'Valitse Puhelin — Puhelinliittymät', href: 'https://valitsepuhelin.fi' },
+  { label: 'Valitse Liittymä — Liittymävertailu', href: 'https://valitseliittyma.fi' },
   { label: 'Asuntomaatti — Asuntojen vertailu', href: 'https://asuntomaatti.fi' },
   { label: 'Alennuskartta — Tarjoukset kartalla', href: 'https://alennuskartta.fi' },
 ];
