@@ -98,11 +98,6 @@ export default function ProviderCard({ provider }: ProviderCardProps) {
               Fiva-valvottu
             </span>
           )}
-          {provider.isAffiliate && (
-            <span className="inline-flex items-center gap-1 text-xs text-gray-400">
-              Mainos
-            </span>
-          )}
         </div>
         <span className="inline-flex items-center gap-1 text-xs font-medium text-[#1a365d] group-hover:underline">
           Lue lisää

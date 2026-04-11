@@ -95,7 +95,7 @@ export default function TietosuojaPage() {
             <ul className="list-disc list-inside space-y-1 text-sm">
               <li>Välttämättömät evästeet (sivuston toiminta)</li>
               <li>Analytiikkaevästeet (Google Analytics)</li>
-              <li>Affiliate-seurantaevästeet (kumppaniverkostojen evästeet)</li>
+              <li>Seurantaevästeet (liikenteen lähteen tunnistaminen)</li>
             </ul>
             <h3 className="font-semibold text-gray-900 mt-4">2.3 Yhteydenottotiedot</h3>
             <p className="text-sm">
@@ -120,7 +120,7 @@ export default function TietosuojaPage() {
           <SubSection>
             <ul className="list-disc list-inside space-y-1">
               <li><strong>Palvelun kehittäminen:</strong> analytiikkatietojen avulla ymmärrämme, miten sivustoa käytetään ja miten voimme parantaa sitä</li>
-              <li><strong>Affiliate-seuranta:</strong> jotta kumppanimme voivat tunnistaa liikenteen lähteen ja maksaa meille korvauksen</li>
+              <li><strong>Seuranta:</strong> liikenteen lähteen tunnistaminen analytiikkatarkoituksiin</li>
               <li><strong>Yhteydenottoon vastaaminen:</strong> sähköpostitse lähetettyihin viesteihin vastaaminen</li>
             </ul>
           </SubSection>
@@ -166,9 +166,9 @@ export default function TietosuojaPage() {
                     </td>
                   </tr>
                   <tr>
-                    <td className="px-4 py-2">Affiliate-verkostot</td>
-                    <td className="px-4 py-2">Kumppaniliikenteen seuranta</td>
-                    <td className="px-4 py-2">Kunkin verkoston oma seloste</td>
+                    <td className="px-4 py-2">Seurantaevästeet</td>
+                    <td className="px-4 py-2">Liikenteen lähteen tunnistaminen</td>
+                    <td className="px-4 py-2">Valitse Laina</td>
                   </tr>
                 </tbody>
               </table>

@@ -52,7 +52,7 @@ const values = [
   {
     icon: Users,
     title: 'Kuluttaja ensin',
-    desc: 'Jokainen päätös tehdään kuluttajan edun näkökulmasta. Lainat järjestetään kokonaiskustannuksen mukaan — emme nosta maksavia kumppaneita.',
+    desc: 'Jokainen päätös tehdään kuluttajan edun näkökulmasta. Lainat järjestetään aina kokonaiskustannuksen mukaan.',
   },
   {
     icon: Ban,
@@ -62,7 +62,7 @@ const values = [
   {
     icon: Scale,
     title: 'Läpinäkyvyys',
-    desc: 'Näytämme kaikki lainat — myös ne, joista emme saa komissiota. Affiliate-status ei vaikuta järjestykseen.',
+    desc: 'Näytämme kaikki lainat kattavasti. Järjestys perustuu aina kokonaiskustannukseen.',
   },
   {
     icon: Lightbulb,
@@ -116,7 +116,7 @@ export default function TietoaPage() {
               Tehtävämme on tehdä lainojen vertailusta <strong>rehellistä, läpinäkyvää
               ja ymmärrettävää</strong>. Suomalaiset ansaitsevat vertailupalvelun, joka
               todella asettaa kuluttajan edun etusijalle — ei sellaisen, joka piilottaa
-              kalliita tuotteita tai nostaa maksavia kumppaneita ylemmäs.
+              kalliita tuotteita tai järjestää niitä muulla kuin kustannusperusteella.
             </p>
           </div>
         </section>
@@ -175,13 +175,11 @@ export default function TietoaPage() {
             <p>
               Keräämme lainanantajien tiedot suoraan heidän virallisista lähteistään
               ja tarkistamme ne säännöllisesti. Vertailualgoritmimme järjestää lainat
-              aina kokonaiskustannuksen mukaan — affiliate-status ei koskaan vaikuta
-              järjestykseen.
+              aina kokonaiskustannuksen mukaan.
             </p>
             <p>
-              Ansaitsemme tuloja affiliate-linkkien kautta: kun klikkaat lainanantajan
-              linkkiä ja haet lainaa, saatamme saada korvauksen. Kaikki affiliate-linkit
-              merkitään selkeästi.
+              Palvelumme on käyttäjälle maksuton. Saamme tuloja, kun käyttäjät
+              siirtyvät palvelumme kautta lainanantajien sivuille.
             </p>
             <Link
               href="/menetelma"

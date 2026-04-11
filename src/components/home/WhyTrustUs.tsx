@@ -12,7 +12,7 @@ const TRUST_METRICS = [
     icon: Eye,
     value: '100%',
     label: 'Kaikki näkyvissä',
-    description: 'myös ei-kumppanit',
+    description: 'kattava valikoima',
   },
   {
     icon: Percent,

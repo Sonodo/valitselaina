@@ -316,12 +316,6 @@ export default function KulutusluottoPage() {
                   ))}
                 </div>
 
-                {/* Affiliate disclosure */}
-                {product.provider.isAffiliate && (
-                  <p className="mt-2 text-xs text-gray-400">
-                    Mainos — saamme provision tästä linkistä
-                  </p>
-                )}
               </div>
             ))}
           </div>

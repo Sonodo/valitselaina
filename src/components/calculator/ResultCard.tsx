@@ -31,7 +31,7 @@ export default function ResultCard({
 }: ResultCardProps) {
   const [expanded, setExpanded] = useState(false);
 
-  const { product, provider, monthlyPayment, totalCost, totalInterest, effectiveRate, isAffiliate } = result;
+  const { product, provider, monthlyPayment, totalCost, totalInterest, effectiveRate } = result;
 
   // Setup fee and monthly fee
   const setupFee = product.setupFee || 0;
@@ -59,7 +59,7 @@ export default function ResultCard({
         rank === 1 ? 'border-[#38a169] ring-1 ring-[#38a169]/20' : 'border-gray-200'
       }`}
     >
-      {/* Top bar: rank badge + affiliate disclosure */}
+      {/* Top bar: rank badge */}
       <div className="flex items-center justify-between px-5 pt-4 pb-0">
         <div className="flex items-center gap-2">
           {rank <= 3 && (
@@ -82,11 +82,6 @@ export default function ResultCard({
           )}
         </div>
         <div className="flex items-center gap-2">
-          {isAffiliate && (
-            <span className="inline-flex items-center rounded bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-800 border border-amber-200">
-              Mainos
-            </span>
-          )}
         </div>
       </div>
 
@@ -215,7 +210,7 @@ export default function ResultCard({
           <a
             href={provider.website}
             target="_blank"
-            rel={`noopener noreferrer${isAffiliate ? ' sponsored nofollow' : ''}`}
+            rel="noopener noreferrer nofollow"
             className="inline-flex items-center gap-2 rounded-lg bg-[#1a365d] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#2a4a7f] transition-colors"
           >
             Hae lainaa
@@ -297,14 +292,6 @@ export default function ResultCard({
         )}
       </div>
 
-      {/* Affiliate disclosure footnote */}
-      {isAffiliate && (
-        <div className="border-t border-gray-100 px-5 py-2">
-          <p className="text-[10px] text-gray-400 leading-tight">
-            Mainos: Saamme korvauksen, jos haet lainaa tämän linkin kautta. Tämä ei vaikuta vertailun järjestykseen tai esitettyihin tietoihin.
-          </p>
-        </div>
-      )}
     </div>
   );
 }

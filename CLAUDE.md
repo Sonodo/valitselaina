@@ -12,5 +12,5 @@
 - Finnish UI, English code/comments
 - Mobile-first responsive design
 - SEO: every page needs metadata, OG images, structured data
-- All affiliate links must be clearly marked with rel="sponsored nofollow"
-- Transparent about monetization — never hide that a link is an affiliate link
+- All external provider links use rel="noopener noreferrer nofollow" uniformly
+- isAffiliate field exists in data for link tracking but is NEVER exposed in UI

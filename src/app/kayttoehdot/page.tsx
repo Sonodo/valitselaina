@@ -127,17 +127,13 @@ export default function KayttoehdotPage() {
             </p>
           </SubSection>
 
-          <SectionTitle id="affiliate-linkit">5. Affiliate-linkit ja ansaintamalli</SectionTitle>
+          <SectionTitle id="ansaintamalli">5. Ansaintamalli</SectionTitle>
           <SubSection>
             <p>
-              Palvelu sisältää affiliate-linkkejä lainanantajien sivuille. Kun klikkaat
-              affiliate-linkkiä ja haet lainaa, saatamme saada korvauksen lainanantajalta.
+              Palvelu on käyttäjälle maksuton. Saamme tuloja, kun käyttäjät siirtyvät
+              palvelumme kautta lainanantajien sivuille ja hakevat lainaa. Ansaintamalli
+              ei vaikuta lainojen järjestykseen vertailussa.
             </p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Kaikki affiliate-linkit merkitään selkeästi</li>
-              <li>Affiliate-status ei vaikuta lainojen järjestykseen vertailussa</li>
-              <li>Vertailutulokset sisältävät myös lainanantajia, joiden kanssa meillä ei ole affiliate-sopimusta</li>
-            </ul>
             <p>
               Lisätietoja ansaintamallistamme löydät{' '}
               <Link href="/menetelma" className="text-[#1a365d] underline font-medium">

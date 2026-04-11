@@ -59,7 +59,7 @@ const keyStats = [
     icon: ShieldCheck,
     value: '100%',
     label: 'Läpinäkyvä',
-    desc: 'Affiliate-status ei vaikuta järjestykseen',
+    desc: 'Kustannusperusteinen järjestys, ei poikkeuksia',
   },
   {
     icon: Users,
@@ -122,13 +122,12 @@ export default function MediaPage() {
             </p>
             <p>
               Valitse Lainan ydinperiaate on läpinäkyvyys: lainat järjestetään aina
-              kokonaiskustannuksen mukaan, eikä affiliate-status koskaan vaikuta järjestykseen.
-              Vertailutulokset sisältävät myös lainanantajia, joiden kanssa Valitse Lainalla
-              ei ole kaupallista yhteistyötä.
+              kokonaiskustannuksen mukaan. Vertailutulokset kattavat laajasti suomalaisen
+              lainamarkkinan toimijat.
             </p>
             <p>
-              Palvelu on kuluttajille täysin ilmainen. Valitse Laina ansaitsee tuloja
-              affiliate-linkkien kautta, jotka merkitään aina selkeästi.
+              Palvelu on kuluttajille täysin ilmainen. Valitse Laina saa tuloja, kun
+              käyttäjät siirtyvät palvelun kautta lainanantajien sivuille.
             </p>
           </div>
         </section>

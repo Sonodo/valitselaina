@@ -101,19 +101,6 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
-          {/* Affiliate disclosure */}
-          <p className="text-xs text-slate-500 leading-relaxed mb-4">
-            Osa linkeistä on affiliate-linkkejä. Tämä tarkoittaa, että saatamme saada
-            korvauksen, kun klikkaat linkkiä ja haet lainaa. Tämä ei vaikuta vertailun
-            tuloksiin tai näytettäviin lainoihin.{' '}
-            <Link
-              href="/menetelma"
-              className="underline underline-offset-2 hover:text-slate-300 transition-colors"
-            >
-              Lue lisää menetelmästämme.
-            </Link>
-          </p>
-
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <p className="text-xs text-slate-500">
               &copy; {new Date().getFullYear()} Valitse Laina

@@ -21,10 +21,6 @@ export default function ResultsList({
   onBack,
   onReset,
 }: ResultsListProps) {
-  // Count affiliates for transparency
-  const affiliateCount = results.filter((r) => r.isAffiliate).length;
-  const nonAffiliateCount = results.length - affiliateCount;
-
   return (
     <div className="space-y-6">
       {/* Header + navigation */}
@@ -57,13 +53,6 @@ export default function ResultsList({
             Aloita alusta
           </button>
         </div>
-      </div>
-
-      {/* Transparency notice */}
-      <div className="rounded-lg bg-blue-50 border border-blue-100 px-4 py-3 text-xs text-blue-800">
-        <strong>Läpinäkyvyys:</strong> Vertailussa on {results.length} lainaa — {nonAffiliateCount} ilman
-        kumppanuutta{affiliateCount > 0 && ` ja ${affiliateCount} kumppanituotetta`}.
-        Kumppanuus ei vaikuta järjestykseen. &quot;Mainos&quot;-merkintä näkyy kumppanituotteissa.
       </div>
 
       {/* Summary cards */}

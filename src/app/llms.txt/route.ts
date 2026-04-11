@@ -7,7 +7,7 @@ Valitse Laina on suomalainen lainavertailupalvelu, joka vertailee yli 27 lainana
 
 ## Key Features
 - Honest comparison of 27+ Finnish loan providers
-- Loans sorted by total cost — affiliate status never affects ranking
+- Loans sorted by total cost
 - Covers: consumer loans, mortgages, car loans, consolidation loans, business loans, quick loans
 - Free calculators: loan calculator, affordability checker, mortgage calculator, consolidation calculator
 - Educational guides on Finnish lending, interest rates, credit scores, and debt management
@@ -49,7 +49,7 @@ Valitse Laina on suomalainen lainavertailupalvelu, joka vertailee yli 27 lainana
 - 14-day cooling-off period for consumer credit (Finnish law)
 - Mortgage interest deduction fully phased out since 2023
 - Reference rates: 12-month Euribor ~2.49%
-- Site uses affiliate links (clearly disclosed) but rankings are never influenced by affiliate status
+- Rankings are never influenced by commercial relationships
 
 ## Contact
 - Website: https://valitselaina.fi

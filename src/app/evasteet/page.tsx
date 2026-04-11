@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Cookie, Settings, BarChart3, Handshake, ShieldCheck, Info } from 'lucide-react';
+import { Cookie, Settings, BarChart3, Megaphone, ShieldCheck, Info } from 'lucide-react';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
 const pageTitle = 'Evastekäytäntö — Valitse Laina';
@@ -57,9 +57,9 @@ const cookies: CookieInfo[] = [
     type: 'analytics',
   },
   {
-    name: 'Affiliate-seuranta',
-    purpose: 'Tunnistaa liikenteen lähteen kumppaniseurantaa varten',
-    provider: 'Affiliate-verkostot',
+    name: 'Seuranta',
+    purpose: 'Tunnistaa liikenteen lähteen analytiikkaa varten',
+    provider: 'Valitse Laina',
     duration: '30–90 päivää',
     type: 'marketing',
   },
@@ -150,16 +150,15 @@ export default function EvasteetPage() {
             </p>
           </div>
 
-          {/* Marketing / affiliate */}
+          {/* Marketing */}
           <div className="bg-purple-50 rounded-xl p-5 border border-purple-100">
             <div className="flex items-center gap-2 mb-3">
-              <Handshake className="w-5 h-5 text-purple-700" />
-              <h3 className="font-semibold text-gray-900">Markkinointi- ja affiliate-evästeet</h3>
+              <Megaphone className="w-5 h-5 text-purple-700" />
+              <h3 className="font-semibold text-gray-900">Markkinointievästeet</h3>
             </div>
             <p className="text-sm text-gray-700 mb-2">
-              Nämä evästeet asettavat affiliate-kumppaniverkostot. Niiden avulla
-              kumppanimme tunnistavat, että liikenne on tullut Valitse Lainan kautta.
-              Tämä mahdollistaa palvelumme ilmaisuuden käyttäjille.
+              Näiden evästeiden avulla tunnistamme liikenteen lähteet ja mittaamme
+              markkinointitoimenpiteiden tehokkuutta.
             </p>
           </div>
         </div>
@@ -259,7 +258,7 @@ export default function EvasteetPage() {
           </p>
           <ul className="list-disc list-inside space-y-1">
             <li><strong>Google Analytics</strong> — Kävijäanalytiikka</li>
-            <li><strong>Affiliate-verkostot</strong> — Kumppaniliikenteen seuranta</li>
+            <li><strong>Markkinointievästeet</strong> — Liikenteen lähteen seuranta</li>
           </ul>
           <p>
             Kolmannen osapuolen evästeet ovat näiden palveluntarjoajien hallinnoimia.

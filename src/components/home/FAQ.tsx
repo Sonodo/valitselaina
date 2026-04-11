@@ -18,7 +18,7 @@ const FAQ_ITEMS: FAQItem[] = [
   {
     question: 'Miten Valitse Laina ansaitsee rahaa?',
     answer:
-      'Ansaitsemme affiliate-linkkien kautta: kun klikkaat tietyille lainanantajille johtavia linkkeja ja haet lainaa, saatamme saada korvauksen. Jokainen affiliate-linkki on selkeasti merkitty. Tama ei vaikuta siihen, mita lainoja naytamme tai miten ne jarjestetaan.',
+      'Palvelu on kayttajalle taysin maksuton. Tulomme muodostuvat, kun kayttajat hakevat lainaa vertailumme kautta. Tama ei vaikuta siihen, mita lainoja naytamme tai miten ne jarjestetaan.',
   },
   {
     question: 'Vaikuttaako vertailu luottotietoihini?',
@@ -26,9 +26,9 @@ const FAQ_ITEMS: FAQItem[] = [
       'Ei. Lainojen vertailu Valitse Lainassa ei vaikuta luottotietoihisi millaan tavalla. Luottotietoja tarkistetaan vasta, kun haet lainaa suoraan lainanantajalta.',
   },
   {
-    question: 'Miksi naytatte myos lainoja, joista ette saa komissiota?',
+    question: 'Miksi naytatte nain laajan valikoiman lainoja?',
     answer:
-      'Koska rehellinen vertailu vaatii sita. Jos nayttaisimme vain maksavien kumppanien lainat, vertailu ei olisi kattava. Tavoitteemme on auttaa sinua loytamaan oikeasti edullisin laina.',
+      'Koska rehellinen vertailu vaatii sita. Naytamme kaikki markkinoiden lainatarjoukset, jotta loydat aidosti edullisimman vaihtoehdon.',
   },
   {
     question: 'Miten todellinen vuosikorko lasketaan?',

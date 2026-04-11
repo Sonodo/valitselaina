@@ -10,7 +10,6 @@ import {
   AlertTriangle,
   Mail,
   CheckCircle2,
-  Eye,
   Scale,
   Clock,
 } from 'lucide-react';
@@ -154,8 +153,7 @@ export default function MenetelmaPage() {
         <Section icon={BarChart3} title="Miten vertailualgoritmi toimii" id="algoritmi">
           <p>
             Vertailumme ydin on yksinkertainen ja reilu: <strong>lainat järjestetään aina
-            kokonaiskustannuksen mukaan, edullisin ensin</strong>. Emme koskaan nosta
-            affiliate-kumppaneitamme korkeammalle tuloksissa.
+            kokonaiskustannuksen mukaan, edullisin ensin</strong>.
           </p>
           <div className="bg-blue-50 rounded-xl p-5 border border-blue-100">
             <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
@@ -170,31 +168,19 @@ export default function MenetelmaPage() {
             </ol>
           </div>
           <p>
-            Algoritmimme on deterministic: samoilla syötteillä saat aina saman tuloksen,
-            riippumatta siitä, oletko klikannut affiliate-linkkiä aiemmin tai et.
+            Algoritmimme on deterministinen: samoilla syötteillä saat aina saman tuloksen.
           </p>
         </Section>
 
         <Section icon={Coins} title="Miten ansaitsemme — ansaintamalli" id="ansaintamalli">
           <p>
-            Valitse Laina on käyttäjille täysin ilmainen. Ansaitsemme tuloja
-            affiliate-linkkien kautta: kun klikkaat lainanantajan linkkiä ja haet lainaa,
-            saatamme saada korvauksen lainanantajalta.
+            Palvelumme on käyttäjälle maksuton. Saamme tuloja, kun käyttäjät siirtyvät
+            palvelumme kautta lainanantajien sivuille.
           </p>
-          <div className="bg-amber-50 rounded-xl p-5 border border-amber-200">
-            <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
-              <Eye className="w-5 h-5 text-[#b7791f]" />
-              Näin merkitsemme affiliate-linkit
-            </h3>
-            <ul className="space-y-1 text-sm">
-              <li>Kaikki affiliate-linkit merkitään selkeästi <code className="bg-amber-100 px-1 rounded">rel=&quot;sponsored nofollow&quot;</code></li>
-              <li>Linkin yhteydessä näkyy aina merkintä, jos kyseessä on mainosyhteistyö</li>
-              <li>Vertailutulokset sisältävät <strong>myös lainanantajat, joista emme saa komissiota</strong></li>
-            </ul>
-          </div>
           <p>
-            Tämä on tärkeä periaatteemme: näytämme kaikki lainat, emmekä piilota
-            tuotteita, joista emme ansaitse. Kuluttajan etu on aina etusijalla.
+            Tämä on tärkeä periaatteemme: näytämme kaikki lainat ja järjestämme ne
+            aina kokonaiskustannuksen mukaan. Ansaintamalli ei vaikuta lainojen
+            järjestykseen. Kuluttajan etu on aina etusijalla.
           </p>
         </Section>
 
@@ -206,8 +192,8 @@ export default function MenetelmaPage() {
                 desc: 'Emme kerää, tallenna tai myy henkilökohtaisia taloustietojasi. Emme tiedä tulojasi, velkojasi tai luottotietojasi.',
               },
               {
-                title: 'Emme nosta maksavia kumppaneita tuloksissa',
-                desc: 'Affiliate-status ei vaikuta lainan sijoitukseen vertailussa. Kokonaiskustannus ratkaisee — aina.',
+                title: 'Emme nosta tiettyjä lainoja tuloksissa',
+                desc: 'Ansaintamalli ei vaikuta lainan sijoitukseen vertailussa. Kokonaiskustannus ratkaisee — aina.',
               },
               {
                 title: 'Emme piilota epäedullisia tietoja',

@@ -19,7 +19,7 @@ export default function VertailuPage() {
           </p>
           <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm text-white/90 border border-white/20">
             <ShieldCheck className="h-4 w-4 text-[#48bb78]" />
-            Kattava vertailu — näytämme myös lainat, joista emme saa komissiota
+            Kattava vertailu — yli 27 lainanantajaa samassa vertailussa
           </div>
         </div>
       </section>
@@ -90,8 +90,7 @@ export default function VertailuPage() {
               Onko vertailu luotettava?
             </h3>
             <p>
-              Kyllä. Näytämme kaikki lainat samassa vertailussa, riippumatta siitä saammeko lainanantajalta komissiota vai emme.
-              Kumppanituotteet on merkitty selkeästi &quot;Mainos&quot;-tunnisteella, ja järjestys perustuu aina laskennalliseen edullisuuteen — ei kumppanuuteen.
+              Kyllä. Näytämme kaikki lainat samassa vertailussa ja järjestys perustuu aina laskennalliseen edullisuuteen — kokonaiskustannus ratkaisee.
             </p>
           </div>
         </div>

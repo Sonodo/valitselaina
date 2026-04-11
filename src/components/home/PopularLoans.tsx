@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, ExternalLink } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { getProductsSortedByRate, type LoanProduct, type LoanProvider } from '@/data/providers';
 import { formatPercentage, formatNumber } from '@/lib/utils';
 import { LOAN_TYPE_LABELS } from '@/lib/constants';
@@ -97,14 +97,6 @@ export default function PopularLoans() {
                     </span>
                   </div>
                 </div>
-
-                {/* Affiliate disclosure */}
-                {product.provider.isAffiliate && (
-                  <p className="text-xs text-amber-700 bg-amber-50 rounded-lg px-2.5 py-1.5 mb-3 flex items-center gap-1">
-                    <ExternalLink className="h-3 w-3" />
-                    Mainos — affiliate-linkki
-                  </p>
-                )}
 
                 {/* CTA */}
                 <Link

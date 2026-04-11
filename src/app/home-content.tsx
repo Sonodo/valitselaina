@@ -103,7 +103,7 @@ const valueProps = [
   {
     icon: Scale,
     title: 'Läpinäkyvä toiminta',
-    description: 'Kerromme avoimesti, mitkä lainat ovat affiliate-linkkien takana. Läpinäkyvyys on toimintamme kulmakivi.',
+    description: 'Vertailemme lainoja puolueettomasti kokonaiskustannuksen perusteella. Läpinäkyvyys on toimintamme kulmakivi.',
   },
 ];
 
@@ -613,7 +613,7 @@ export default function HomeContent({
                   {[
                     { label: 'Kattavuus', a: 'Pankki kerrallaan', b: 'Yksi pankki', c: 'Kaikki lainanantajat' },
                     { label: 'Läpinäkyvyys', a: 'Mainosten vaikutus', b: 'Pankin oma tarjonta', c: 'Avoin menetelmä' },
-                    { label: 'Läpinäkyvyys', a: 'Vaihtelee', b: 'Rajoitettu', c: 'Affiliate-merkinnät näkyvillä' },
+                    { label: 'Puolueettomuus', a: 'Vaihtelee', b: 'Rajoitettu', c: 'Kokonaiskustannus ratkaisee' },
                     { label: 'Todellinen vuosikorko', a: 'Pitää etsiä itse', b: 'Usein piilossa', c: 'Aina näkyvillä' },
                     { label: 'Ajankäyttö', a: 'Tunteja', b: 'Tapaaminen tarvitaan', c: 'Muutama minuutti' },
                     { label: 'Hinta', a: 'Ilmainen', b: 'Ilmainen', c: 'Ilmainen' },

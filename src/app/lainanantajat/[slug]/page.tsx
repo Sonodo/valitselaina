@@ -11,12 +11,10 @@ import {
   ExternalLink,
   ThumbsUp,
   ThumbsDown,
-  AlertTriangle,
   ArrowLeft,
   Clock,
   Lock,
   UserCheck,
-  Info,
 } from 'lucide-react';
 import { providers, getProviderBySlug } from '@/data/providers';
 import type { LoanProvider, LoanProduct } from '@/data/providers';
@@ -312,12 +310,6 @@ export default async function ProviderDetailPage({
                     Finanssivalvonnan (Fiva) valvoma
                   </span>
                 )}
-                {provider.isAffiliate && (
-                  <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-50 border border-amber-200 px-3 py-1 text-sm font-medium text-amber-700">
-                    <Info className="h-4 w-4" />
-                    Mainosyhteistyö
-                  </span>
-                )}
               </div>
             </div>
           </div>
@@ -356,7 +348,7 @@ export default async function ProviderDetailPage({
                 <a
                   href={provider.website}
                   target="_blank"
-                  rel={`noopener noreferrer${provider.isAffiliate ? ' sponsored nofollow' : ''}`}
+                  rel="noopener noreferrer nofollow"
                   className="text-[#1a365d] hover:underline inline-flex items-center gap-1"
                 >
                   {provider.website.replace(/^https?:\/\//, '').replace(/\/$/, '')}
@@ -442,47 +434,18 @@ export default async function ProviderDetailPage({
         </section>
 
         {/* ================================================================= */}
-        {/* e) Affiliate disclosure */}
-        {/* ================================================================= */}
-        {provider.isAffiliate && (
-          <section className="mb-10">
-            <div className="rounded-xl border border-amber-200 bg-amber-50 p-5">
-              <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
-                <div>
-                  <h3 className="text-base font-semibold text-amber-800 mb-1">
-                    Tämä on mainosyhteistyö
-                  </h3>
-                  <p className="text-sm text-amber-700 leading-relaxed">
-                    Valitse Laina saa korvauksen, kun klikkaat tämän
-                    lainanantajan linkkiä ja haet lainaa. Tämä ei vaikuta
-                    arvosteluumme, arvosanaan tai vertailun tuloksiin. Näytämme
-                    aina myös lainanantajat, joista emme saa komissiota.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-        )}
-
-        {/* ================================================================= */}
-        {/* f) Link to provider */}
+        {/* e) Link to provider */}
         {/* ================================================================= */}
         <section className="mb-10">
           <a
             href={provider.website}
             target="_blank"
-            rel={`noopener noreferrer${provider.isAffiliate ? ' sponsored nofollow' : ''}`}
+            rel="noopener noreferrer nofollow"
             className="inline-flex items-center gap-2 rounded-lg bg-[#1a365d] px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-[#2a4a7f] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1a365d]"
           >
             Siirry lainanantajan sivuille
             <ExternalLink className="h-4 w-4" />
           </a>
-          {provider.isAffiliate && (
-            <p className="mt-2 text-xs text-gray-400">
-              Mainos — affiliate-linkki
-            </p>
-          )}
         </section>
 
         {/* Back to directory */}

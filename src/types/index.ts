@@ -24,8 +24,7 @@ export interface LoanProvider {
   description: string;
   pros: string[];
   cons: string[];
-  isAffiliate: boolean; // CRITICAL: transparency
-  affiliateDisclosure?: string;
+  isAffiliate: boolean;
   logoUrl?: string;
   products: LoanProduct[];
 }
