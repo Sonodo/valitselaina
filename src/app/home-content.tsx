@@ -39,7 +39,7 @@ const ease = [0.25, 0.1, 0.25, 1] as const;
 const faqItems = [
   {
     q: 'Onko Valitse Lainan palvelu ilmainen?',
-    a: 'Kyllä, palvelumme on täysin ilmainen kuluttajille. Saatamme saada korvauksen lainanantajilta, mutta se ei vaikuta vertailun tuloksiin tai järjestykseen. Näytämme aina myös lainat, joista emme saa komissiota.',
+    a: 'Kyllä, palvelumme on täysin ilmainen kuluttajille. Vertailumme on puolueeton — järjestämme lainat aina todellisen vuosikoron perusteella.',
   },
   {
     q: 'Miten todellinen vuosikorko eroaa nimelliskorosta?',
@@ -88,7 +88,7 @@ const valueProps = [
   {
     icon: Shield,
     title: 'Kattava vertailu',
-    description: 'Emme suosi mitään lainanantajaa. Näytämme myös lainat, joista emme saa komissiota — aina todellisten vuosikorkojen perusteella.',
+    description: 'Emme suosi mitään lainanantajaa. Järjestämme kaikki lainat puolueettomasti todellisten vuosikorkojen perusteella.',
   },
   {
     icon: Clock,
@@ -209,7 +209,7 @@ export default function HomeContent({
               className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-white/80"
             >
               Vertaile kulutusluottoja, asuntolainoja ja muita lainoja {totalProviders}+ lainanantajalta.
-              Näytämme kaikki lainat — myös ne, joista emme saa komissiota.
+              Näytämme kaikki lainat puolueettomasti todellisten vuosikorkojen perusteella.
             </motion.p>
 
             {/* CTAs */}

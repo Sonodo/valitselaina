@@ -180,8 +180,8 @@ export default function KulutusluottoPage() {
               Vertaa {allProducts.length} kulutusluottoa {allProducts.length > 0
                 ? `${new Set(allProducts.map((p) => p.provider.shortName || p.provider.name)).size} lainanantajalta`
                 : ''}{' '}
-              ja löydä sinulle edullisin vaihtoehto. Näytämme kaikki lainat —
-              myös ne, joista emme saa komissiota.
+              ja löydä sinulle edullisin vaihtoehto. Näytämme kaikki lainat
+              puolueettomasti todellisten vuosikorkojen perusteella.
             </p>
 
             {/* Key stats */}

@@ -714,7 +714,7 @@ export const guides: Guide[] = [
   <li>Vertailet tarjouksia rinnakkain ja valitset parhaan.</li>
   <li>Hyväksyt tarjouksen suoraan lainanantajan palvelussa.</li>
 </ol>
-<p>Vertailupalvelu saa tulonsa lainanantajilta provisiona, ei sinulta. Hyvä vertailupalvelu näyttää kuitenkin myös lainat, joista se ei saa provisiota — kuten me Valitse Lainassa teemme.</p>
+<p>Vertailupalvelu on käyttäjälle maksuton. Hyvä vertailupalvelu näyttää kaikki lainat puolueettomasti todellisten kustannusten perusteella — kuten me Valitse Lainassa teemme.</p>
 
 <h2 id="yleiset-virheet">Yleisimmät virheet</h2>
 <p>Vältä nämä tyypilliset sudenkuopat lainan kilpailutuksessa:</p>
