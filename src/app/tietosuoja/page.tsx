@@ -76,7 +76,6 @@ export default function TietosuojaPage() {
               <strong>Sonodo — Henri Linnainmaa</strong><br />
               Y-tunnus: 2887416-4<br />
               Helsinki, Suomi<br />
-              Sähköposti: info@valitselaina.fi<br />
               Verkkosivusto: https://valitselaina.fi
             </p>
           </SubSection>
@@ -208,9 +207,9 @@ export default function TietosuojaPage() {
               <li><strong>Oikeus peruuttaa suostumus</strong> — Evästeasetukset voi muuttaa milloin tahansa</li>
             </ul>
             <p>
-              Toteuta oikeutesi lähettämällä sähköpostia osoitteeseen{' '}
-              <a href="mailto:info@valitselaina.fi" className="text-[#1a365d] underline font-medium">
-                info@valitselaina.fi
+              Toteuta oikeutesi ottamalla yhteyttä{' '}
+              <a href="/yhteystiedot" className="text-[#1a365d] underline font-medium">
+                yhteydenottosivullamme
               </a>.
               Vastaamme pyyntöihin 30 päivän kuluessa.
             </p>

@@ -35,11 +35,11 @@ export default function BlogiPage() {
         {/* Page header */}
         <div className="mb-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">
-            Blogi
+            Artikkelit
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl">
             Ajankohtaisia artikkeleita lainoista, koroista ja taloudenhallinnasta.
-            Puolueetonta tietoa, joka auttaa tekemaan parempia rahoituspäätöksiä.
+            Kattavaa tietoa, joka auttaa tekemaan parempia rahoituspäätöksiä.
           </p>
         </div>
 
@@ -117,12 +117,8 @@ export default function BlogiPage() {
                   {post.description}
                 </p>
 
-                {/* Footer: date + read more */}
-                <div className="flex items-center justify-between mt-auto pt-3 border-t border-gray-100">
-                  <span className="inline-flex items-center gap-1 text-xs text-gray-400">
-                    <Calendar className="h-3 w-3" />
-                    {formatDate(post.publishedAt)}
-                  </span>
+                {/* Footer: read more */}
+                <div className="flex items-center justify-end mt-auto pt-3 border-t border-gray-100">
                   <span className="inline-flex items-center gap-1 text-sm font-semibold text-[#1a365d] group-hover:gap-2 transition-all">
                     Lue lisää
                     <ArrowRight className="h-3.5 w-3.5" />

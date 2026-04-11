@@ -280,9 +280,9 @@ export default function EvasteetPage() {
         <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
           <h3 className="font-semibold text-gray-900 mb-2">Kysyttävää evästeistä?</h3>
           <p className="text-sm text-gray-700">
-            Evästekäytäntöä koskevat kysymykset voi lähettää osoitteeseen{' '}
-            <a href="mailto:info@valitselaina.fi" className="text-[#1a365d] underline font-medium">
-              info@valitselaina.fi
+            Evästekäytäntöä koskevat kysymykset voi lähettää{' '}
+            <a href="/yhteystiedot" className="text-[#1a365d] underline font-medium">
+              yhteydenottosivullamme
             </a>. Lue myös{' '}
             <Link href="/tietosuoja" className="text-[#1a365d] underline font-medium">
               tietosuojaselosteemme

@@ -219,9 +219,9 @@ export default function KayttoehdotPage() {
           <SectionTitle id="yhteydenotot">11. Yhteydenotot</SectionTitle>
           <SubSection>
             <p>
-              Käyttöehtoja koskevat kysymykset voi lähettää osoitteeseen{' '}
-              <a href="mailto:info@valitselaina.fi" className="text-[#1a365d] underline font-medium">
-                info@valitselaina.fi
+              Käyttöehtoja koskevat kysymykset voi lähettää{' '}
+              <a href="/yhteystiedot" className="text-[#1a365d] underline font-medium">
+                yhteydenottosivullamme
               </a>.
             </p>
           </SubSection>

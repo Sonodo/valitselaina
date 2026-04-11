@@ -16,7 +16,7 @@ import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
 const pageTitle = 'Tietoa Valitse Lainasta — Keitä olemme';
 const pageDescription =
-  'Valitse Laina on riippumaton suomalainen lainavertailupalvelu. Tehtävämme on tehdä lainojen vertailusta rehellistä ja läpinäkyvää.';
+  'Valitse Laina on suomalainen lainavertailupalvelu. Tehtävämme on tehdä lainojen vertailusta rehellistä ja läpinäkyvää.';
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -61,7 +61,7 @@ const values = [
   },
   {
     icon: Scale,
-    title: 'Puolueettomuus',
+    title: 'Läpinäkyvyys',
     desc: 'Näytämme kaikki lainat — myös ne, joista emme saa komissiota. Affiliate-status ei vaikuta järjestykseen.',
   },
   {
@@ -97,8 +97,8 @@ export default function TietoaPage() {
             Rehellinen lainavertailu — se on meidän juttumme
           </h1>
           <p className="text-lg text-blue-200 max-w-2xl">
-            Valitse Laina on riippumaton suomalainen palvelu, joka auttaa sinua löytämään
-            edullisimman lainan vertaamalla yli 27 lainanantajan tuotteita puolueettomasti.
+            Valitse Laina on suomalainen palvelu, joka auttaa sinua löytämään
+            edullisimman lainan vertaamalla yli 27 lainanantajan tuotteita kattavasti.
           </p>
         </div>
       </div>
@@ -129,7 +129,7 @@ export default function TietoaPage() {
           </div>
           <div className="text-gray-700 leading-relaxed space-y-4">
             <p>
-              Valitse Laina on suomalainen, riippumaton vertailupalvelu. Emme ole pankki,
+              Valitse Laina on suomalainen vertailupalvelu. Emme ole pankki,
               rahoituslaitos tai lainanvälittäjä — olemme tietopalvelu, joka auttaa
               kuluttajia tekemään parempia päätöksiä.
             </p>

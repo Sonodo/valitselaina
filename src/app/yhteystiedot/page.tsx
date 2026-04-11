@@ -35,18 +35,11 @@ const jsonLd = {
     '@type': 'Organization',
     name: SITE_NAME,
     url: SITE_URL,
-    email: 'info@valitselaina.fi',
     contactPoint: [
       {
         '@type': 'ContactPoint',
         contactType: 'customer service',
-        email: 'info@valitselaina.fi',
-        availableLanguage: 'Finnish',
-      },
-      {
-        '@type': 'ContactPoint',
-        contactType: 'media',
-        email: 'media@valitselaina.fi',
+        url: `${SITE_URL}/yhteystiedot`,
         availableLanguage: 'Finnish',
       },
     ],
@@ -57,7 +50,7 @@ const channels = [
   {
     icon: MessageCircle,
     title: 'Yleinen palaute ja kysymykset',
-    email: 'info@valitselaina.fi',
+    label: 'Yhteydenottolomake tulossa pian',
     desc: 'Palaute palvelusta, yleisiä kysymyksiä, yhteistyöehdotukset.',
     color: 'bg-blue-50 border-blue-100',
     iconColor: 'text-[#1a365d]',
@@ -65,7 +58,7 @@ const channels = [
   {
     icon: Newspaper,
     title: 'Median yhteydenotot',
-    email: 'media@valitselaina.fi',
+    label: 'Yhteydenottolomake tulossa pian',
     desc: 'Haastattelupyynnöt, tiedotusvälineiden kysymykset, tietopyynnöt.',
     color: 'bg-purple-50 border-purple-100',
     iconColor: 'text-purple-700',
@@ -73,7 +66,7 @@ const channels = [
   {
     icon: AlertTriangle,
     title: 'Virheiden raportointi',
-    email: 'korjaukset@valitselaina.fi',
+    label: 'Yhteydenottolomake tulossa pian',
     desc: 'Ilmoita väärästä lainatiedosta, vanhentuneesta korosta tai muusta virheestä.',
     color: 'bg-amber-50 border-amber-100',
     iconColor: 'text-amber-700',
@@ -87,7 +80,7 @@ const faqs = [
   },
   {
     q: 'Voiko Valitse Lainaan ilmoittaa oman lainatuotteen?',
-    a: 'Kyllä! Jos edustat lainanantajaa ja haluaisit tuotteesi mukaan vertailuun, ota yhteyttä osoitteeseen info@valitselaina.fi. Sisällytämme kaikki luotettavat suomalaiset lainanantajat.',
+    a: 'Kyllä! Jos edustat lainanantajaa ja haluaisit tuotteesi mukaan vertailuun, ota meihin yhteyttä. Sisällytämme kaikki luotettavat suomalaiset lainanantajat.',
   },
   {
     q: 'Tarjoaako Valitse Laina taloudellista neuvontaa?',
@@ -95,7 +88,7 @@ const faqs = [
   },
   {
     q: 'Miten voin pyytää tietojeni poistamista?',
-    a: 'Emme kerää henkilökohtaisia taloustietoja. Jos haluat tietää, mitä evästetietoja keräämme, lue tietosuojaselosteemme. Tietojenpoistopyynnöt osoitteeseen info@valitselaina.fi.',
+    a: 'Emme kerää henkilökohtaisia taloustietoja. Jos haluat tietää, mitä evästetietoja keräämme, lue tietosuojaselosteemme. Tietojenpoistopyynnöt voi lähettää tämän sivun kautta.',
   },
 ];
 
@@ -134,18 +127,15 @@ export default function YhteystiedotPage() {
           <div className="grid sm:grid-cols-3 gap-6">
             {channels.map((ch) => (
               <div
-                key={ch.email}
+                key={ch.title}
                 className={`rounded-xl p-6 border ${ch.color}`}
               >
                 <ch.icon className={`w-6 h-6 ${ch.iconColor} mb-3`} />
                 <h3 className="font-semibold text-gray-900 mb-1">{ch.title}</h3>
                 <p className="text-sm text-gray-600 mb-4">{ch.desc}</p>
-                <a
-                  href={`mailto:${ch.email}`}
-                  className="text-sm font-semibold text-[#1a365d] hover:text-[#2a4a7f] underline underline-offset-2 transition-colors"
-                >
-                  {ch.email}
-                </a>
+                <p className="text-sm font-semibold text-[#1a365d]">
+                  {ch.label}
+                </p>
               </div>
             ))}
           </div>

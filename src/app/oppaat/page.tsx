@@ -10,7 +10,7 @@ import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
 const pageTitle = 'Oppaat — Lainaamisen tietopankki';
 const pageDescription =
-  'Kattavat ja puolueettomat oppaat lainaamiseen, korkoihin, luottotietoihin, velkojen hallintaan ja kuluttajan oikeuksiin. Opi tekemään parempia taloudellisia päätöksiä.';
+  'Kattavat oppaat lainaamiseen, korkoihin, luottotietoihin, velkojen hallintaan ja kuluttajan oikeuksiin. Opi tekemään parempia taloudellisia päätöksiä.';
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -106,7 +106,7 @@ export default function OppaatPage() {
               Lainaamisen tietopankki
             </h1>
             <p className="mt-4 text-lg sm:text-xl text-white/80 leading-relaxed">
-              Puolueettomia, kattavia oppaita, jotka auttavat sinua tekemään
+              Kattavia oppaita, jotka auttavat sinua tekemään
               parempia taloudellisia päätöksiä. Kaikki oppaat on kirjoitettu
               selkeällä suomella — ilman jargonia.
             </p>

@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Lainanantajat Suomessa — Vertaa 27+ pankkia ja rahoitusyhtiötä',
   description:
-    'Kattava lista Suomen lainanantajista. Vertaa pankkeja, fintech-yhtiöitä ja vertaislainoja. Puolueeton arvio jokaisesta lainanantajasta.',
+    'Kattava lista Suomen lainanantajista. Vertaa pankkeja, fintech-yhtiöitä ja vertaislainoja. Kattava arvio jokaisesta lainanantajasta.',
   openGraph: {
     title: 'Lainanantajat Suomessa — Vertaa 27+ pankkia ja rahoitusyhtiötä',
     description:

@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'Valitse Laina — Blogi';
+export const alt = 'Valitse Laina — Artikkelit';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -54,7 +54,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
               borderRadius: '9999px',
             }}
           >
-            Blogi
+            Artikkelit
           </div>
         </div>
 

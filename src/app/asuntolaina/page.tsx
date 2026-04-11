@@ -68,7 +68,7 @@ const faqs = [
   },
   {
     q: 'Paljonko omaa rahaa tarvitsen asunnon ostoon?',
-    a: 'Suomessa omarahoitusosuus on tyypillisesti 5-15 % asunnon hinnasta. Ensiasunnon ostajat voivat hyödyntää ASP-järjestelmää, jossa omia säästöjä kertyy vähintään 10 % ja valtio takaa lainan 600 000 euroon asti (pääkaupunkiseudulla). Omarahoitusosuuden lisäksi kannattaa varata rahaa varainsiirtoveroon (1,5 % asunto-osakkeista, 3 % kiinteistöistä — ensiasunnon ostajat vapautettu) ja muihin kuluihin.',
+    a: 'Suomessa omarahoitusosuus on tyypillisesti 5-15 % asunnon hinnasta. Ensiasunnon ostajat voivat hyödyntää ASP-järjestelmää, jossa omia säästöjä kertyy vähintään 10 %. ASP-lainan valtiontakaus kattaa enintään 25 % lainasta. Takauksen enimmäismäärä on 50 000 € Helsingissä, 37 500 € Espoossa, Vantaalla ja Kauniaisissa sekä 30 000 € muissa kunnissa. Omarahoitusosuuden lisäksi kannattaa varata rahaa varainsiirtoveroon (1,5 % asunto-osakkeista, 3 % kiinteistöistä — ensiasunnon ostajat vapautettu) ja muihin kuluihin.',
   },
   {
     q: 'Mikä on ASP-laina?',

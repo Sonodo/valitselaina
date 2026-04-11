@@ -1,78 +1,60 @@
-import { Eye, Percent, Tag, ShieldCheck } from 'lucide-react';
+import { ShieldCheck, Eye, Percent, Users } from 'lucide-react';
+import ScrollReveal from '@/components/ScrollReveal';
 
-const TRUST_CARDS = [
+const TRUST_METRICS = [
+  {
+    icon: Users,
+    value: '28+',
+    label: 'Lainanantajaa',
+    description: 'vertailussam',
+  },
   {
     icon: Eye,
-    title: 'Näytämme kaikki lainat',
-    description:
-      'Useimmat vertailusivut näyttävät vain maksavien kumppanien lainat. Me näytämme kaikki — myös ne, joista emme saa komissiota. Näin löydät oikeasti edullisimman vaihtoehdon.',
-    highlight: 'Myös ei-kumppanien lainat',
+    value: '100%',
+    label: 'Kaikki näkyvissä',
+    description: 'myös ei-kumppanit',
   },
   {
     icon: Percent,
-    title: 'Todellinen vuosikorko aina',
-    description:
-      'Nimelliskorko ei kerro koko totuutta. Me näytämme aina todellisen vuosikoron, joka sisältää kaikki lainan kulut. Näin vertaat hintoja oikeudenmukaisesti.',
-    highlight: 'Ei harhaanjohtavia korkoja',
-  },
-  {
-    icon: Tag,
-    title: 'Affiliate-linkit merkitty',
-    description:
-      'Jokainen affiliate-linkki on selkeästi merkitty. Kerromme avoimesti, miten ansaitsemme rahaa. Läpinäkyvyys on meille itsestäänselvyys, ei lisäominaisuus.',
-    highlight: 'Täysi läpinäkyvyys',
+    value: 'TAV',
+    label: 'Todellinen vuosikorko',
+    description: 'aina esillä',
   },
   {
     icon: ShieldCheck,
-    title: 'Ei piilotettua agendaa',
-    description:
-      'Ei tekaistuja ennakkopäätöksiä, ei kiirehtimistemppuja, ei manipuloivaa suunnittelua. Annamme sinun tehdä päätöksen rauhassa ja oikean tiedon pohjalta.',
-    highlight: 'Ei dark patterneita',
+    value: '0 €',
+    label: 'Ilmainen palvelu',
+    description: 'ei piilokuluia',
   },
 ];
 
 export default function WhyTrustUs() {
   return (
-    <section className="py-16 sm:py-20 bg-[#f7fafc]">
+    <section className="py-16 sm:py-20 bg-background">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
-        <div className="text-center mb-12 lg:mb-16">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-            Miksi Valitse Laina on erilainen?
-          </h2>
-          <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
-            Rakennettu rehellisyydelle — emme kilpaile temppujen vaan
-            luotettavuuden avulla
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-12 lg:mb-16">
+            <h2 className="section-title">Miksi Valitse Laina?</h2>
+            <p className="section-subtitle mx-auto">
+              Kattava ja läpinäkyvä lainavertailu — emme piilota mitään
+            </p>
+          </div>
+        </ScrollReveal>
 
-        {/* Cards grid */}
-        <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
-          {TRUST_CARDS.map((card) => (
-            <div
-              key={card.title}
-              className="rounded-xl border border-gray-200 bg-white p-6 sm:p-8 hover:shadow-md transition-shadow"
-            >
-              {/* Icon + badge row */}
-              <div className="flex items-start gap-4 mb-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#1a365d]/5">
-                  <card.icon
-                    className="h-6 w-6 text-[#1a365d]"
-                    strokeWidth={1.8}
-                  />
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          {TRUST_METRICS.map((metric, idx) => (
+            <ScrollReveal key={metric.label} delay={idx * 100}>
+              <div className="card-hover text-center p-6">
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-accent-50 mb-4">
+                  <metric.icon className="h-6 w-6 text-accent" strokeWidth={1.8} />
                 </div>
-                <span className="inline-flex items-center rounded-full bg-[#f0fdf4] px-3 py-1 text-xs font-medium text-[#38a169] border border-[#38a169]/20">
-                  {card.highlight}
-                </span>
+                <p className="text-2xl sm:text-3xl font-bold text-accent-700 mb-1">
+                  {metric.value}
+                </p>
+                <p className="text-sm font-semibold text-slate-900">{metric.label}</p>
+                <p className="text-xs text-slate-500 mt-0.5">{metric.description}</p>
               </div>
-
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {card.title}
-              </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                {card.description}
-              </p>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

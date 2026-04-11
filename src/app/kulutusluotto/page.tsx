@@ -686,7 +686,7 @@ export default function KulutusluottoPage() {
           </h2>
           <p className="text-blue-100/80 mb-8 max-w-xl mx-auto">
             Vertaa kaikkia {allProducts.length} kulutusluottoa yhdellä
-            sivulla. Ilmainen, puolueeton vertailu — ei vaikuta
+            sivulla. Ilmainen, kattava vertailu — ei vaikuta
             luottotietoihisi.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

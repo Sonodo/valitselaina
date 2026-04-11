@@ -241,13 +241,13 @@ export default function MenetelmaPage() {
               {
                 icon: Clock,
                 label: 'Korot ja kulut',
-                freq: 'Viikoittain',
-                desc: 'Tarkistamme korko- ja kulutiedot joka viikko',
+                freq: 'Säännöllisesti',
+                desc: 'Pyrimme pitämään korko- ja kulutiedot ajantasaisina',
               },
               {
                 icon: Database,
                 label: 'Tuotetiedot',
-                freq: 'Kuukausittain',
+                freq: 'Säännöllisesti',
                 desc: 'Lainaehdot, rajat ja ominaisuudet',
               },
               {
@@ -286,9 +286,8 @@ export default function MenetelmaPage() {
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <strong>Sähköposti:</strong>{' '}
-                <a href="mailto:korjaukset@valitselaina.fi" className="text-[#1a365d] underline">
-                  korjaukset@valitselaina.fi
+                <a href="/yhteystiedot" className="text-[#1a365d] underline">
+                  Ilmoita virheestä yhteydenottosivullamme
                 </a>
               </li>
               <li>

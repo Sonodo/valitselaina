@@ -16,7 +16,7 @@ import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
 const pageTitle = 'Media — Valitse Laina lehdistölle';
 const pageDescription =
-  'Valitse Lainan mediasivut: avainluvut, brändimateriaalit ja lehdistöyhteydenotot. Valitse Laina on Suomen riippumaton lainavertailupalvelu.';
+  'Valitse Lainan mediasivut: avainluvut, brändimateriaalit ja lehdistöyhteydenotot. Valitse Laina on Suomen kattava lainavertailupalvelu.';
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -58,7 +58,7 @@ const keyStats = [
   {
     icon: ShieldCheck,
     value: '100%',
-    label: 'Puolueeton',
+    label: 'Läpinäkyvä',
     desc: 'Affiliate-status ei vaikuta järjestykseen',
   },
   {
@@ -85,7 +85,7 @@ export default function MediaPage() {
             Lehdistö ja media
           </h1>
           <p className="text-lg text-blue-200 max-w-2xl">
-            Valitse Laina on suomalainen, riippumaton lainavertailupalvelu.
+            Valitse Laina on suomalainen lainavertailupalvelu.
             Tältä sivulta löydät avainluvut, tietoa palvelusta ja mediayhteydenottokanavat.
           </p>
         </div>
@@ -116,8 +116,8 @@ export default function MediaPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Tietoa palvelusta</h2>
           <div className="text-gray-700 leading-relaxed space-y-4">
             <p>
-              <strong>Valitse Laina</strong> on suomalainen, riippumaton lainavertailupalvelu,
-              joka vertailee yli 27 lainanantajan tuotteita puolueettomasti. Palvelu kattaa
+              <strong>Valitse Laina</strong> on suomalainen lainavertailupalvelu,
+              joka vertailee yli 27 lainanantajan tuotteita kattavasti. Palvelu kattaa
               kulutusluotot, asuntolainat, autolainat, yhdistelylainat, yrityslainat ja pikavipit.
             </p>
             <p>
@@ -168,9 +168,9 @@ export default function MediaPage() {
               </ul>
             </div>
             <p className="text-sm text-gray-600">
-              Logot ja brändimateriaalit mediakäyttöön: pyydä osoitteesta{' '}
-              <a href="mailto:media@valitselaina.fi" className="text-[#1a365d] underline font-medium">
-                media@valitselaina.fi
+              Logot ja brändimateriaalit mediakäyttöön: pyydä{' '}
+              <a href="/yhteystiedot" className="text-[#1a365d] underline font-medium">
+                yhteydenottosivullamme
               </a>.
             </p>
           </div>
@@ -190,12 +190,12 @@ export default function MediaPage() {
             </p>
             <div className="space-y-3">
               <div>
-                <p className="text-sm text-blue-300">Sähköposti</p>
+                <p className="text-sm text-blue-300">Yhteydenotto</p>
                 <a
-                  href="mailto:media@valitselaina.fi"
+                  href="/yhteystiedot"
                   className="text-white font-semibold hover:text-[#d69e2e] transition-colors"
                 >
-                  media@valitselaina.fi
+                  Ota yhteyttä
                 </a>
               </div>
               <div>

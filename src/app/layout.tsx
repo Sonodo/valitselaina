@@ -17,8 +17,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Lainavertailu — Luotettava lainavertailu',
-    template: '%s | Lainavertailu',
+    default: 'Valitse Laina — Luotettava lainavertailu',
+    template: '%s | Valitse Laina',
   },
   description:
     'Vertaa lainoja rehellisesti. Näytämme kaikki lainat — myös ne, joista emme saa komissiota. Löydä edullisin kulutusluotto, asuntolaina tai autolaina.',
@@ -27,14 +27,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'fi_FI',
     url: 'https://valitselaina.fi',
-    siteName: 'Lainavertailu',
-    title: 'Lainavertailu — Luotettava lainavertailu',
+    siteName: 'Valitse Laina',
+    title: 'Valitse Laina — Luotettava lainavertailu',
     description:
       'Vertaa lainoja rehellisesti. Näytämme kaikki lainat — myös ne, joista emme saa komissiota.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Lainavertailu — Luotettava lainavertailu',
+    title: 'Valitse Laina — Luotettava lainavertailu',
     description:
       'Vertaa lainoja rehellisesti. Näytämme kaikki lainat — myös ne, joista emme saa komissiota.',
   },
@@ -57,17 +57,15 @@ export const metadata: Metadata = {
   },
 };
 
-// JSON-LD Organization structured data
 const organizationJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Valitse Laina',
   url: 'https://valitselaina.fi',
   description:
-    'Luotettava lainavertailupalvelu. Vertaa kulutusluottoja, asuntolainoja ja autolainoja puolueettomasti.',
+    'Luotettava lainavertailupalvelu. Vertaa kulutusluottoja, asuntolainoja ja autolainoja kattavasti.',
 };
 
-// JSON-LD WebSite structured data
 const websiteJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
@@ -83,7 +81,6 @@ export default function RootLayout({
   return (
     <html lang="fi" className={`${inter.variable} h-full antialiased`}>
       <head>
-        {/* JSON-LD structured data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -96,9 +93,8 @@ export default function RootLayout({
             __html: JSON.stringify(websiteJsonLd),
           }}
         />
-
       </head>
-      <body className="min-h-full flex flex-col bg-[#f7fafc] text-gray-900 font-sans">
+      <body className="min-h-full flex flex-col bg-background text-foreground font-sans">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

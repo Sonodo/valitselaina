@@ -1263,9 +1263,10 @@ export const guides: Guide[] = [
 <h3>Korkokaton historia</h3>
 <p>Korkokatto on ollut Suomessa käytössä eri muodoissaan vuodesta 2013:</p>
 <ul>
-  <li>2013: Korkokatto 51 % alle 2 000 euron luotoille</li>
-  <li>2019: Korkokatto 20 % kaikille kuluttajaluotoille (väliaikainen koronalaki)</li>
-  <li>2023: Pysyvä 20 %:n korkokatto voimaan</li>
+  <li>2013: Korkokatto 51 % alle 2 000 euron kulutusluotoille</li>
+  <li>1.9.2019: Pysyvä korkokatto 20 % kaikille kuluttajaluotoille (kuluttajansuojalain muutos)</li>
+  <li>2020–2021: Väliaikainen 10 %:n korkokatto koronapandemian vuoksi (ns. koronalaki)</li>
+  <li>1.10.2023: Korkokaton laskentatapa muuttui: viitekorko + 15 prosenttiyksikköä, enintään 20 %</li>
 </ul>
 
 <h3>Mitä korkokatto tarkoittaa käytännössä?</h3>

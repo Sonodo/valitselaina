@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Blogi',
+  title: 'Artikkelit',
   description:
-    'Ajankohtaisia artikkeleita lainoista, koroista ja taloudenhallinnasta. Puolueetonta tietoa parempien rahoituspäätösten tueksi.',
+    'Ajankohtaisia artikkeleita lainoista, koroista ja taloudenhallinnasta. Kattavaa tietoa parempien rahoituspäätösten tueksi.',
   alternates: {
     canonical: 'https://valitselaina.fi/blogi',
   },

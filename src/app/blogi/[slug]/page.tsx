@@ -130,7 +130,7 @@ export default async function BlogPostPage({
       {
         '@type': 'ListItem',
         position: 2,
-        name: 'Blogi',
+        name: 'Artikkelit',
         item: `${SITE_URL}/blogi`,
       },
       {
@@ -170,7 +170,7 @@ export default async function BlogPostPage({
             <li aria-hidden="true">/</li>
             <li>
               <Link href="/blogi" className="hover:text-[#1a365d] transition-colors">
-                Blogi
+                Artikkelit
               </Link>
             </li>
             <li aria-hidden="true">/</li>
@@ -207,21 +207,16 @@ export default async function BlogPostPage({
                 {post.description}
               </p>
 
-              {/* Author + date row */}
+              {/* Author + reading time row */}
               <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 pb-6 border-b border-gray-200">
                 <span className="inline-flex items-center gap-1.5">
                   <User className="h-4 w-4" />
                   {post.author}
                 </span>
                 <span className="inline-flex items-center gap-1.5">
-                  <Calendar className="h-4 w-4" />
-                  {formatDate(post.publishedAt)}
+                  <Clock className="h-4 w-4" />
+                  {post.readTime} min lukuaika
                 </span>
-                {post.updatedAt && post.updatedAt !== post.publishedAt && (
-                  <span className="text-xs text-gray-400">
-                    (Päivitetty {formatDate(post.updatedAt)})
-                  </span>
-                )}
               </div>
             </header>
 
@@ -326,7 +321,7 @@ export default async function BlogPostPage({
                     {post.author}
                   </p>
                   <p className="text-xs text-gray-500 mt-1 leading-relaxed">
-                    Valitse Lainan toimitustiimi tuottaa puolueetonta ja
+                    Valitse Lainan toimitustiimi tuottaa kattavaa ja
                     tutkittua sisältöä lainoista, koroista ja
                     taloudenhallinnasta.
                   </p>

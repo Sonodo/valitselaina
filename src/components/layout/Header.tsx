@@ -2,9 +2,9 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { ShieldCheck, ChevronDown, Menu, X } from 'lucide-react';
+import { Landmark, ChevronDown, Menu, X } from 'lucide-react';
+import { UserMenu } from '@/components/auth/UserMenu';
 
-// Navigation link definitions
 const loanTypes = [
   { label: 'Kulutusluotto', href: '/kulutusluotto' },
   { label: 'Asuntolaina', href: '/asuntolaina' },
@@ -17,9 +17,11 @@ const loanTypes = [
 const mainNavLinks = [
   { label: 'Vertailu', href: '/vertailu' },
   { label: 'Lainanantajat', href: '/lainanantajat' },
+  { label: 'Elämänmuutokset', href: '/elamanmuutokset' },
   { label: 'Oppaat', href: '/oppaat' },
   { label: 'Työkalut', href: '/tyokalut' },
-  { label: 'Blogi', href: '/blogi' },
+  { label: 'Korkotutka', href: '/korkotutka' },
+  { label: 'Artikkelit', href: '/blogi' },
 ];
 
 export default function Header() {
@@ -29,14 +31,12 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // Track scroll for header shadow
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close dropdown on outside click
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
@@ -47,7 +47,6 @@ export default function Header() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (mobileMenuOpen) {
       document.body.style.overflow = 'hidden';
@@ -61,39 +60,36 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full border-b transition-all duration-200 ${
+      className={`sticky top-0 z-50 w-full border-b transition-all duration-300 ${
         scrolled
-          ? 'border-gray-200 bg-white/95 backdrop-blur-md shadow-sm'
-          : 'border-transparent bg-white'
+          ? 'border-white/10 bg-navy/95 backdrop-blur-md shadow-lg shadow-navy-dark/20'
+          : 'border-transparent bg-navy'
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          {/* Logo + Trust Badge */}
+          {/* Logo */}
           <div className="flex items-center gap-4">
             <Link
               href="/"
-              className="flex items-center gap-2 text-[#1a365d] hover:opacity-90 transition-opacity"
+              className="flex items-center gap-2.5 hover:opacity-90 transition-opacity"
               aria-label="Valitse Laina — Etusivu"
             >
-              <ShieldCheck className="h-7 w-7 text-[#1a365d]" strokeWidth={2.2} />
+              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-accent-400 to-accent">
+                <Landmark className="h-4.5 w-4.5 text-white" strokeWidth={2} />
+              </div>
               <span className="text-xl font-bold tracking-tight">
-                Valitse Laina
+                <span className="text-white">Valitse</span>
+                <span className="text-accent-400 ml-1">Laina</span>
               </span>
             </Link>
-            {/* Trust badge — desktop only */}
-            <span className="hidden lg:inline-flex items-center gap-1 rounded-full bg-[#f0fdf4] px-2.5 py-0.5 text-xs font-medium text-[#38a169] border border-[#38a169]/20">
-              <ShieldCheck className="h-3 w-3" />
-              Puolueeton vertailu
-            </span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1" aria-label="Päänavigaatio">
-            {/* Vertailu link */}
             <Link
               href="/vertailu"
-              className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-[#1a365d] transition-colors"
+              className="rounded-lg px-3 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 transition-colors"
             >
               Vertailu
             </Link>
@@ -103,7 +99,7 @@ export default function Header() {
               <button
                 onClick={() => setLoanDropdownOpen(!loanDropdownOpen)}
                 onMouseEnter={() => setLoanDropdownOpen(true)}
-                className="flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-[#1a365d] transition-colors"
+                className="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 transition-colors"
                 aria-expanded={loanDropdownOpen}
                 aria-haspopup="true"
               >
@@ -116,7 +112,7 @@ export default function Header() {
               </button>
               {loanDropdownOpen && (
                 <div
-                  className="absolute left-0 top-full mt-1 w-52 rounded-lg border border-gray-100 bg-white py-1.5 shadow-lg ring-1 ring-black/5"
+                  className="absolute left-0 top-full mt-1 w-52 rounded-xl border border-white/10 bg-navy-light/95 backdrop-blur-md py-1.5 shadow-xl"
                   onMouseLeave={() => setLoanDropdownOpen(false)}
                   role="menu"
                 >
@@ -124,7 +120,7 @@ export default function Header() {
                     <Link
                       key={item.href}
                       href={item.href}
-                      className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#f7fafc] hover:text-[#1a365d] transition-colors"
+                      className="block px-4 py-2.5 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors"
                       role="menuitem"
                       onClick={() => setLoanDropdownOpen(false)}
                     >
@@ -135,70 +131,60 @@ export default function Header() {
               )}
             </div>
 
-            {/* Remaining nav links */}
             {mainNavLinks.slice(1).map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-[#1a365d] transition-colors"
+                className="rounded-lg px-3 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 transition-colors"
               >
                 {link.label}
               </Link>
             ))}
 
-            {/* CTA Button */}
-            <Link
-              href="/vertailu"
-              className="ml-3 inline-flex items-center rounded-lg bg-[#1a365d] px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-[#2a4a7f] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1a365d]"
-            >
-              Vertaa lainoja
-            </Link>
+            {/* CTA + User Menu */}
+            <div className="flex items-center gap-3 ml-3">
+              <Link
+                href="/vertailu"
+                className="inline-flex items-center rounded-xl bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-sm shadow-accent/25 hover:bg-accent-600 hover:shadow-md transition-all min-h-[44px]"
+              >
+                Vertaa lainoja
+              </Link>
+              <UserMenu />
+            </div>
           </nav>
 
-          {/* Mobile menu button */}
-          <button
-            className="lg:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 transition-colors"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-expanded={mobileMenuOpen}
-            aria-label={mobileMenuOpen ? 'Sulje valikko' : 'Avaa valikko'}
-          >
-            {mobileMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
-          </button>
+          {/* Mobile controls */}
+          <div className="lg:hidden flex items-center gap-2">
+            <UserMenu />
+            <button
+              className="inline-flex items-center justify-center rounded-lg p-2 text-slate-300 hover:text-white hover:bg-white/10 transition-colors min-h-[44px] min-w-[44px]"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-expanded={mobileMenuOpen}
+              aria-label={mobileMenuOpen ? 'Sulje valikko' : 'Avaa valikko'}
+            >
+              {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
       </div>
 
       {/* Mobile Navigation Overlay */}
       {mobileMenuOpen && (
         <div className="lg:hidden fixed inset-0 top-16 z-40">
-          {/* Backdrop */}
           <div
-            className="absolute inset-0 bg-black/20 backdrop-blur-sm"
+            className="absolute inset-0 bg-black/40 backdrop-blur-sm"
             onClick={() => setMobileMenuOpen(false)}
             aria-hidden="true"
           />
 
-          {/* Drawer */}
           <nav
-            className="relative bg-white border-t border-gray-100 shadow-xl overflow-y-auto max-h-[calc(100vh-4rem)]"
+            className="relative bg-navy border-t border-white/10 shadow-xl overflow-y-auto max-h-[calc(100vh-4rem)]"
             aria-label="Mobiilinavigaatio"
           >
             <div className="px-4 py-4 space-y-1">
-              {/* Trust badge — mobile */}
-              <div className="flex items-center gap-1.5 px-3 py-2 mb-2">
-                <ShieldCheck className="h-4 w-4 text-[#38a169]" />
-                <span className="text-xs font-medium text-[#38a169]">
-                  Puolueeton vertailu
-                </span>
-              </div>
-
-              {/* Vertailu */}
               <Link
                 href="/vertailu"
-                className="block rounded-lg px-3 py-3 text-base font-medium text-gray-800 hover:bg-gray-50 transition-colors"
+                className="block rounded-lg px-3 py-3 text-base font-medium text-slate-200 hover:bg-white/10 hover:text-white transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Vertailu
@@ -207,13 +193,13 @@ export default function Header() {
               {/* Lainatyypit accordion */}
               <div>
                 <button
-                  className="flex w-full items-center justify-between rounded-lg px-3 py-3 text-base font-medium text-gray-800 hover:bg-gray-50 transition-colors"
+                  className="flex w-full items-center justify-between rounded-lg px-3 py-3 text-base font-medium text-slate-200 hover:bg-white/10 hover:text-white transition-colors"
                   onClick={() => setMobileLoanDropdownOpen(!mobileLoanDropdownOpen)}
                   aria-expanded={mobileLoanDropdownOpen}
                 >
                   Lainatyypit
                   <ChevronDown
-                    className={`h-5 w-5 text-gray-500 transition-transform duration-200 ${
+                    className={`h-5 w-5 text-slate-400 transition-transform duration-200 ${
                       mobileLoanDropdownOpen ? 'rotate-180' : ''
                     }`}
                   />
@@ -224,7 +210,7 @@ export default function Header() {
                       <Link
                         key={item.href}
                         href={item.href}
-                        className="block rounded-lg px-3 py-2.5 text-sm text-gray-600 hover:bg-gray-50 hover:text-[#1a365d] transition-colors"
+                        className="block rounded-lg px-3 py-2.5 text-sm text-slate-400 hover:bg-white/10 hover:text-white transition-colors"
                         onClick={() => setMobileMenuOpen(false)}
                       >
                         {item.label}
@@ -234,12 +220,11 @@ export default function Header() {
                 )}
               </div>
 
-              {/* Other nav links */}
               {mainNavLinks.slice(1).map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="block rounded-lg px-3 py-3 text-base font-medium text-gray-800 hover:bg-gray-50 transition-colors"
+                  className="block rounded-lg px-3 py-3 text-base font-medium text-slate-200 hover:bg-white/10 hover:text-white transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.label}
@@ -250,7 +235,7 @@ export default function Header() {
               <div className="pt-3 px-3">
                 <Link
                   href="/vertailu"
-                  className="flex w-full items-center justify-center rounded-lg bg-[#1a365d] px-4 py-3 text-base font-semibold text-white shadow-sm hover:bg-[#2a4a7f] transition-colors"
+                  className="flex w-full items-center justify-center rounded-xl bg-accent px-4 py-3 text-base font-semibold text-white shadow-sm shadow-accent/25 hover:bg-accent-600 transition-colors min-h-[44px]"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Vertaa lainoja

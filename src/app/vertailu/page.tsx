@@ -19,7 +19,7 @@ export default function VertailuPage() {
           </p>
           <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm text-white/90 border border-white/20">
             <ShieldCheck className="h-4 w-4 text-[#48bb78]" />
-            Puolueeton vertailu — näytämme myös lainat, joista emme saa komissiota
+            Kattava vertailu — näytämme myös lainat, joista emme saa komissiota
           </div>
         </div>
       </section>
@@ -87,7 +87,7 @@ export default function VertailuPage() {
               Vertailussamme näkyy jokaisen lainan kokonaiskustannus, joten voit helposti valita edullisimman vaihtoehdon.
             </p>
             <h3 className="text-lg font-semibold text-gray-900">
-              Onko vertailu puolueeton?
+              Onko vertailu luotettava?
             </h3>
             <p>
               Kyllä. Näytämme kaikki lainat samassa vertailussa, riippumatta siitä saammeko lainanantajalta komissiota vai emme.

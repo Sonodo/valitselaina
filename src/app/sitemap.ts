@@ -60,6 +60,24 @@ const loanTypes = [
   '/yhdistelylaina',
   '/yrityslaina',
   '/pikavippi',
+  '/remonttilaina',
+];
+
+// Standalone tool pages
+const standaloneToolPages = [
+  '/korkotutka',
+];
+
+// Life event pages
+const lifeEventPages = [
+  '/elamanmuutokset',
+  '/elamanmuutokset/asunnonosto',
+  '/elamanmuutokset/autonosto',
+];
+
+// Informational guide pages (standalone)
+const standaloneGuidePages = [
+  '/positiivinen-luottorekisteri',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -165,9 +183,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.4,
   }));
 
+  // Standalone guide pages
+  const standalonePages: MetadataRoute.Sitemap = standaloneGuidePages.map(
+    (path) => ({
+      url: `${BASE_URL}${path}`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    }),
+  );
+
+  // Life event pages
+  const lifeEventEntries: MetadataRoute.Sitemap = lifeEventPages.map(
+    (path) => ({
+      url: `${BASE_URL}${path}`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    }),
+  );
+
+  // Standalone tool pages (e.g. Korkotutka)
+  const standaloneToolEntries: MetadataRoute.Sitemap = standaloneToolPages.map(
+    (path) => ({
+      url: `${BASE_URL}${path}`,
+      lastModified: now,
+      changeFrequency: 'daily' as const,
+      priority: 0.85,
+    }),
+  );
+
   return [
     ...corePages,
     ...loanTypePages,
+    ...lifeEventEntries,
+    ...standalonePages,
+    ...standaloneToolEntries,
     ...providerIndex,
     ...providerPages,
     ...guideIndex,

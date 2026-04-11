@@ -92,7 +92,7 @@ export default async function Image() {
             gap: '24px',
           }}
         >
-          {['Puolueeton vertailu', '27+ lainanantajaa', 'Ilmainen palvelu'].map(
+          {['Kattava vertailu', '27+ lainanantajaa', 'Ilmainen palvelu'].map(
             (badge) => (
               <div
                 key={badge}

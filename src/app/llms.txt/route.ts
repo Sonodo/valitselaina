@@ -3,7 +3,7 @@ export function GET() {
 > Luotettava suomalainen lainavertailupalvelu
 
 ## About
-Valitse Laina on suomalainen, riippumaton lainavertailupalvelu, joka vertailee yli 27 lainanantajan tuotteita puolueettomasti. Palvelu kattaa kulutusluotot, asuntolainat, autolainat, yhdistelylainat, yrityslainat ja pikavipit.
+Valitse Laina on suomalainen lainavertailupalvelu, joka vertailee yli 27 lainanantajan tuotteita kattavasti. Palvelu kattaa kulutusluotot, asuntolainat, autolainat, yhdistelylainat, yrityslainat ja pikavipit.
 
 ## Key Features
 - Honest comparison of 27+ Finnish loan providers
@@ -53,8 +53,7 @@ Valitse Laina on suomalainen, riippumaton lainavertailupalvelu, joka vertailee y
 
 ## Contact
 - Website: https://valitselaina.fi
-- General inquiries: info@valitselaina.fi
-- Press: media@valitselaina.fi
+- Contact page: https://valitselaina.fi/yhteystiedot
 `;
 
   return new Response(content, {
