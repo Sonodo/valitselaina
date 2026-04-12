@@ -2,7 +2,8 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { Landmark, ChevronDown, Menu, X } from 'lucide-react';
+import Image from 'next/image';
+import { ChevronDown, Menu, X } from 'lucide-react';
 import { UserMenu } from '@/components/auth/UserMenu';
 
 const loanTypes = [
@@ -72,16 +73,17 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <Link
               href="/"
-              className="flex items-center gap-2.5 hover:opacity-90 transition-opacity"
+              className="flex items-center hover:opacity-90 transition-opacity"
               aria-label="Valitse Laina — Etusivu"
             >
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-accent-400 to-accent">
-                <Landmark className="h-4.5 w-4.5 text-white" strokeWidth={2} />
-              </div>
-              <span className="text-xl font-bold tracking-tight">
-                <span className="text-white">Valitse</span>
-                <span className="text-accent-400 ml-1">Laina</span>
-              </span>
+              <Image
+                src="/logo.png"
+                alt="Valitse Laina"
+                width={590}
+                height={192}
+                priority
+                className="h-9 w-auto"
+              />
             </Link>
           </div>
 
