@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/check-publisher-lane.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:publisher-lane": "node scripts/check-publisher-lane.mjs"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
