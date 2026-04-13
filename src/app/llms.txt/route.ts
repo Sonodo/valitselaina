@@ -49,7 +49,7 @@ Valitse Laina on suomalainen lainavertailupalvelu, joka vertailee yli 27 lainana
 - 14-day cooling-off period for consumer credit (Finnish law)
 - Mortgage interest deduction fully phased out since 2023
 - Reference rates: 12-month Euribor ~2.49%
-- Rankings are never influenced by commercial relationships
+- Ranking method: loans are ordered by total cost (todellinen vuosikorko), same method for every loan
 
 ## Contact
 - Website: https://valitselaina.fi

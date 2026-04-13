@@ -62,8 +62,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-slate-400">
-              Vertaa lainoja helposti yhdestä paikasta. Kattava vertailu, joka
-              näyttää kaikki lainat.
+              Puolueeton lainavertailu. Järjestys perustuu todelliseen vuosikorkoon.
             </p>
           </div>
 

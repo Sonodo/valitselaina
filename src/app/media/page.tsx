@@ -121,13 +121,12 @@ export default function MediaPage() {
               kulutusluotot, asuntolainat, autolainat, yhdistelylainat, yrityslainat ja pikavipit.
             </p>
             <p>
-              Valitse Lainan ydinperiaate on läpinäkyvyys: lainat järjestetään aina
-              kokonaiskustannuksen mukaan. Vertailutulokset kattavat laajasti suomalaisen
-              lainamarkkinan toimijat.
+              Valitse Lainan ydinperiaate on puolueettomuus: lainat järjestetään aina
+              kokonaiskustannuksen mukaan, ja sama menetelmä koskee jokaista lainaa.
+              Vertailutulokset kattavat laajasti suomalaisen lainamarkkinan toimijat.
             </p>
             <p>
-              Palvelu on kuluttajille täysin ilmainen. Valitse Laina saa tuloja, kun
-              käyttäjät siirtyvät palvelun kautta lainanantajien sivuille.
+              Palvelu on kuluttajille täysin ilmainen.
             </p>
           </div>
         </section>
@@ -210,7 +209,7 @@ export default function MediaPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Hyödyllisiä linkkejä</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
-              { href: '/menetelma', label: 'Menetelmämme', desc: 'Miten vertailu toimii ja miten ansaitsemme' },
+              { href: '/menetelma', label: 'Menetelmämme', desc: 'Miten keräämme tiedot ja miten vertailu toimii' },
               { href: '/tietoa', label: 'Tietoa meistä', desc: 'Keitä olemme ja miksi teemme tätä' },
               { href: '/vertailu', label: 'Vertailutyökalu', desc: 'Kokeile vertailutyökalua' },
               { href: '/yhteystiedot', label: 'Yhteystiedot', desc: 'Kaikki yhteydenottokanavat' },

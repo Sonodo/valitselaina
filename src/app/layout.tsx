@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: '%s | Valitse Laina',
   },
   description:
-    'Vertaa lainoja puolueettomasti. Näytämme kaikki lainat todellisten vuosikorkojen perusteella. Löydä edullisin kulutusluotto, asuntolaina tai autolaina.',
+    'Vertaa lainoja puolueettomasti. Järjestys perustuu todelliseen vuosikorkoon ja ajantasaiseen dataan. Löydä edullisin kulutusluotto, asuntolaina tai autolaina.',
   metadataBase: new URL('https://valitselaina.fi'),
   openGraph: {
     type: 'website',
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     siteName: 'Valitse Laina',
     title: 'Valitse Laina — Luotettava lainavertailu',
     description:
-      'Vertaa lainoja puolueettomasti. Näytämme kaikki lainat todellisten vuosikorkojen perusteella.',
+      'Vertaa lainoja puolueettomasti. Järjestys perustuu todelliseen vuosikorkoon ja ajantasaiseen dataan.',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Valitse Laina — Luotettava lainavertailu',
     description:
-      'Vertaa lainoja puolueettomasti. Näytämme kaikki lainat todellisten vuosikorkojen perusteella.',
+      'Vertaa lainoja puolueettomasti. Järjestys perustuu todelliseen vuosikorkoon ja ajantasaiseen dataan.',
   },
   robots: {
     index: true,

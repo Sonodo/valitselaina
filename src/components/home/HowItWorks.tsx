@@ -14,7 +14,7 @@ const STEPS = [
     icon: BarChart3,
     title: 'Vertaile tarjoajia',
     description:
-      'Näet kaikki lainat yhdellä sivulla puolueettomasti todellisin vuosikoroin.',
+      'Näet lainat yhdellä sivulla puolueettomasti — järjestys perustuu todelliseen vuosikorkoon.',
   },
   {
     number: '3',

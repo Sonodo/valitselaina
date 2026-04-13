@@ -68,7 +68,7 @@ const howItWorks = [
     step: 1,
     icon: Search,
     title: 'Vertaile',
-    desc: 'Selaa kaikkien lainanantajien tuotteita yhdessä paikassa. Suodata lainatyypin, summan ja laina-ajan mukaan.',
+    desc: 'Selaa lainanantajien tuotteita yhdessä paikassa. Suodata lainatyypin, summan ja laina-ajan mukaan.',
   },
   {
     step: 2,
@@ -87,8 +87,8 @@ const howItWorks = [
 const valueProps = [
   {
     icon: Shield,
-    title: 'Kattava vertailu',
-    description: 'Emme suosi mitään lainanantajaa. Järjestämme kaikki lainat puolueettomasti todellisten vuosikorkojen perusteella.',
+    title: 'Puolueeton menetelmä',
+    description: 'Emme suosi mitään lainanantajaa. Järjestys perustuu aina todelliseen vuosikorkoon — sama menetelmä jokaiselle lainalle.',
   },
   {
     icon: Clock,
@@ -102,8 +102,8 @@ const valueProps = [
   },
   {
     icon: Scale,
-    title: 'Läpinäkyvä toiminta',
-    description: 'Vertailemme lainoja puolueettomasti kokonaiskustannuksen perusteella. Läpinäkyvyys on toimintamme kulmakivi.',
+    title: 'Objektiiviset kriteerit',
+    description: 'Vertailemme lainoja puolueettomasti kokonaiskustannuksen perusteella. Ei suosikkeja, ei piilotettuja tuloksia.',
   },
 ];
 
@@ -209,7 +209,7 @@ export default function HomeContent({
               className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-white/80"
             >
               Vertaile kulutusluottoja, asuntolainoja ja muita lainoja {totalProviders}+ lainanantajalta.
-              Näytämme kaikki lainat puolueettomasti todellisten vuosikorkojen perusteella.
+              Järjestys perustuu aina todelliseen vuosikorkoon — sama menetelmä jokaiselle lainalle.
             </motion.p>
 
             {/* CTAs */}
@@ -344,7 +344,7 @@ export default function HomeContent({
                 </h2>
                 <p className="mt-6 text-lg leading-relaxed text-white/70">
                   Suomalaiset maksavat lainoistaan usein liikaa, koska eivät kilpailuta. Valitse Laina auttaa löytämään
-                  edullisimman vaihtoehdon — vertailemalla kaikkien lainanantajien tuotteet kattavasti yhdessä paikassa.
+                  edullisimman vaihtoehdon — kattava valikoima lainanantajia, sama menetelmä jokaiselle lainalle.
                   Näytämme aina todellisen vuosikoron, emmekä piilota kustannuksia.
                 </p>
                 <div className="mt-8">
@@ -607,8 +607,8 @@ export default function HomeContent({
                 </thead>
                 <tbody className="divide-y divide-slate-100 bg-white text-sm">
                   {[
-                    { label: 'Kattavuus', a: 'Pankki kerrallaan', b: 'Yksi pankki', c: 'Kaikki lainanantajat' },
-                    { label: 'Läpinäkyvyys', a: 'Mainosten vaikutus', b: 'Pankin oma tarjonta', c: 'Avoin menetelmä' },
+                    { label: 'Kattavuus', a: 'Pankki kerrallaan', b: 'Yksi pankki', c: 'Kattava valikoima' },
+                    { label: 'Menetelmä', a: 'Vaihtelee pankin mukaan', b: 'Pankin oma tarjonta', c: 'Sama kaikille lainoille' },
                     { label: 'Puolueettomuus', a: 'Vaihtelee', b: 'Rajoitettu', c: 'Kokonaiskustannus ratkaisee' },
                     { label: 'Todellinen vuosikorko', a: 'Pitää etsiä itse', b: 'Usein piilossa', c: 'Aina näkyvillä' },
                     { label: 'Ajankäyttö', a: 'Tunteja', b: 'Tapaaminen tarvitaan', c: 'Muutama minuutti' },
@@ -759,7 +759,7 @@ export default function HomeContent({
             />
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/70 leading-relaxed">
               Vertaa lainoja ilmaiseksi ja löydä edullisin vaihtoehto. {totalProviders}+ lainanantajaa,
-              todellinen vuosikorko aina näkyvillä. Kattava ja täysin ilmainen palvelu.
+              todellinen vuosikorko aina näkyvillä. Puolueeton ja täysin ilmainen palvelu.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link

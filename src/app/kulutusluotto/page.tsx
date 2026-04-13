@@ -30,7 +30,7 @@ import { formatCurrency, formatPercentage } from '@/lib/utils';
 
 const pageTitle = 'Kulutusluotto — Vertaa ja löydä edullisin';
 const pageDescription =
-  'Vertaa kulutusluottoja rehellisesti. Näytämme kaikki kulutusluotot — korot alkaen 4,9 %. Löydä edullisin vakuudeton laina 500–60 000 euroon.';
+  'Vertaa kulutusluottoja rehellisesti — korot alkaen 4,9 %. Järjestys perustuu todelliseen vuosikorkoon. Löydä edullisin vakuudeton laina 500–60 000 euroon.';
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -180,8 +180,8 @@ export default function KulutusluottoPage() {
               Vertaa {allProducts.length} kulutusluottoa {allProducts.length > 0
                 ? `${new Set(allProducts.map((p) => p.provider.shortName || p.provider.name)).size} lainanantajalta`
                 : ''}{' '}
-              ja löydä sinulle edullisin vaihtoehto. Näytämme kaikki lainat
-              puolueettomasti todellisten vuosikorkojen perusteella.
+              ja löydä sinulle edullisin vaihtoehto. Järjestys perustuu aina
+              todelliseen vuosikorkoon — sama menetelmä jokaiselle lainalle.
             </p>
 
             {/* Key stats */}

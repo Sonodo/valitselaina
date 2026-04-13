@@ -5,32 +5,7 @@
 **Health**: GREEN
 **Domain**: valitselaina.fi (custom domain)
 **GA4**: G-DB1138LVS1 (needs NEXT_PUBLIC_GA_ID env var in Vercel)
-**Compliance posture**: **PUBLISHER LANE** — see [`COMPLIANCE_RED_LINES.md`](./COMPLIANCE_RED_LINES.md) and [`CLAUDE.md`](./CLAUDE.md). Enforced by `npm run check:publisher-lane` (auto-runs as `prebuild`).
-**Last Updated**: Session #088 — 2026-04-13
-
-## ⛔ Compliance — read before any code change
-
-Valitse Laina operates strictly in the **publisher lane** under Finnish KSL 7:7 / KKV linjaus. Crossing the line into `luotonvälittäjä` (credit intermediary) territory triggers FIVA registration, supervision, and personal liability for the chairman.
-
-**The 10 red lines are documented in [`COMPLIANCE_RED_LINES.md`](./COMPLIANCE_RED_LINES.md)**. The shortlist:
-1. No on-site loan application form
-2. No offer-solicitation flow (no POST to partner APIs)
-3. No personalized eligibility / pre-qualification
-4. No self-description as `lainanvälittäjä` / `luotonvälittäjä` (negations OK)
-5. No "yksi hakemus, useita tarjouksia" language or mechanic
-6. No backend that proxies, brokers, scores, or stores loan applications
-7. No collection of henkilötunnus, income, employment, debts, or maksuhäiriö
-8. No "guaranteed approval" / "no credit check" / "with payment defaults" claims
-9. No commission, fee, or payment from the consumer
-10. No personalized human-in-the-loop credit recommendations
-
-**Enforcement**: `scripts/check-publisher-lane.mjs` greps the source tree for forbidden patterns and exits non-zero if any are found. It runs as `prebuild`, so Vercel deployments fail closed if a violation lands on `master`. Run it locally before every commit:
-
-```bash
-npm run check:publisher-lane
-```
-
-**Canonical regulatory memo**: `_EMPIRE_HQ/MARKETING/VALITSE_GROUP_PLAYBOOK/MEMO_FIVA_AFFILIATE_QUESTION.md`
+**Last Updated**: Session #087 — 2026-04-12
 
 ## Overview
 Finland's most trusted, transparent loan comparison site. Consumer-first approach: shows ALL loans including from non-affiliate providers, real total costs (todellinen vuosikorko), no dark patterns. Covers consumer loans, mortgages, car loans, business loans, consolidation loans, and quick loans. Built as a Vertailu Hub spoke from day one.
@@ -45,13 +20,10 @@ Finland's most trusted, transparent loan comparison site. Consumer-first approac
 
 ## Recent Changes
 
-### Session #088 — Publisher-Lane Red Lines Embedded (2026-04-13)
-- **`COMPLIANCE_RED_LINES.md` created** — 10 canonical publisher-lane rules with full Finnish primary-source reasoning
-- **`CLAUDE.md` updated** — auto-loads the 10 red lines into every Claude Code session opened in this directory
-- **`scripts/check-publisher-lane.mjs` created** — static grep enforcer with negation tolerance for legitimate disclaimers
-- **`package.json` wired** — `prebuild` hook auto-runs the check; Vercel deployments fail closed on violations
-- **One real violation fixed** — `src/data/guides.ts` line 698-717 was describing a Sortter-style broker service ("Yksi hakemus, useita tarjouksia. Vertailupalvelu välittää tietosi useille lainanantajille") and labeling it "kuten Valitse Laina". Rewritten to accurately describe the publisher-lane flow: filter static catalog → click out → user applies on the lender's own site
-- **STATUS audit**: Calculator (`src/components/calculator/**`) confirmed 100% client-side — no API, no data passthrough, no form submission. Pure publisher lane.
+### Session #087 — New Logo + Valitse-ID Infra (2026-04-12)
+- **New Valitse Laina logo deployed**: Updated brand mark live in production
+- **Valitse-ID env vars set**: Shared Neon DB URL, Google OAuth client, AUTH_SECRET configured in Vercel
+- **Production redeploy completed**: Site serving new logo + Valitse-ID infrastructure ready for frontend wiring
 
 ### Session #080 — Compliance Audit (2026-04-07)
 - **Cookie consent added**: GDPR-compliant cookie banner implemented

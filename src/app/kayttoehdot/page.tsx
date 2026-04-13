@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import { FileText, AlertTriangle } from 'lucide-react';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
@@ -127,18 +126,11 @@ export default function KayttoehdotPage() {
             </p>
           </SubSection>
 
-          <SectionTitle id="ansaintamalli">5. Ansaintamalli</SectionTitle>
+          <SectionTitle id="palvelun-maksuttomuus">5. Palvelun maksuttomuus</SectionTitle>
           <SubSection>
             <p>
-              Palvelu on käyttäjälle maksuton. Saamme tuloja, kun käyttäjät siirtyvät
-              palvelumme kautta lainanantajien sivuille ja hakevat lainaa. Ansaintamalli
-              ei vaikuta lainojen järjestykseen vertailussa.
-            </p>
-            <p>
-              Lisätietoja ansaintamallistamme löydät{' '}
-              <Link href="/menetelma" className="text-[#1a365d] underline font-medium">
-                menetelmäsivultamme
-              </Link>.
+              Valitse Laina on käyttäjälle maksuton. Palvelu voi saada korvauksen
+              palveluntarjoajilta osana normaalia liiketoimintaa.
             </p>
           </SubSection>
 

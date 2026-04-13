@@ -4,7 +4,6 @@ import {
   ShieldCheck,
   Database,
   BarChart3,
-  Coins,
   Ban,
   RefreshCcw,
   AlertTriangle,
@@ -17,7 +16,7 @@ import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
 const pageTitle = 'Menetelmämme — Näin Valitse Laina toimii';
 const pageDescription =
-  'Valitse Lainan menetelmä: miten keräämme tiedot, miten vertailualgoritmi toimii, miten ansaitsemme ja mitä emme tee. Täysi läpinäkyvyys.';
+  'Valitse Lainan menetelmä: miten keräämme lainatiedot, miten vertailualgoritmi järjestää lainat todellisen vuosikoron mukaan ja millä kriteereillä tulokset päivittyvät.';
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -87,9 +86,9 @@ export default function MenetelmaPage() {
             Näin Valitse Laina toimii
           </h1>
           <p className="text-lg text-blue-200 max-w-2xl">
-            Uskomme täyteen läpinäkyvyyteen. Tällä sivulla kerromme tarkalleen,
-            miten keräämme tietoja, miten vertailumme toimii, miten ansaitsemme
-            rahaa ja mitä emme koskaan tee.
+            Tällä sivulla kerromme tarkalleen, miten keräämme lainatiedot,
+            millä kriteereillä vertailumme järjestää lainat ja mitä emme
+            koskaan tee.
           </p>
         </div>
       </div>
@@ -102,7 +101,6 @@ export default function MenetelmaPage() {
               {[
                 { href: '#tiedonkeruu', label: 'Tiedonkeruu' },
                 { href: '#algoritmi', label: 'Algoritmi' },
-                { href: '#ansaintamalli', label: 'Ansaintamalli' },
                 { href: '#mita-emme-tee', label: 'Mitä emme tee' },
                 { href: '#paivitystahti', label: 'Päivitystahti' },
                 { href: '#virheet', label: 'Virheiden raportointi' },
@@ -172,18 +170,6 @@ export default function MenetelmaPage() {
           </p>
         </Section>
 
-        <Section icon={Coins} title="Miten ansaitsemme — ansaintamalli" id="ansaintamalli">
-          <p>
-            Palvelumme on käyttäjälle maksuton. Saamme tuloja, kun käyttäjät siirtyvät
-            palvelumme kautta lainanantajien sivuille.
-          </p>
-          <p>
-            Tämä on tärkeä periaatteemme: näytämme kaikki lainat ja järjestämme ne
-            aina kokonaiskustannuksen mukaan. Ansaintamalli ei vaikuta lainojen
-            järjestykseen. Kuluttajan etu on aina etusijalla.
-          </p>
-        </Section>
-
         <Section icon={Ban} title="Mitä emme tee" id="mita-emme-tee">
           <div className="space-y-3">
             {[
@@ -193,7 +179,7 @@ export default function MenetelmaPage() {
               },
               {
                 title: 'Emme nosta tiettyjä lainoja tuloksissa',
-                desc: 'Ansaintamalli ei vaikuta lainan sijoitukseen vertailussa. Kokonaiskustannus ratkaisee — aina.',
+                desc: 'Sama menetelmä koskee jokaista lainaa. Kokonaiskustannus ratkaisee järjestyksen — aina.',
               },
               {
                 title: 'Emme piilota epäedullisia tietoja',

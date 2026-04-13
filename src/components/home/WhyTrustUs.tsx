@@ -6,13 +6,13 @@ const TRUST_METRICS = [
     icon: Users,
     value: '28+',
     label: 'Lainanantajaa',
-    description: 'vertailussam',
+    description: 'vertailussa',
   },
   {
     icon: Eye,
-    value: '100%',
-    label: 'Kaikki näkyvissä',
-    description: 'kattava valikoima',
+    value: 'Sama',
+    label: 'Menetelmä kaikille',
+    description: 'objektiiviset kriteerit',
   },
   {
     icon: Percent,
@@ -24,7 +24,7 @@ const TRUST_METRICS = [
     icon: ShieldCheck,
     value: '0 €',
     label: 'Ilmainen palvelu',
-    description: 'ei piilokuluia',
+    description: 'ei piilokuluja',
   },
 ];
 
@@ -36,7 +36,7 @@ export default function WhyTrustUs() {
           <div className="text-center mb-12 lg:mb-16">
             <h2 className="section-title">Miksi Valitse Laina?</h2>
             <p className="section-subtitle mx-auto">
-              Kattava ja läpinäkyvä lainavertailu — emme piilota mitään
+              Kattava ja puolueeton lainavertailu — sama menetelmä jokaiselle lainalle
             </p>
           </div>
         </ScrollReveal>

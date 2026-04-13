@@ -696,25 +696,25 @@ export const guides: Guide[] = [
 <p>Pyydä aina tarjous kirjallisena — mieluiten virallisena SECCI-lomakkeena (Vakiomuotoiset eurooppalaiset kuluttajaluottotiedot). Tämä lomake sisältää kaikki lainan tiedot standardoidussa muodossa, joten vertailu on helppoa. Suullinen lupaus "hyvästä korosta" ei riitä.</p>
 
 <h2 id="vertailupalvelun-kaytto">Milloin käyttää vertailupalvelua?</h2>
-<p>Vertailupalvelu, kuten Valitse Laina, on hyödyllisin näissä tilanteissa:</p>
+<p>Lainavertailupalvelu, kuten Valitse Laina, on hyödyllisin näissä tilanteissa:</p>
 <ul>
-  <li><strong>Haluat säästää aikaa</strong> — Näet samassa näkymässä kymmenien lainanantajien todelliset vuosikorot, kulut ja kuukausierät. Sinun ei tarvitse käydä jokaisen pankin sivulla erikseen vain selvittääksesi hintoja.</li>
-  <li><strong>Et tunne markkinaa</strong> — Vertailupalvelu näyttää, mitä eri lainanantajat ilmoittavat hinnoiksi, jolloin saat kuvan markkinatasosta ennen kuin haet lainaa.</li>
-  <li><strong>Haluat varmistaa, ettet maksa liikaa</strong> — Näet heti, onko oman pankkisi tarjous kilpailukykyinen markkinahinnoilla.</li>
-  <li><strong>Etsit parasta mahdollista korkoa</strong> — Vertailu useiden lainanantajien välillä auttaa sinua kohdistamaan oman lainahakemuksesi sinne, missä markkinahinta on edullisin.</li>
+  <li><strong>Haluat säästää aikaa</strong> — Yksi hakemus, useita tarjouksia. Sinun ei tarvitse täyttää jokaisen pankin lomaketta erikseen.</li>
+  <li><strong>Et tunne markkinaa</strong> — Vertailupalvelu näyttää, mitä eri lainanantajat tarjoavat, jolloin saat kuvan markkinahinnasta.</li>
+  <li><strong>Haluat varmistaa, ettet maksa liikaa</strong> — Näet heti, onko oman pankkisi tarjous kilpailukykyinen.</li>
+  <li><strong>Etsit parasta mahdollista korkoa</strong> — Kilpailutus useilla lainanantajilla nostaa todennäköisyyttä saada markkinoiden paras korko.</li>
 </ul>
-<p>Valitse Laina on käyttäjälle täysin maksuton. Emme välitä lainoja emmekä lähetä tietojasi pankeille — vertailutuloksissa näkyvät hinnat ovat lainanantajien itsensä julkaisemia &quot;alkaen&quot;-korkoja. Lopullisen lainatarjouksen ja luottopäätöksen tekee aina lainanantaja oman luottoharkintansa pohjalta, kun haet lainaa suoraan heidän palvelustaan.</p>
+<p>Vertailupalvelun käyttö on aina ilmaista, eikä se sido sinua mihinkään. Tarjousten pyytäminen ei myöskään vaikuta luottotietoihisi — varsinainen luottotietotarkistus tehdään vasta, kun hyväksyt tarjouksen.</p>
 
-<h3>Miten Valitse Laina toimii käytännössä?</h3>
-<p>Valitse Lainan käyttö etenee näin:</p>
+<h3>Miten vertailupalvelu toimii?</h3>
+<p>Käytännössä vertailupalvelun käyttö etenee näin:</p>
 <ol>
-  <li>Syötät vertailutyökaluun lainasumman, laina-ajan ja lainatyypin — ei henkilötietoja, ei tulotietoja.</li>
-  <li>Vertailutyökalu suodattaa lainakatalogimme ja näyttää sopivat tuotteet kymmeniltä lainanantajilta rinnakkain.</li>
-  <li>Vertailet tuloksia kokonaiskustannuksen, todellisen vuosikoron ja kuukausierän perusteella.</li>
-  <li>Klikkaat valitsemasi lainanantajan korttia ja siirryt suoraan kyseisen lainanantajan omille sivuille.</li>
-  <li>Täytät varsinaisen lainahakemuksen lainanantajan palvelussa — siellä, missä myös luottopäätös tehdään.</li>
+  <li>Täytät yhden hakemuksen, jossa kerrot lainasumman, laina-ajan ja perustietosi.</li>
+  <li>Vertailupalvelu välittää tietosi useille lainanantajille samanaikaisesti.</li>
+  <li>Saat tarjouksia useilta lainanantajilta — usein jo minuuteissa.</li>
+  <li>Vertailet tarjouksia rinnakkain ja valitset parhaan.</li>
+  <li>Hyväksyt tarjouksen suoraan lainanantajan palvelussa.</li>
 </ol>
-<p>Valitse Laina ei ole pankki, rahoituslaitos eikä lainanvälittäjä. Olemme riippumaton tietopalvelu, joka julkaisee vertailutietoa lainanantajien omista hinnoista. Saamme tuloja affiliate-yhteistyöstä lainanantajien kanssa silloin, kun käyttäjä klikkaa palvelustamme heidän sivuilleen ja päätyy hakemaan lainaa — käyttäjälle palvelumme on aina ilmainen, eikä hintaan ole vaikutusta sillä, kenen kautta olet siirtynyt lainanantajan sivuille.</p>
+<p>Vertailupalvelu on käyttäjälle maksuton. Hyvä vertailupalvelu näyttää kaikki lainat puolueettomasti todellisten kustannusten perusteella — kuten me Valitse Lainassa teemme.</p>
 
 <h2 id="yleiset-virheet">Yleisimmät virheet</h2>
 <p>Vältä nämä tyypilliset sudenkuopat lainan kilpailutuksessa:</p>

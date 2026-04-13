@@ -6,7 +6,7 @@ import HomeContent from './home-content';
 export const metadata: Metadata = {
   title: 'Valitse Laina — Vertaa lainoja rehellisesti | Löydä edullisin laina',
   description:
-    'Vertaa kulutusluottoja, asuntolainoja ja autolainoja. Näytämme kaikki lainat puolueettomasti todellisten vuosikorkojen perusteella. 28+ lainanantajaa.',
+    'Vertaa kulutusluottoja, asuntolainoja ja autolainoja puolueettomasti. Järjestys perustuu todelliseen vuosikorkoon ja ajantasaiseen dataan. Ilmainen ja riippumaton.',
   alternates: { canonical: 'https://valitselaina.fi' },
 };
 

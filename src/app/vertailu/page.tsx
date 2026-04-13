@@ -57,7 +57,7 @@ export default function VertailuPage() {
                 Vertaa tarjouksia
               </h3>
               <p className="text-sm text-gray-500">
-                Näe kaikkien lainanantajien kuukausierä, kokonaiskustannukset ja todellinen vuosikorko rinnakkain.
+                Näe lainanantajien kuukausierä, kokonaiskustannukset ja todellinen vuosikorko rinnakkain.
               </p>
             </div>
             <div>
@@ -90,7 +90,7 @@ export default function VertailuPage() {
               Onko vertailu luotettava?
             </h3>
             <p>
-              Kyllä. Näytämme kaikki lainat samassa vertailussa ja järjestys perustuu aina laskennalliseen edullisuuteen — kokonaiskustannus ratkaisee.
+              Kyllä. Järjestys perustuu aina laskennalliseen edullisuuteen — kokonaiskustannus ratkaisee, ja sama menetelmä koskee jokaista lainaa.
             </p>
           </div>
         </div>

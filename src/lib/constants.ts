@@ -16,7 +16,7 @@ export const MORTGAGE_INTEREST_DEDUCTION = 0; // Phased out completely by 2023
 // Site config
 export const SITE_NAME = 'Lainavertailu';
 export const SITE_URL = 'https://valitselaina.fi';
-export const SITE_DESCRIPTION = 'Luotettava lainavertailu. Vertaa lainoja puolueettomasti — näytämme kaikki lainat todellisten vuosikorkojen perusteella.';
+export const SITE_DESCRIPTION = 'Luotettava lainavertailu. Vertaa lainoja puolueettomasti — järjestys perustuu todelliseen vuosikorkoon ja ajantasaiseen dataan.';
 
 // Loan type labels (Finnish)
 export const LOAN_TYPE_LABELS: Record<string, string> = {

@@ -46,8 +46,8 @@ const jsonLd = {
 const values = [
   {
     icon: Eye,
-    title: 'Läpinäkyvyys',
-    desc: 'Kerromme avoimesti, miten ansaitsemme, miten vertailumme toimii ja mitä tietoja keräämme. Ei piiloagendaa.',
+    title: 'Puolueeton menetelmä',
+    desc: 'Vertailun järjestys perustuu aina todelliseen vuosikorkoon ja kokonaiskustannukseen. Sama menetelmä koskee jokaista lainaa.',
   },
   {
     icon: Users,
@@ -61,8 +61,8 @@ const values = [
   },
   {
     icon: Scale,
-    title: 'Läpinäkyvyys',
-    desc: 'Näytämme kaikki lainat kattavasti. Järjestys perustuu aina kokonaiskustannukseen.',
+    title: 'Riippumattomuus',
+    desc: 'Emme suosi mitään yksittäistä lainanantajaa. Objektiiviset kriteerit ratkaisevat järjestyksen.',
   },
   {
     icon: Lightbulb,
@@ -71,7 +71,7 @@ const values = [
   },
   {
     icon: ShieldCheck,
-    title: 'Luotettavuus',
+    title: 'Ajantasaisuus',
     desc: 'Tietomme tarkistetaan säännöllisesti. Jokaisen tuotteen kohdalla näkyy viimeisin päivitysajankohta.',
   },
 ];
@@ -113,10 +113,10 @@ export default function TietoaPage() {
           </div>
           <div className="bg-blue-50 rounded-xl p-6 border border-blue-100">
             <p className="text-lg text-gray-800 leading-relaxed">
-              Tehtävämme on tehdä lainojen vertailusta <strong>rehellistä, läpinäkyvää
-              ja ymmärrettävää</strong>. Suomalaiset ansaitsevat vertailupalvelun, joka
-              todella asettaa kuluttajan edun etusijalle — ei sellaisen, joka piilottaa
-              kalliita tuotteita tai järjestää niitä muulla kuin kustannusperusteella.
+              Tehtävämme on tehdä lainojen vertailusta <strong>rehellistä ja
+              ymmärrettävää</strong>. Autamme suomalaisia löytämään sopivimman lainan,
+              ja järjestämme tulokset aina kokonaiskustannuksen mukaan — objektiivisilla
+              kriteereillä, sama menetelmä jokaiselle lainalle.
             </p>
           </div>
         </section>
@@ -175,11 +175,10 @@ export default function TietoaPage() {
             <p>
               Keräämme lainanantajien tiedot suoraan heidän virallisista lähteistään
               ja tarkistamme ne säännöllisesti. Vertailualgoritmimme järjestää lainat
-              aina kokonaiskustannuksen mukaan.
+              aina kokonaiskustannuksen mukaan — sama menetelmä koskee jokaista lainaa.
             </p>
             <p>
-              Palvelumme on käyttäjälle maksuton. Saamme tuloja, kun käyttäjät
-              siirtyvät palvelumme kautta lainanantajien sivuille.
+              Palvelumme on käyttäjälle täysin ilmainen.
             </p>
             <Link
               href="/menetelma"
@@ -195,8 +194,7 @@ export default function TietoaPage() {
           <Mail className="w-8 h-8 text-[#1a365d] mx-auto mb-4" />
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Ota yhteyttä</h2>
           <p className="text-gray-600 mb-6 max-w-lg mx-auto">
-            Onko sinulla kysyttävää, palautetta tai yhteistyöehdotus?
-            Kuulemme mielellämme sinusta.
+            Onko sinulla kysyttävää tai palautetta? Kuulemme mielellämme sinusta.
           </p>
           <Link
             href="/yhteystiedot"

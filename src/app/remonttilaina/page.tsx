@@ -904,7 +904,7 @@ export default function RemonttilainaPage() {
           </h2>
           <p className="text-blue-100/80 mb-8 max-w-xl mx-auto">
             Vertaa kulutusluottoja, jotka sopivat remontin rahoittamiseen.
-            Kattava vertailu — näytämme kaikki lainat rehellisesti.
+            Kattava ja puolueeton vertailu.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

@@ -11,39 +11,39 @@ interface FAQItem {
 
 const FAQ_ITEMS: FAQItem[] = [
   {
-    question: 'Onko Valitse Lainan kaytto ilmaista?',
+    question: 'Onko Valitse Lainan käyttö ilmaista?',
     answer:
-      'Kylla, aina. Valitse Lainan kaytto on taysin ilmaista eika sido sinua mihinkaan. Voit vertailla lainoja niin paljon kuin haluat ilman kustannuksia.',
+      'Kyllä. Valitse Lainan käyttö on täysin ilmaista — ei maksuja, ei rekisteröitymistä, ei sitoumusta.',
   },
   {
-    question: 'Miten Valitse Laina ansaitsee rahaa?',
+    question: 'Miten vertailu toimii?',
     answer:
-      'Palvelu on kayttajalle taysin maksuton. Tulomme muodostuvat, kun kayttajat hakevat lainaa vertailumme kautta. Tama ei vaikuta siihen, mita lainoja naytamme tai miten ne jarjestetaan.',
+      'Vertailun järjestys perustuu objektiivisiin kriteereihin: todelliseen vuosikorkoon, kokonaiskustannukseen ja ajantasaiseen dataan. Sama menetelmä koskee jokaista lainaa. Lue lisää sivulta /menetelma.',
+  },
+  {
+    question: 'Oletteko puolueettomia?',
+    answer:
+      'Kyllä. Vertailun järjestys perustuu aina hintaan ja ominaisuuksiin, ja sama menetelmä koskee jokaista lainaa.',
   },
   {
     question: 'Vaikuttaako vertailu luottotietoihini?',
     answer:
-      'Ei. Lainojen vertailu Valitse Lainassa ei vaikuta luottotietoihisi millaan tavalla. Luottotietoja tarkistetaan vasta, kun haet lainaa suoraan lainanantajalta.',
-  },
-  {
-    question: 'Miksi naytatte nain laajan valikoiman lainoja?',
-    answer:
-      'Koska rehellinen vertailu vaatii sita. Naytamme kaikki markkinoiden lainatarjoukset, jotta loydat aidosti edullisimman vaihtoehdon.',
+      'Ei. Lainojen vertailu Valitse Lainassa ei vaikuta luottotietoihisi millään tavalla. Luottotietoja tarkistetaan vasta, kun haet lainaa suoraan lainanantajalta.',
   },
   {
     question: 'Miten todellinen vuosikorko lasketaan?',
     answer:
-      'Todellinen vuosikorko (TAV) on EU-lainsaadannon mukainen mittari, joka sisaltaa nimelliskoron lisaksi kaikki lainan pakolliset kulut: avausmaksun, kuukausimaksut ja muut kasittelykulut. Se ilmaistaan vuositasolla prosentteina.',
+      'Todellinen vuosikorko (TAV) on EU-lainsäädännön mukainen mittari, joka sisältää nimelliskoron lisäksi kaikki lainan pakolliset kulut: avausmaksun, kuukausimaksut ja muut käsittelykulut. Se ilmaistaan vuositasolla prosentteina.',
   },
   {
     question: 'Onko Valitse Laina lainanantaja?',
     answer:
-      'Ei. Valitse Laina on vertailupalvelu, emme lainanantaja. Emme myonna lainoja, emmeka tee luottopaatoksia. Ohjaamme sinut suoraan lainanantajan sivuille.',
+      'Ei. Valitse Laina on vertailupalvelu, emme lainanantaja. Emme myönnä lainoja, emmekä tee luottopäätöksiä. Ohjaamme sinut suoraan lainanantajan sivuille.',
   },
   {
-    question: 'Kuinka usein tiedot paivitetaan?',
+    question: 'Päivitetäänkö tiedot säännöllisesti?',
     answer:
-      'Paivitamme lainatiedot saannollisesti. Korot, ehdot ja tuotetiedot tarkistetaan vahintaan kuukausittain. Jokaisen tuotteen kohdalla nakyy viimeisin paivityspaivamaara.',
+      'Kyllä. Keräämme ja tarkistamme lainatiedot säännöllisesti, jotta näet aina ajantasaisen kuvan markkinasta. Jokaisen tuotteen kohdalla näkyy viimeisin päivityspäivämäärä.',
   },
 ];
 
