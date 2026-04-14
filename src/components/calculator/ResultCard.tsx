@@ -6,6 +6,7 @@ import {
   formatCurrency,
   formatPercentage,
   generateAmortizationSchedule,
+  getApplyUrl,
 } from '@/lib/utils';
 
 // Provider type labels (Finnish)
@@ -208,7 +209,7 @@ export default function ResultCard({
         {/* Action buttons */}
         <div className="flex items-center gap-3">
           <a
-            href={provider.website}
+            href={getApplyUrl(provider, product.type)}
             target="_blank"
             rel="noopener noreferrer nofollow"
             className="inline-flex items-center gap-2 rounded-lg bg-[#1a365d] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#2a4a7f] transition-colors"

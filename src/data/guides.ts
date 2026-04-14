@@ -27,9 +27,8 @@ export const guides: Guide[] = [
     content: `
 <h2 id="mika-on-laina">Mikä on laina?</h2>
 <p>Laina on rahoitussopimus, jossa lainanantaja — tyypillisesti pankki tai muu rahoituslaitos — antaa lainanottajalle sovitun rahasumman käyttöön. Lainanottaja sitoutuu maksamaan rahan takaisin sovitussa aikataulussa korkoineen ja kuluineen.</p>
-<p>Lainaaminen on yksi talouden perustyökaluista. Ilman lainoja suurin osa suomalaisista ei voisi koskaan ostaa asuntoa, ja monet yritykset eivät voisi kasvaa. Lainaaminen ei siis ole lähtökohtaisesti hyvä tai huono asia — se on työkalu, jonka hyödyllisyys riippuu siitä, miten sitä käytetään.</p>
-<p>Suomessa lainamarkkinat ovat monipuoliset. Perinteisten pankkien (OP, Nordea, Danske Bank, S-Pankki jne.) rinnalla toimii kymmeniä fintech-yrityksiä ja verkkolainanantajia. Kilpailu on kuluttajan etu — se pitää korot ja kulut kurissa ja pakottaa lainanantajat kehittämään palveluitaan.</p>
-<p>Lainasopimus on juridisesti sitova asiakirja, jossa määritellään vähintään seuraavat asiat:</p>
+<p>Suomessa lainamarkkinoilla toimivat perinteisten pankkien (OP, Nordea, Danske Bank, S-Pankki, Säästöpankit jne.) rinnalla kymmenet rahoitusyhtiöt ja verkkolainanantajat. Kilpailu pitää korot ja kulut kurissa, kun vertailet tarjouksia useammasta paikasta.</p>
+<p>Lainasopimuksessa määritellään vähintään:</p>
 <ul>
   <li><strong>Lainasumma</strong> — kuinka paljon rahaa lainataan</li>
   <li><strong>Laina-aika</strong> — millä aikataululla laina maksetaan takaisin</li>
@@ -43,23 +42,22 @@ export const guides: Guide[] = [
 <p>Suomessa on tarjolla useita eri lainatyyppejä eri käyttötarkoituksiin. Oikean lainatyypin valinta vaikuttaa merkittävästi lainan hintaan ja ehtoihin.</p>
 
 <h3>Kulutusluotto</h3>
-<p>Kulutusluotto on yleisin vakuudeton lainamuoto. Sitä voi käyttää mihin tahansa tarkoitukseen — remontista elektroniikkaan tai matkoihin. Lainasummat vaihtelevat tyypillisesti 500 eurosta 60 000 euroon, ja laina-aika on 1–15 vuotta. Koska vakuutta ei vaadita, korko on yleensä korkeampi kuin vakuudellisissa lainoissa.</p>
-<p>Kulutusluotto on oikea valinta, kun tarvitset rahoitusta suurempaan hankintaan eikä sinulla ole riittävästi säästöjä. Tyypillisiä käyttökohteita ovat kodinremontti, häät, suuri kodinkone tai lääkärikulut. Kulutusluoton korko vaihtelee paljon hakijasta riippuen — parhaimmillaan alle 5 %, mutta enimmillään lähelle 20 %:n korkokattoa.</p>
+<p>Kulutusluotto on yleisin vakuudeton lainamuoto. Lainasummat vaihtelevat tyypillisesti 500 eurosta 60 000 euroon ja laina-aika 1–15 vuotta. Koska vakuutta ei vaadita, korko on korkeampi kuin vakuudellisissa lainoissa. Tyypillisiä käyttökohteitä ovat kodinremontti, auto, kodinkoneet tai lääkärikulut. Kulutusluottojen nimelliskorot vaihtelevat hakijasta riippuen noin 5 prosentista lähelle lain sallimaa enimmäiskorkoa (viitekorko + 15 prosenttiyksikköä, enintään 20 %).</p>
 
 <h3>Asuntolaina</h3>
-<p>Asuntolaina on vakuudellinen laina, jonka vakuutena toimii ostettava asunto. Asuntolainojen korot ovat selvästi kulutusluottoja matalampia, koska pankilla on vakuus. Laina-ajat ovat pitkiä, tyypillisesti 20–30 vuotta. Suomessa asuntolainoissa vaaditaan yleensä vähintään 5–15 % omaa rahoitusta.</p>
-<p>Asuntolaina on useimpien suomalaisten elämän suurin yksittäinen luottosopimus. Sen vuoksi asuntolainan ehtoihin — erityisesti korkoon, marginaaliin ja takaisinmaksutapaan — kannattaa kiinnittää erityistä huomiota. Pienikin ero marginaalissa voi tarkoittaa tuhansien eurojen eroa lainan kokonaiskustannuksessa 25 vuoden aikana. Lue lisää <a href="/oppaat/asuntolaina-ensiostajalle">asuntolainaoppaastamme</a>.</p>
+<p>Asuntolaina on vakuudellinen laina, jonka vakuutena toimii ostettava asunto. Asuntolainojen korot ovat selvästi kulutusluottoja matalampia, koska pankilla on vakuus. Laina-ajat ovat pitkiä, tyypillisesti 20–30 vuotta. Finanssivalvonnan lainakaton mukaan asuntolainan enimmäismäärä on 90 % asunnon käyvästä arvosta — ensiasunnon ostajille 95 %.</p>
+<p>Pienikin ero marginaalissa tarkoittaa tuhansien eurojen eroa lainan kokonaiskustannuksessa 25 vuoden aikana, joten asuntolainan kilpailutus on erityisen arvokasta. Lue lisää <a href="/oppaat/asuntolaina-ensiostajalle">asuntolainaoppaastamme</a>.</p>
 
 <h3>Autolaina</h3>
-<p>Autolaina on tarkoitettu auton ostoon. Se voi olla joko vakuudellinen (auto vakuutena) tai vakuudeton. Vakuudellisen autolainan korko on yleensä edullisempi. Laina-ajat ovat tyypillisesti 1–8 vuotta.</p>
-<p>Autolainan valinnassa kannattaa kiinnittää huomiota lainan ja auton arvon suhteeseen. Uusi auto menettää arvoaan nopeasti — jopa 20–30 % ensimmäisenä vuonna. Jos laina on pitkä ja auto menettää arvoaan nopeammin kuin lainaa lyhennetään, voit päätyä tilanteeseen, jossa olet velkaa enemmän kuin auto on arvoinen.</p>
+<p>Autolaina on tarkoitettu auton ostoon. Se voi olla vakuudellinen (auto vakuutena) tai vakuudeton — vakuudellisen autolainan korko on yleensä edullisempi. Laina-ajat ovat tyypillisesti 1–8 vuotta.</p>
+<p>Uusi auto menettää arvoaan nopeasti, jopa 20–30 % ensimmäisenä vuonna. Jos laina on pitkä ja auto menettää arvoaan nopeammin kuin lainaa lyhennetään, voit päätyä tilanteeseen, jossa olet velkaa enemmän kuin auto on arvoinen. Valitse siksi kohtuullinen laina-aika suhteessa auton elinkaareen.</p>
 
 <h3>Yhdistelylaina</h3>
 <p>Yhdistelylainalla voi koota useamman pienen lainan yhdeksi isommaksi lainaksi. Tämä voi alentaa kokonaiskorkoa ja yksinkertaistaa velanhoitoa, kun erilliset kuukausierät yhdistyvät yhdeksi. Yhdistely kannattaa erityisesti silloin, kun yksittäisten lainojen korot ovat korkeita (esim. luottokorttien 15–20 % korot) ja yhdistelylainan korko olisi merkittävästi matalampi. Yhdistelylainasta kerromme lisää <a href="/oppaat/velkojen-yhdistely">erillisessä oppaassamme</a>.</p>
 
 <h3>Pikavippi</h3>
-<p>Pikavippi on pieni ja lyhytaikainen laina, tyypillisesti 100–2 000 euroa, joka maksetaan takaisin muutamassa kuukaudessa. <strong>Pikavippien todelliset vuosikorot ovat erittäin korkeita</strong> — usein lähellä lain sallimaa 20 %:n ylärajaa. Pikavippejä kannattaa välttää aina kun mahdollista.</p>
-<p>Jos tarvitset pienen summan nopeasti, selvitä ensin muut vaihtoehdot: luottokortin käyttö, tilapäinen luottolimiitti pankista tai lainatarpeen siirtäminen. Pikavipistä voi helposti syntyä velkakierre, kun alkuperäinen pieni summa paisuu korkokulujen myötä.</p>
+<p>Pikavippi on pieni, tyypillisesti alle 2 000 euron lyhytaikainen vakuudeton laina. Pikavipit kuuluvat saman korkokattosääntelyn piiriin kuin muutkin kuluttajaluotot — nimelliskorko ei saa ylittää viitekorkoa + 15 prosenttiyksikköä (enintään 20 %), ja muut kulut ovat enintään 0,01 % lainasummasta päivässä, kuitenkin enintään 150 € vuodessa. Pienten lainasummien kohdalla todellinen vuosikorko jää silti usein korkeaksi, koska kiinteät kulut painavat suhteellisesti paljon.</p>
+<p>Jos tarvitset pienen summan nopeasti, selvitä ensin muut vaihtoehdot: luottokortti, tilapäinen luottolimiitti pankista tai hankinnan siirtäminen. Pikavipistä voi syntyä velkakierre, kun pieni summa kasvaa korkokulujen myötä.</p>
 
 <h3>Yrityslaina</h3>
 <p>Yrityslaina on tarkoitettu yritystoiminnan rahoittamiseen. Yrityslainoihin liittyy usein erilaisia vakuus- ja takaajavaatimuksia. Ne eivät kuulu kuluttajansuojalain piiriin samalla tavalla kuin henkilökohtaiset lainat.</p>
@@ -82,11 +80,11 @@ export const guides: Guide[] = [
 <h2 id="kulut-ja-maksut">Lainan kulut ja maksut</h2>
 <p>Lainan kokonaiskustannus koostuu koron lisäksi useista eri maksuista. Näitä ovat tyypillisesti:</p>
 <ul>
-  <li><strong>Avausmaksu / toimitusmaksu</strong> — kertaluonteinen maksu lainan nostamisen yhteydessä. Voi olla kiinteä summa (esim. 0–199 €) tai prosentti lainasummasta.</li>
-  <li><strong>Kuukausimaksu / tilinhoitomaksu</strong> — joka kuukausi perittävä kiinteä maksu, tyypillisesti 3–9 €/kk.</li>
+  <li><strong>Avausmaksu / toimitusmaksu</strong> — kertaluonteinen maksu lainan nostamisen yhteydessä. Voi olla kiinteä summa tai prosentti lainasummasta.</li>
+  <li><strong>Kuukausimaksu / tilinhoitomaksu</strong> — kuukausittain perittävä kiinteä maksu. Kaikki muut kulut yhteensä saavat olla enintään 0,01 % lainasummasta päivässä, enimmillään 150 € vuodessa.</li>
   <li><strong>Korko</strong> — lasketaan jäljellä olevasta lainapääomasta.</li>
-  <li><strong>Ennenaikaisen takaisinmaksun kulu</strong> — jos maksat lainan ennen sovittua eräpäivää, lainanantaja voi periä korvauksen. Kuluttajansuojalaki rajoittaa tämän enintään 1 %:iin jäljellä olevasta pääomasta.</li>
-  <li><strong>Myöhästymiskorko</strong> — viivästyskorko eräpäivän jälkeen. Lain mukaan enintään viitekorko + 7 prosenttiyksikköä.</li>
+  <li><strong>Ennenaikaisen takaisinmaksun kulu</strong> — kiinteäkorkoisessa kuluttajaluotossa lainanantaja voi periä korvauksen: enintään 1 % takaisinmaksetusta määrästä (0,5 %, jos päättymiseen on alle vuosi). Viitekorkoon sidotusta lainasta ei saa periä korvausta lainkaan.</li>
+  <li><strong>Viivästyskorko</strong> — eräpäivän jälkeen. Enintään Suomen Pankin puolivuosittain vahvistama viitekorko + 7 prosenttiyksikköä.</li>
 </ul>
 <p><strong>Vinkki:</strong> Kiinnitä huomiota erityisesti kuukausimaksuihin. Pieni kuukausimaksu voi pitkän laina-ajan aikana nostaa lainan kokonaiskustannusta merkittävästi. Esimerkiksi 6 euron kuukausimaksu 10 vuoden lainassa tarkoittaa yhteensä 720 euroa pelkkiä tilinhoitokuluja.</p>
 
@@ -155,11 +153,11 @@ export const guides: Guide[] = [
 <p><strong>Huomio:</strong> Kokonaiskorkokustannus on korkein kaikista tavoista, koska pääoma ei pienene lainkaan laina-aikana.</p>
 
 <h2 id="milloin-lainaaminen-kannattaa">Milloin lainaaminen kannattaa?</h2>
-<p>Lainaaminen voi olla järkevä ratkaisu monissa tilanteissa:</p>
+<p>Lainaaminen voi olla järkevää näissä tilanteissa:</p>
 <ul>
-  <li><strong>Asunnon hankinta</strong> — Asunto on suuri investointi, ja asuntolaina on useimmille ainoa tapa rahoittaa asunnon osto. Asuntojen arvo on historiallisesti noussut pitkällä aikavälillä.</li>
-  <li><strong>Arvoa tuottavat investoinnit</strong> — Esimerkiksi kodin energiaremontti, joka alentaa asumiskustannuksia pitkällä aikavälillä.</li>
-  <li><strong>Koulutus</strong> — Opintolaina on edullinen tapa rahoittaa koulutusta, joka parantaa ansaintakykyäsi.</li>
+  <li><strong>Asunnon hankinta</strong> — Asuntolaina on useimmille ainoa tapa rahoittaa oman asunnon osto.</li>
+  <li><strong>Arvoa tuottavat investoinnit</strong> — Kodin energiaremontti, joka alentaa asumiskustannuksia pitkällä aikavälillä.</li>
+  <li><strong>Koulutus</strong> — Valtiontakuun kautta myönnettävä opintolaina on edullinen tapa rahoittaa opiskelua.</li>
   <li><strong>Velkojen yhdistely</strong> — Jos sinulla on useita kalliita pienlainoja, yhdistelylainalla voit alentaa kokonaiskorkoa.</li>
   <li><strong>Välttämättömät hankinnat</strong> — Esimerkiksi auto työssäkäyntiin alueella, jossa julkinen liikenne ei toimi.</li>
 </ul>
@@ -210,12 +208,11 @@ export const guides: Guide[] = [
     relatedGuides: ['lainaamisen-perusteet', 'lainan-kilpailutus', 'kuluttajan-oikeudet'],
     content: `
 <h2 id="mita-todellinen-vuosikorko-tarkoittaa">Mitä todellinen vuosikorko tarkoittaa?</h2>
-<p>Todellinen vuosikorko on luku, joka kertoo lainan <strong>kokonaiskustannuksen vuositasolla prosentteina</strong>. Toisin kuin nimelliskorko, todellinen vuosikorko sisältää koron lisäksi kaikki lainan pakolliset kulut: avausmaksun, kuukausimaksut, tilinhoitopalkkiot ja muut lainanantajan perimät maksut.</p>
-<p>Todellinen vuosikorko on suunniteltu yhdeksi ainoaksi luvuksi, jolla kuluttaja voi vertailla eri lainojen hintaa keskenään — riippumatta siitä, miten lainanantaja on hinnoittelunsa rakenteuttanut. Se on siis <strong>lainojen vertailun tärkein työkalu</strong>.</p>
-<p>Suomessa todellista vuosikorkoa kutsutaan joskus myös efektiiviseksi vuosikoroksi. Englanninkielinen vastine on <em>Annual Percentage Rate (APR)</em>.</p>
+<p>Todellinen vuosikorko kertoo lainan <strong>kokonaiskustannuksen vuositasolla prosentteina</strong>. Toisin kuin nimelliskorko, se sisältää koron lisäksi kaikki lainan pakolliset kulut: avausmaksun, kuukausimaksut, tilinhoitopalkkiot ja muut lainanantajan perimät maksut.</p>
+<p>Todellisen vuosikoron avulla voit vertailla eri lainojen hintaa keskenään riippumatta siitä, miten lainanantaja on hinnoittelunsa rakentanut. Englanninkielinen vastine on <em>Annual Percentage Rate (APR)</em>.</p>
 
 <h3>Miksi todellinen vuosikorko kehitettiin?</h3>
-<p>Ennen todellisen vuosikoron käyttöönottoa lainanantajat saattoivat mainostaa matalaa nimelliskorkoa, mutta piilottaa todelliset kustannukset erilaisiin maksuihin ja palkkioihin. Kuluttajan oli käytännössä mahdotonta vertailla lainoja keskenään, koska kulurakenteet vaihtelivat merkittävästi. Todellinen vuosikorko ratkaisi tämän ongelman: se pakkaa kaikki kustannukset yhteen vertailukelpoiseen lukuun.</p>
+<p>Ennen todellisen vuosikoron käyttöönottoa lainanantajat saattoivat mainostaa matalaa nimelliskorkoa ja piilottaa todelliset kustannukset erilaisiin maksuihin. Todellinen vuosikorko pakkaa kaikki pakolliset kustannukset yhteen vertailukelpoiseen lukuun.</p>
 
 <h2 id="nimelliskorko-vs-todellinen">Nimelliskorko vs. todellinen vuosikorko</h2>
 <p>Monet lainanhakijat sekoittavat nimelliskoron ja todellisen vuosikoron. Ero on kuitenkin merkittävä:</p>
@@ -364,19 +361,17 @@ export const guides: Guide[] = [
   <li>Todellisen vuosikoron lisäksi huomioi lainan joustavuus ja muut ehdot.</li>
 </ul>
 <h3>Todellinen vuosikorko eri lainatyypeissä</h3>
-<p>Todellisen vuosikoron taso vaihtelee merkittävästi eri lainatyypeissä:</p>
+<p>Todellisen vuosikoron taso vaihtelee lainatyypin ja markkinatilanteen mukaan. Suuntaa-antavat vaihteluvälit:</p>
 <ul>
-  <li><strong>Asuntolainat:</strong> Tyypillisesti 2–5 %. Matalimmat korot, koska asunto toimii vakuutena.</li>
-  <li><strong>Autolainat:</strong> Tyypillisesti 3–8 %. Kohtuulliset korot, erityisesti vakuudellisissa.</li>
-  <li><strong>Kulutusluotot:</strong> Tyypillisesti 5–15 %. Laaja hajonta hakijan luottoprofiilin mukaan.</li>
-  <li><strong>Luottokortit:</strong> Tyypillisesti 14–20 %. Korkeat korot, jos velkaa ei makseta kokonaan pois kuukausittain.</li>
-  <li><strong>Pikavipit:</strong> Tyypillisesti 15–20 %. Lähellä lain sallimaa ylärajaa.</li>
+  <li><strong>Asuntolainat:</strong> noin 3–6 % (euribor + marginaali). Matalimmat korot, koska asunto toimii vakuutena.</li>
+  <li><strong>Autolainat:</strong> noin 4–10 %. Vakuudellisissa korko on edullisempi.</li>
+  <li><strong>Kulutusluotot:</strong> noin 6–20 %. Suurin hajonta hakijan luottoprofiilin mukaan.</li>
+  <li><strong>Luottokortit ja joustoluotot:</strong> nimelliskorko usein lähellä lain sallimaa ylärajaa (viitekorko + 15 prosenttiyksikköä, enimmillään 20 %).</li>
+  <li><strong>Pikavipit:</strong> pienissä summissa todellinen vuosikorko voi nousta korkeaksi, koska kiinteät kulut painavat suhteellisesti paljon.</li>
 </ul>
-<p>Nämä luvut ovat suuntaa-antavia ja vaihtelevat markkinatilanteen ja hakijan tilanteen mukaan. Ainoa tapa tietää oma korkosi on pyytää tarjous.</p>
+<p>Kulutusluottojen <strong>nimelliskorolle</strong> on Suomessa lainsäädännöllinen katto (viitekorko + 15 prosenttiyksikköä, enintään 20 %), mutta <em>todellinen vuosikorko</em> voi silti nousta tätä korkeammaksi, jos kulut kasvattavat kokonaiskustannusta. Ainoa tapa tietää oma korkosi on pyytää tarjous.</p>
 
-<p>Todellinen vuosikorko ei ole täydellinen mittari — mikään yksittäinen luku ei voi kertoa kaikkea. Mutta se on <strong>ylivoimaisesti paras yksittäinen työkalu</strong>, joka sinulla on lainojen vertailussa. Opi lukemaan sitä, ja teet parempia taloudellisia päätöksiä.</p>
-
-<p><a href="/vertailu">Vertaa lainoja todellisen vuosikoron perusteella</a> — se on paras tapa löytää edullisin laina juuri sinun tarpeisiisi.</p>
+<p>Todellinen vuosikorko on paras yksittäinen työkalu lainojen vertailuun. <a href="/vertailu">Vertaa lainoja todellisen vuosikoron perusteella</a>.</p>
 `,
   },
 
@@ -403,22 +398,20 @@ export const guides: Guide[] = [
     relatedGuides: ['lainaamisen-perusteet', 'lainan-kilpailutus', 'velan-hallinta'],
     content: `
 <h2 id="mita-luottotiedot-ovat">Mitä luottotiedot ovat?</h2>
-<p>Luottotiedot ovat rekisteriin tallennettuja tietoja henkilön maksukäyttäytymisestä ja taloudellisesta asemasta. Ne kertovat lainanantajalle, kuinka luotettava lainanottaja olet — miten olet hoitanut aiemmat velvoitteesi ja millainen taloudellinen tilanteesi on.</p>
-<p>Suomessa luottotietojärjestelmä on perinteisesti ollut ns. <strong>negatiivinen järjestelmä</strong>: rekisteriin on tallennettu vain tietoja maksujen laiminlyönneistä (maksuhäiriömerkinnät). Tämä on kuitenkin muuttunut: huhtikuussa 2024 käyttöön otettu <strong>positiivinen luottorekisteri</strong> tuo järjestelmään myös tiedot henkilön tuloista ja olemassa olevista lainoista.</p>
-
-<p>Luottotiedot koskettavat jokaista suomalaista. Ne vaikuttavat lainan saamiseen, asunnon vuokraamiseen ja jopa joissakin tapauksissa työllistymiseen. Siksi on tärkeää ymmärtää, mitä luottotiedot sisältävät, miten ne toimivat ja miten omiin tietoihin voi vaikuttaa.</p>
+<p>Luottotiedot ovat rekisteriin tallennettuja tietoja henkilön maksukäyttäytymisestä ja taloudellisesta asemasta. Ne kertovat lainanantajalle, miten olet hoitanut aiemmat velvoitteesi ja millainen taloudellinen tilanteesi on.</p>
+<p>Suomen luottotietojärjestelmä oli pitkään <strong>negatiivinen</strong>: rekisteriin tallennettiin vain tiedot maksujen laiminlyönneistä (maksuhäiriömerkinnät). <strong>1. huhtikuuta 2024 käyttöön otettu positiivinen luottotietorekisteri</strong> toi järjestelmään myös tiedot olemassa olevista luotoista ja tuloista. Rekisteriä ylläpitää Verohallinnon Tulorekisteriyksikkö.</p>
 
 <h2 id="luottotietorekisterit">Luottotietorekisterit Suomessa</h2>
-<p>Suomessa luottotietoja ylläpitävät pääasiassa kaksi yksityistä yritystä ja yksi viranomainen:</p>
+<p>Suomessa toimii rinnakkain kaksi yksityistä luottotietotoimittajaa sekä valtion ylläpitämä positiivinen luottotietorekisteri:</p>
 
-<h3>Suomen Asiakastieto Oy</h3>
-<p>Suomen Asiakastieto on vanhin ja laajimmin käytetty luottotietorekisteri Suomessa. Se ylläpitää sekä henkilö- että yritysluottotietoja. Suurin osa lainanantajista tarkistaa hakijan luottotiedot Asiakastieton rekisteristä. Asiakastieto on osa Enento Group -konsernia ja käsittelee vuosittain miljoonia luottotietokyselyjä.</p>
+<h3>Suomen Asiakastieto (Enento Group)</h3>
+<p>Suomen Asiakastieto on suurin luottotietotoimittaja Suomessa. Se ylläpitää sekä henkilö- että yritysluottotietoja, ja suurin osa lainanantajista hakee maksuhäiriötiedot juuri Asiakastiedon rekisteristä. Yhtiö on osa pörssilistattua Enento Groupia.</p>
 
-<h3>Bisnode Finland Oy (Dun & Bradstreet)</h3>
-<p>Bisnode on toinen merkittävä luottotietoyritys Suomessa. Se ylläpitää omaa rekisteriään, jossa on pitkälti samat tiedot kuin Asiakastieton rekisterissä, mutta joitain eroja voi olla. Joissakin tapauksissa maksuhäiriömerkintä voi näkyä toisessa rekisterissä mutta ei toisessa — tämän vuoksi on hyvä tarkistaa molemmat.</p>
+<h3>Dun &amp; Bradstreet Finland (ent. Bisnode)</h3>
+<p>Toinen merkittävä toimija on Dun &amp; Bradstreet Finland, joka tunnettiin aiemmin nimellä Bisnode Finland. Yhtiö ylläpitää omaa rekisteriään, jossa on pääosin samat tiedot kuin Asiakastiedolla. Koska toimittajat keräävät osan tiedoista eri lähteistä, merkintä voi joissakin tapauksissa näkyä vain toisessa rekisterissä — siksi molempien tarkistus on perusteltua.</p>
 
-<h3>Tulorekisteri ja positiivinen luottorekisteri</h3>
-<p>Vuodesta 2024 lähtien Verohallinnon ylläpitämä <strong>Tulorekisteri</strong> toimii positiivisen luottorekisterin pohjana. Tulorekisteriin raportoidaan reaaliaikaisesti tietoja maksetuista palkoista ja etuuksista. Tähän palataan tarkemmin alla.</p>
+<h3>Positiivinen luottotietorekisteri</h3>
+<p>Verohallinnon Tulorekisteriyksikön ylläpitämä positiivinen luottotietorekisteri on toiminut 1.4.2024 alkaen. Se yhdistää tiedot kuluttajan olemassa olevista luotoista sekä tulorekisteristä saatavat palkka- ja etuustiedot. Omat tiedot voi tarkistaa osoitteessa luottotietorekisteri.fi.</p>
 
 <h2 id="maksuhairiomerkinnat">Maksuhäiriömerkinnät</h2>
 <p>Maksuhäiriömerkintä on tieto siitä, että henkilö on jättänyt maksamatta erääntyneen velan, ja asiasta on tehty oikeudellinen ratkaisu tai se on muuten vahvistettu. Maksuhäiriömerkintä on <strong>vakavin yksittäinen tekijä, joka vaikuttaa lainan saamiseen</strong>.</p>
@@ -436,13 +429,14 @@ export const guides: Guide[] = [
 <p>Merkintä voi syntyä myös ilman oikeudenkäyntiä, esimerkiksi ulosottomerkinnän kautta.</p>
 
 <h3>Miten pitkään merkintä näkyy?</h3>
-<p>Maksuhäiriömerkinnän säilytysajat vaihtelevat merkinnän tyypin mukaan:</p>
+<p>Joulukuussa 2022 voimaan tulleen luottotietolain muutoksen jälkeen maksuhäiriömerkintä <strong>poistuu pääsääntöisesti kuukauden kuluessa siitä, kun velka on maksettu</strong> ja luottotietoyhtiö on saanut tiedon maksusta. Uudet maksuhäiriömerkinnät eivät myöskään enää pidennä aiempien merkintöjen säilytysaikaa.</p>
+<p>Säilytysaikojen pääsäännöt hoitamattomille veloille:</p>
 <ul>
-  <li><strong>Yksipuolinen tuomio</strong> (tyypit 3–4): tallessa 3 vuotta, mutta lyhenee 2 vuoteen, jos velan maksaa</li>
-  <li><strong>Ulosottomerkintä</strong>: tallessa 3 vuotta, lyhenee 2 vuoteen, jos velan maksaa</li>
-  <li><strong>Velkajärjestelymerkintä</strong>: koko maksuohjelman ajan</li>
+  <li><strong>Yksipuolinen tuomio tai tuomioistuimen vahvistama maksuhäiriö:</strong> enintään 3 vuotta</li>
+  <li><strong>Ulosottomerkintä (suppea ulosotto, varattomuusestämä):</strong> enintään 3 vuotta</li>
+  <li><strong>Velkajärjestelymerkintä:</strong> maksuohjelman ajan</li>
 </ul>
-<p>Tärkeää: <strong>velan maksaminen ei poista merkintää välittömästi</strong>, mutta se lyhentää säilytysaikaa ja parantaa luottokelpoisuuttasi lainanantajien silmissä.</p>
+<p>Velan maksaminen ei välttämättä poista merkintää välittömästi, mutta se käynnistää poistumisaikataulun. Paras tapa välttää merkintöjä on hoitaa laskut ajallaan.</p>
 
 <h3>Kuinka yleisiä maksuhäiriömerkinnät ovat?</h3>
 <p>Suomessa on noin 400 000 henkilöä, joilla on voimassa oleva maksuhäiriömerkintä. Tämä on noin 7 % aikuisväestöstä. Eniten merkintöjä on 25–44-vuotiailla miehillä. Yleisimmät syyt ovat maksamattomat laskut, pikavippivelat ja perintään edenneet kuluttajaluotot. On tärkeää ymmärtää, että merkintä voi syntyä yllättävän pienestäkin summasta — jopa muutaman kymmenen euron maksamaton lasku voi johtaa merkintään, jos se etenee oikeuteen asti.</p>
@@ -514,12 +508,12 @@ export const guides: Guide[] = [
 
 <h3>Maksuhäiriömerkinnät</h3>
 <ul>
-  <li><strong>Suomen Asiakastieto:</strong> Oma luottotieto -raportin voi tilata osoitteesta omatieto.fi. Kerran vuodessa tarkistus on maksuton.</li>
-  <li><strong>Bisnode:</strong> Oman luottotietoraportin voi tilata Bisnoden verkkopalvelusta.</li>
+  <li><strong>Suomen Asiakastieto:</strong> Oma luottotieto -raportin voi tilata osoitteesta omatieto.fi. Henkilöllä on EU:n tietosuoja-asetuksen nojalla oikeus tarkastaa omat tietonsa maksutta.</li>
+  <li><strong>Dun &amp; Bradstreet Finland:</strong> Omat tiedot voi tilata osoitteesta my.bisnode.fi.</li>
 </ul>
 
-<h3>Positiivinen luottorekisteri</h3>
-<p>Omat tiedot positiivisesta luottorekisteristä voi tarkistaa <strong>Tulorekisterin sähköisessä asiointipalvelussa</strong> osoitteessa tulorekisteri.fi. Kirjautuminen tapahtuu pankkitunnuksilla, mobiilivarmenteella tai henkilökortilla.</p>
+<h3>Positiivinen luottotietorekisteri</h3>
+<p>Omat tiedot positiivisesta luottotietorekisteristä voi tarkistaa Tulorekisteriyksikön sähköisessä asiointipalvelussa osoitteessa <strong>luottotietorekisteri.fi</strong>. Kirjautuminen tapahtuu pankkitunnuksilla tai mobiilivarmenteella. Otteen voi tilata maksutta.</p>
 <p>Tarkista erityisesti:</p>
 <ul>
   <li>Ovatko kaikki luottotiedot oikein (lainasummat, luottorajat)?</li>
@@ -565,10 +559,10 @@ export const guides: Guide[] = [
 <h3>Yleisimmät kysymykset luottotiedoista</h3>
 <p><strong>Vaikuttaako pelkkä lainahakemus luottotietoihini?</strong> Lainahakemuksen jättäminen ei itsessään aiheuta maksuhäiriömerkintää. Lainanantaja tekee luottotietojen tarkistuksen, joka voi näkyä rekisterissä, mutta se ei heikennä luottokelpoisuuttasi. Useita hakemuksia lyhyen ajan sisällä voi kuitenkin herättää lainanantajan huomiota.</p>
 <p><strong>Voiko puolison maksuhäiriömerkintä vaikuttaa omaan lainaan?</strong> Ei suoraan. Lainapäätös tehdään yksilökohtaisesti. Jos kuitenkin haette yhteistä lainaa, molempien luottotiedot tarkistetaan.</p>
-<p><strong>Miten kauan maksuhäiriömerkinnän jälkeen saa lainaa?</strong> Pääsääntöisesti lainaa on vaikea saada niin kauan kuin merkintä on voimassa (2–3 vuotta). Jotkin erikoistuneet lainanantajat voivat myöntää lainaa merkinnästä huolimatta, mutta korko on silloin erittäin korkea. Paras strategia on odottaa merkinnän vanhenemista ja keskittyä talouden kuntoon saattamiseen.</p>
-<p><strong>Voiko virheellisen luottotietomerkinnän poistaa?</strong> Kyllä. Jos rekisterissä on virheellinen merkintä, ota yhteyttä luottotietoyritykseen (Asiakastieto tai Bisnode) ja pyydä oikaisua. Luottotietolaki velvoittaa korjaamaan virheelliset tiedot.</p>
+<p><strong>Miten kauan maksuhäiriömerkinnän jälkeen saa lainaa?</strong> Kuluttajalainaa on lähtökohtaisesti vaikea saada merkinnän voimassaoloaikana. Vuoden 2022 lakiuudistuksen jälkeen merkintä poistuu kuitenkin noin kuukauden kuluessa velan maksamisesta, joten velan maksaminen on tehokkain tapa palauttaa luottokelpoisuus. Jotkin erikoistuneet toimijat myöntävät lainaa merkinnästä huolimatta, mutta korot ovat silloin korkeita.</p>
+<p><strong>Voiko virheellisen luottotietomerkinnän poistaa?</strong> Kyllä. Ota yhteyttä luottotietoyritykseen (Asiakastieto tai Dun &amp; Bradstreet) ja pyydä oikaisua. Luottotietolaki velvoittaa korjaamaan virheelliset tiedot ilman aiheetonta viivytystä.</p>
 
-<p><strong>Näkyvätkö kaikki lainani positiivisessa luottorekisterissä?</strong> Kyllä — lähes kaikki. Positiivinen luottorekisteri sisältää tiedot kaikista Suomessa myönnetyistä kuluttajaluotoista, asuntolainoista, opintolainoista, luottokorteista ja osamaksusopimuksista. Ainoastaan hyvin pienet luotot (alle 200 €) ja yrityslainat eivät näy rekisterissä. Jos sinulla on lainoja ulkomaisista pankeista, ne eivät yleensä näy suomalaisessa rekisterissä.</p>
+<p><strong>Näkyvätkö kaikki lainani positiivisessa luottotietorekisterissä?</strong> Rekisteri sisältää tiedot Suomessa myönnetyistä kuluttajaluotoista — kulutusluotoista, asuntolainoista, opintolainoista, luottokorteista, joustoluotoista ja osamaksusopimuksista. Yrityslainat ja ulkomaisista pankeista otetut luotot eivät näy rekisterissä.</p>
 
 <p><strong>Voiko luottotietoja parantaa nopeasti?</strong> Luottotietojen parantaminen on enemmän maraton kuin sprintti. Nopeimmat vaikutukset saat maksamalla erääntyneet laskut ja pienentämällä luottokorttien saldoa. Pidemmällä aikavälillä johdonmukainen maksuhistoria on parasta, mitä voit tehdä. Mitään "pikakeinoa" ei valitettavasti ole.</p>
 
@@ -598,9 +592,8 @@ export const guides: Guide[] = [
     relatedGuides: ['todellinen-vuosikorko', 'lainaamisen-perusteet', 'velkojen-yhdistely'],
     content: `
 <h2 id="miksi-kilpailuttaa">Miksi laina kannattaa kilpailuttaa?</h2>
-<p>Lainan kilpailutus on yksinkertaisin tapa säästää rahaa lainakustannuksissa. Silti yllättävän moni suomalainen hyväksyy ensimmäisen tarjouksen, jonka saa — usein omasta pankistaan. Tutkimusten mukaan jopa 40 % kuluttajista ei pyydä kuin yhden tarjouksen.</p>
-<p>Lainamarkkinoilla on kymmeniä toimijoita, ja <strong>korot ja kulut vaihtelevat merkittävästi</strong>. Saman 10 000 euron kulutusluoton kokonaiskustannus voi vaihdella jopa tuhansia euroja eri lainanantajien välillä. Tämä johtuu siitä, että lainanantajat hinnoittelevat tuotteensa eri perustein: toiset panostavat edullisiin korkoihin, toiset joustavuuteen, toiset nopeuteen.</p>
-<p>Kilpailutus vie tyypillisesti 15–30 minuuttia — ja se voi säästää satoja tai tuhansia euroja. <strong>Paras tuotto ajallesi, jonka voit saada.</strong></p>
+<p>Lainan kilpailutus on yksinkertaisin tapa säästää rahaa lainakustannuksissa. Silti moni suomalainen hyväksyy ensimmäisen tarjouksen, jonka saa — usein omasta pankistaan.</p>
+<p>Suomen lainamarkkinoilla toimii kymmeniä lainanantajia, joiden korot ja kulut vaihtelevat merkittävästi. Saman 10 000 euron kulutusluoton kokonaiskustannus voi vaihdella satoja tai tuhansia euroja eri tarjousten välillä. Tarjousten pyytäminen on usein 15–30 minuutin työ.</p>
 
 <h3>Käytännön esimerkki</h3>
 <p>Oletetaan, että haet 15 000 euron kulutusluottoa 5 vuoden laina-ajalla. Kolme eri tarjousta:</p>
@@ -657,7 +650,7 @@ export const guides: Guide[] = [
 <p>Tarkista avausmaksu, kuukausimaksu ja muut kulut. Joissakin tapauksissa matalamman koron lainassa on korkeat kiinteät kulut, jotka nostavat kokonaiskustannusta.</p>
 
 <h3>Ennenaikainen takaisinmaksu</h3>
-<p>Voitko maksaa lainan pois ennen sovittua aikaa? Miten paljon se maksaa? Kuluttajansuojalain mukaan ennenaikaisen takaisinmaksun korvaus saa olla enintään 1 % jäljellä olevasta pääomasta.</p>
+<p>Voitko maksaa lainan pois ennen sovittua aikaa? Kiinteäkorkoisessa kuluttajaluotossa lainanantaja saa periä enintään 1 % (tai 0,5 %, jos laina-aikaa on alle vuosi) takaisinmaksetusta määrästä. <strong>Viitekorkoon sidotusta lainasta ei saa periä korvausta lainkaan</strong> — ennenaikainen takaisinmaksu on maksutonta.</p>
 
 <h3>Joustavuus</h3>
 <p>Voitko siirtää erää tai muuttaa laina-aikaa tarvittaessa? Joustavuus on arvokasta, jos taloudellinen tilanteesi muuttuu.</p>
@@ -735,7 +728,7 @@ export const guides: Guide[] = [
 <p>Halvin laina ei ole aina paras, jos se on jäykkä. Elämäntilanteet muuttuvat — mahdollisuus siirtää erää tai maksaa ennenaikaisesti voi olla arvokas.</p>
 
 <h3>6. Impulssipäätökset</h3>
-<p>Älä tee lainapäätöstä kiireessä. Vertaile rauhassa, nuku yön yli ja tee päätös harkiten. Lainasopimus on juridisesti sitova (vaikkakaan 14 päivän peruutusoikeus pätee kuluttajaluotoissa).</p>
+<p>Älä tee lainapäätöstä kiireessä. Vertaile rauhassa, nuku yön yli ja tee päätös harkiten. Lainasopimus on juridisesti sitova, vaikka kuluttajaluotoissa on 14 päivän peruutusoikeus.</p>
 
 <h3>7. Huomiotta jätetyt lisäkulut</h3>
 <p>Monet keskittyvät pelkkään korkoon mutta unohtavat muut kulut. Tarkista aina: onko lainaturvavakuutus pakollinen? Veloittaako pankki tiliotteista tai tilimuutoksista? Näitä kuluja ei aina mainita aktiivisesti, mutta ne voivat nostaa lainan kokonaiskustannusta.</p>
@@ -830,7 +823,7 @@ export const guides: Guide[] = [
 </ul>
 
 <h2 id="milloin-ei-kannata">Milloin yhdistely ei kannata?</h2>
-<p>Ollaan rehellisiä: velkojen yhdistely <strong>ei ole aina oikea ratkaisu</strong>. Tässä tilanteet, joissa yhdistely voi jopa pahentaa asioita:</p>
+<p>Velkojen yhdistely ei ole aina oikea ratkaisu. Näissä tilanteissa yhdistely voi jopa pahentaa asioita:</p>
 <ul>
   <li><strong>Yhdistelylainan korko on korkeampi kuin nykyisten lainojen:</strong> Jos luottotietosi ovat heikot, et välttämättä saa yhdistelylainaa edullisella korolla. Tällöin yhdistely ei säästä rahaa.</li>
   <li><strong>Ongelma on kulutuskäyttäytymisessä:</strong> Jos velkaantuminen johtuu liiallisesta kulutuksesta, yhdistelylaina hoitaa oiretta mutta ei syytä. Riski on, että otat pian uutta velkaa vanhojen tilalle — ja päädyt entistä pahempaan tilanteeseen.</li>
@@ -1004,41 +997,39 @@ export const guides: Guide[] = [
 
 <h3>ASP-tilin edut</h3>
 <ul>
-  <li><strong>Hyvä korko:</strong> ASP-tilin talletuksille maksetaan 1 %:n peruskorko + 2–4 %:n lisäkorko, kun ASP-ehdot täyttyvät ja asunto ostetaan. Käytännössä noin 3–5 % vuotuinen korko — selvästi markkinakorkoja parempi.</li>
-  <li><strong>Korkokatto:</strong> Kun ASP-ehdot täyttyvät, pankki sitoutuu myöntämään asuntolainan, jonka <strong>korko on enintään 3,8 %</strong> (viimeisin enimmäiskorko). Jos markkinakorot ovat tätä matalammat, saat markkinakoron.</li>
-  <li><strong>Valtiontakaus:</strong> Valtio takaa ASP-lainasta 25 % ilman lisäkustannuksia sinulle. Tämä vähentää tarvetta lisävakuuksille.</li>
-  <li><strong>Korkotuotto on verovapaata</strong> — ASP-tilin korot ovat verovapaita.</li>
+  <li><strong>Lisäkorko säästöille:</strong> ASP-tilin talletuksille maksetaan 1 %:n peruskorko ja lisäksi pankin kanssa sovittava lisäkorko (tyypillisesti 2–4 %), joka maksetaan, kun ASP-ehdot täyttyvät ja asunto ostetaan.</li>
+  <li><strong>Verovapaa korkotuotto:</strong> ASP-tilille maksetut korot ovat tuloverosta vapaita.</li>
+  <li><strong>Valtion korkotuki:</strong> Valtio maksaa korkotukea ASP-lainan korosta siltä osin, kun korko ylittää 3,8 %. Korkotukea maksetaan 70 % rajan ylittävästä osasta ja ensimmäisen 10 vuoden ajan. Jos markkinakorot pysyvät alle 3,8 %:n, tukea ei makseta.</li>
+  <li><strong>Maksuton valtiontakaus:</strong> Valtio takaa ASP-lainasta enintään 25 %, kuitenkin enintään 60 000 euroa per asunto. Takaus vähentää tarvetta lisävakuuksille.</li>
 </ul>
 
 <h3>Kenelle ASP sopii?</h3>
 <p>ASP on erinomainen vaihtoehto, jos olet alle 45-vuotias, et omista vielä asuntoa ja sinulla on aikaa säästää vähintään 2 vuotta. Jos asunnonosto on ajankohtainen nopeammin, ASP ei ehdi käynnistyä — mutta aloita silti heti, jos täytät ehdot.</p>
 
 <h3>ASP-tilin sudenkuopat</h3>
-<p>ASP-järjestelmässä on muutamia huomioitavia seikkoja:</p>
 <ul>
-  <li><strong>Puolison omistusasunto:</strong> Jos puolisosi omistaa asunnon, sinun ASP-tilisi edut voivat raueta.</li>
-  <li><strong>Perintöasunto:</strong> Jos perit asunnon ASP-säästämisen aikana, se voi vaikuttaa ASP-ehtoihin.</li>
-  <li><strong>Asunnon hintaraja:</strong> ASP-lainalle ei ole lakisääteistä hintarajaa, mutta lainan enimmäismäärä on rajoitettu (90 000–180 000 € kunnasta riippuen). Tämä ei kuitenkaan koske lainan kokonaismäärää, vaan vain sitä osaa, josta valtio antaa korkotuen.</li>
-  <li><strong>Nostamatta jättäminen:</strong> ASP-tilin voi purkaa milloin tahansa, mutta silloin menettää lisäkoron ja muut edut.</li>
+  <li><strong>Aiempi asunnonomistus:</strong> Jos olet aiemmin omistanut asunnon (tai osuuden siitä) vähintään 50 %, et voi avata ASP-tiliä.</li>
+  <li><strong>Korkotuen kuntakohtainen enimmäismäärä:</strong> Valtion korkotukeen oikeuttavan lainan enimmäismäärä vaihtelee kunnittain. Varsinainen asuntolaina voi olla tätä suurempi, mutta vain osa saa korkotukea.</li>
+  <li><strong>Nostamatta jättäminen:</strong> Jos et lopulta ostakaan ensiasuntoa tai rikot ASP-sopimuksen, menetät lisäkoron ja muut edut. Tilin peruskorko jää silti saatavaksi.</li>
 </ul>
 
 <h2 id="paljonko-voit-lainata">Paljonko voit lainata?</h2>
 <p>Asuntolainan enimmäismäärä riippuu useista tekijöistä. Pankit käyttävät ns. <strong>stressitestiä</strong> arvioidessaan maksukykyäsi.</p>
 
 <h3>Stressitesti</h3>
-<p>Pankki ei arvioi maksukykyäsi nykyisillä koroilla, vaan testaa, selviytyisitkö myös korkeammilla koroilla. Tyypillinen stressitestikorko on <strong>6 %</strong>, vaikka todellinen korko olisi paljon matalampi.</p>
-<p>Esimerkki: Jos haet 200 000 euron asuntolainaa 25 vuoden laina-ajalla ja stressitestikorko on 6 %, kuukausierä olisi noin 1 289 €. Pankki arvioi, pystytkö maksamaan tämän summan kuukaudessa muiden menojesi jälkeen.</p>
+<p>Finanssivalvonnan suosituksen mukaan pankki testaa, kestäisikö talous, jos korko nousee. Vakiintunut stressitestikorko on <strong>6 %</strong> ja laina-ajan oletuksena 25 vuotta, vaikka todellinen korko olisi nykyisin paljon matalampi.</p>
+<p>Esimerkki: 200 000 euron asuntolaina, 25 vuoden laina-aika, stressitestikorko 6 % → kuukausierä noin 1 289 €. Pankki arvioi, riittävätkö tulosi tähän senkin jälkeen, kun muut menot ja muut lainat on huomioitu.</p>
 
-<h3>Nyrkkisääntö</h3>
-<p>Yleinen nyrkkisääntö on, että asumismenot (lainanlyhennys + korko + vastike + sähkö + vesi) eivät saisi ylittää noin <strong>35–40 % bruttotuloistasi</strong>. Moni pankki on kuitenkin tiukempi ja katsoo kokonaistilannetta tapauskohtaisesti.</p>
+<h3>Lainanhoitorasitus</h3>
+<p>Finanssivalvonta suosittelee, että asuntolainanhakijan <strong>lainanhoitomenot eivät stressitestissä ylitä 60 % nettotuloista</strong>. Pankit arvioivat kokonaistilannetta tapauskohtaisesti — ohje on suositus, ei absoluuttinen raja.</p>
 
 <h3>Lainakatto</h3>
-<p>Suomessa on käytössä <strong>lainakatto</strong>, joka rajoittaa asuntolainan enimmäismäärää suhteessa asunnon arvoon:</p>
+<p>Finanssivalvonnan antama lainakatto rajoittaa asuntolainan enimmäismäärää suhteessa vakuuksien käypään arvoon:</p>
 <ul>
-  <li><strong>Ensiasunnon ostajat:</strong> Laina saa olla enintään 95 % asunnon käyvästä arvosta</li>
-  <li><strong>Muut ostajat:</strong> Laina saa olla enintään 90 % asunnon käyvästä arvosta</li>
+  <li><strong>Ensiasunnon ostajat:</strong> laina saa olla enintään 95 % vakuuksien arvosta</li>
+  <li><strong>Muut ostajat:</strong> laina saa olla enintään 90 % vakuuksien arvosta</li>
 </ul>
-<p>Käytännössä tämä tarkoittaa, että ensiasunnon ostajana sinun on katettava vähintään 5 % asunnon hinnasta omilla säästöilläsi. Useimmat pankit suosittelevat kuitenkin 10–15 %:n omaa rahoitusta.</p>
+<p>Ensiasunnon ostajana sinun on siis katettava vähintään 5 % asunnon hinnasta omilla säästöillä tai muulla vakuudella (esim. valtiontakaus, pankkitakaus). Käytännössä useimmat pankit toivovat suurempaa omaa rahoitusta.</p>
 
 <h2 id="mita-pankki-katsoo">Mitä pankki katsoo?</h2>
 <p>Asuntolainaa hakiessasi pankki arvioi kokonaistilannettasi. Tärkeimmät tekijät:</p>
@@ -1098,12 +1089,12 @@ export const guides: Guide[] = [
 <p>Asunnon hinta on vain osa kokonaiskustannusta. Muista budjetoida myös nämä:</p>
 
 <h3>Varainsiirtovero</h3>
-<p><strong>Ensiasunnon ostajat: 0 %!</strong> Jos ostat ensiasuntosi, et maksa varainsiirtoveroa lainkaan. Tämä on merkittävä etu — muuten vero on vuoden 2024 alusta:</p>
+<p><strong>Ensiasunnon ostajan varainsiirtoverovapaus poistui 1.1.2024.</strong> Vapautus koski vain ennen vuoden 2024 alkua tehtyjä kauppoja. Vuoden 2024 alusta alkaen varainsiirtoveroa maksavat kaikki ostajat, myös ensiasunnon ostajat. Samassa uudistuksessa verokantoja myös laskettiin:</p>
 <ul>
-  <li>Asunto-osakkeet: 1,5 % kauppahinnasta</li>
-  <li>Kiinteistöt: 3 % kauppahinnasta</li>
+  <li><strong>Asunto-osakkeet (taloyhtiöosakkeet):</strong> 1,5 % kauppahinnasta</li>
+  <li><strong>Kiinteistöt (esim. omakotitalo, kiinteistöyhtiö):</strong> 3 % kauppahinnasta</li>
 </ul>
-<p>200 000 euron asunto-osakkeessa tämä tarkoittaa 3 000 euron säästöä ensiasunnon ostajalle.</p>
+<p>200 000 euron asunto-osakkeen varainsiirtovero on siis 3 000 €. Summa kannattaa sisällyttää asunnonoston kokonaisbudjettiin.</p>
 
 <h3>Muut kustannukset</h3>
 <ul>
@@ -1116,18 +1107,18 @@ export const guides: Guide[] = [
 </ul>
 
 <h3>Kokonaiskustannuksen esimerkki</h3>
-<p>Kuvitellaan 200 000 euron asunto-osakkeen osto:</p>
+<p>Esimerkki 200 000 euron asunto-osakkeen ostosta ensiasunnon ostajana:</p>
 <ul>
   <li>Asunnon hinta: 200 000 €</li>
   <li>Omarahoitus (10 %): 20 000 €</li>
   <li>Laina: 180 000 €</li>
-  <li>Varainsiirtovero (ensiostaja): 0 €</li>
+  <li>Varainsiirtovero (1,5 % asunto-osakkeesta): 3 000 €</li>
   <li>Lainan järjestelypalkkio: 400 €</li>
   <li>Isännöitsijäntodistus: 80 €</li>
-  <li>Korkokustannus 25 vuodessa (korko 3,5 %): noin 95 000 €</li>
-  <li><strong>Kokonaiskustannus:</strong> noin 295 500 €</li>
+  <li>Laskennallinen korkokustannus 25 vuoden annuiteetissa 3,5 % korolla: noin 89 000 €</li>
+  <li><strong>Kokonaiskustannus:</strong> noin 292 500 €</li>
 </ul>
-<p>Korkokustannus on merkittävä osa kokonaishintaa. Siksi asuntolainan koron kilpailutus on erityisen tärkeää.</p>
+<p>Korkokustannus on merkittävä osa kokonaishintaa — siksi asuntolainan kilpailutus on erityisen tärkeää.</p>
 
 <h2 id="vakuutukset">Vakuutukset</h2>
 <p>Asuntolainan yhteydessä on syytä harkita ainakin seuraavia vakuutuksia:</p>
@@ -1160,11 +1151,11 @@ export const guides: Guide[] = [
 <h2 id="yhteenveto">Yhteenveto</h2>
 <p>Ensiasunnon ostaminen on suuri päätös, mutta hyvällä valmistautumisella se on myös palkitseva. Tärkeimmät muistettavat asiat:</p>
 <ul>
-  <li>Hyödynnä ASP-järjestelmä — se on paras etu ensiasunnon ostajalle.</li>
+  <li>Hyödynnä ASP-järjestelmä, jos olet ehtoihin sopiva — lisäkorko, valtiontakaus ja korkotuki ovat merkittäviä etuja.</li>
   <li>Kilpailuta laina aina useilta pankeilta.</li>
-  <li>Varaudu korkonnousuun — älä lainaa maksimia.</li>
-  <li>Muista ensiostajan varainsiirtoverovapaus (0 % asunto-osakkeista ja kiinteistöistä).</li>
-  <li>Tutki taloyhtiön talous huolellisesti.</li>
+  <li>Varaudu koron nousuun — älä lainaa maksimia.</li>
+  <li>Muista budjetoida varainsiirtovero (1,5 % asunto-osakkeesta, 3 % kiinteistöstä). Ensiasunnon verovapaus poistui 1.1.2024.</li>
+  <li>Tutki taloyhtiön talous huolellisesti (tulossa olevat remontit, vastike, taloyhtiölainan osuus).</li>
   <li>Pidä säästöpuskuri myös asunnonoston jälkeen.</li>
 </ul>
 <h3>Asunnon valinta ja lainan suhde</h3>
@@ -1179,7 +1170,7 @@ export const guides: Guide[] = [
   <li>Kilpailuta laina vähintään 3 pankissa</li>
   <li>Tutustu taloyhtiön talouteen ja tuleviin remontteihin</li>
   <li>Teetä kuntotarkastus (erityisesti omakotitaloissa)</li>
-  <li>Muista ensiostajan varainsiirtoverovapaus</li>
+  <li>Budjetoi varainsiirtovero (1,5 % asunto-osakkeesta, 3 % kiinteistöstä)</li>
   <li>Harkitse lainaturvavakuutusta</li>
   <li>Pidä säästöpuskuri myös oston jälkeen</li>
 </ol>
@@ -1244,37 +1235,40 @@ export const guides: Guide[] = [
 <p>Peruutusilmoituksen ei tarvitse olla monimutkainen. Riittää, että ilmoitat selkeästi: peruutan luottosopimuksen [sopimuksen numero], päivämäärä [allekirjoituspäivä]. Sähköposti riittää, mutta tallenna lähettämäsi viesti todisteeksi. Ilmoituksen jälkeen sinulle ilmoitetaan palautettava summa ja tili, jolle rahat maksetaan.</p>
 
 <h2 id="ennenaikainen-takaisinmaksu">Oikeus ennenaikaiseen takaisinmaksuun</h2>
-<p>Sinulla on aina <strong>oikeus maksaa laina takaisin ennen sovittua eräpäivää</strong> — kokonaan tai osittain. Lainanantaja ei voi kieltää ennenaikaista takaisinmaksua.</p>
+<p>Sinulla on aina <strong>oikeus maksaa kuluttajaluotto takaisin ennen sovittua eräpäivää</strong> — kokonaan tai osittain. Lainanantaja ei voi kieltää ennenaikaista takaisinmaksua.</p>
 
 <h3>Korvaus ennenaikaisesta takaisinmaksusta</h3>
-<p>Lainanantaja voi periä korvauksen ennenaikaisesta takaisinmaksusta, mutta korvaus on rajoitettu:</p>
+<p>Pääsääntöisesti takaisinmaksusta ei saa periä mitään. Korvaus on sallittu vain <strong>kiinteäkorkoisessa</strong> luotossa, ja silloinkin rajoitetusti:</p>
 <ul>
-  <li><strong>Enintään 1 %</strong> ennenaikaisesti maksetusta määrästä, jos jäljellä oleva laina-aika on yli 1 vuosi</li>
-  <li><strong>Enintään 0,5 %</strong>, jos jäljellä oleva laina-aika on enintään 1 vuosi</li>
-  <li><strong>Ei korvausta lainkaan</strong>, jos luotto on vaihtuvakorkoinen tai tililuotto</li>
+  <li><strong>Enintään 1 %</strong> takaisinmaksetusta määrästä, jos laina-aikaa on jäljellä yli vuosi</li>
+  <li><strong>Enintään 0,5 %</strong>, jos laina-aikaa on jäljellä enintään vuosi</li>
+  <li><strong>Ei korvausta lainkaan</strong>, jos luoton korko on sidottu viitekorkoon (esim. euribor), tai jos luotto on tililuotto</li>
+  <li>Korvaus ei myöskään saa ylittää korkomäärää, joka olisi kertynyt takaisinmaksun ja luottosopimuksen päättymisen väliseltä ajalta</li>
+  <li>Pankilla ei ole oikeutta korvaukseen myöskään silloin, kun viimeisen 12 kuukauden aikana ennenaikaisesti maksettu määrä on enintään 10 000 euroa</li>
 </ul>
 
 <h3>Esimerkki</h3>
-<p>Jos sinulla on 8 000 euroa jäljellä olevaa lainaa ja maksat sen kerralla pois 2 vuotta ennen sovittua päättymistä, lainanantaja voi periä enintään 80 euron korvauksen (1 % × 8 000 €). Säästösi koroissa on kuitenkin todennäköisesti paljon suurempi.</p>
+<p>Sinulla on kiinteäkorkoista kulutusluottoa 8 000 euroa jäljellä ja maksat sen kerralla pois kaksi vuotta ennen sovittua päättymistä. Lainanantaja voi periä enintään 80 euron korvauksen (1 % × 8 000 €). Säästö korkokustannuksissa on silti tyypillisesti moninkertainen.</p>
 
-<h2 id="korkokatto">Korkokatto 20 %</h2>
-<p>Suomessa on vuodesta 2023 lähtien voimassa <strong>pysyvä 20 %:n korkokatto</strong> kuluttajaluotoille. Tämä tarkoittaa, että minkään kuluttajaluoton todellinen vuosikorko ei saa ylittää 20 prosenttia.</p>
+<h2 id="korkokatto">Kulutusluottojen korkokatto</h2>
+<p>Kuluttajansuojalaki rajoittaa sekä kuluttajaluoton <strong>korkoa</strong> että muita luottokustannuksia. Sääntely suojaa kuluttajia kohtuuttoman kalliilta lainoilta.</p>
+
+<h3>Koron enimmäismäärä</h3>
+<p>Kuluttajaluoton <strong>nimelliskorko</strong> saa olla enintään Suomen Pankin puolivuosittain vahvistama viitekorko + 15 prosenttiyksikköä. Luoton korko ei kuitenkaan voi koskaan ylittää 20 prosenttia, vaikka viitekorko nousisi. Katto koskee nimelliskorkoa, ei todellista vuosikorkoa — todellinen vuosikorko voi olla tätä korkeampi, jos muut kulut kasvattavat kokonaiskustannusta.</p>
+
+<h3>Muiden luottokustannusten katto</h3>
+<p>Avausmaksu, kuukausimaksut ja muut luottokulut saavat yhteensä olla enintään <strong>0,01 % lainasummasta päivässä</strong>, kuitenkin enintään <strong>150 euroa vuodessa</strong>. Tämä rajoittaa merkittävästi mahdollisuutta kiertää korkokattoa kulurakenteella.</p>
 
 <h3>Korkokaton historia</h3>
-<p>Korkokatto on ollut Suomessa käytössä eri muodoissaan vuodesta 2013:</p>
 <ul>
-  <li>2013: Korkokatto 51 % alle 2 000 euron kulutusluotoille</li>
-  <li>1.9.2019: Pysyvä korkokatto 20 % kaikille kuluttajaluotoille (kuluttajansuojalain muutos)</li>
-  <li>2020–2021: Väliaikainen 10 %:n korkokatto koronapandemian vuoksi (ns. koronalaki)</li>
-  <li>1.10.2023: Korkokaton laskentatapa muuttui: viitekorko + 15 prosenttiyksikköä, enintään 20 %</li>
+  <li>2013: Korkokatto otettiin käyttöön alle 2 000 euron pienlainoille (Suomen Pankin viitekorko + 50 prosenttiyksikköä)</li>
+  <li>1.9.2019: Korkokaton soveltamisalaa laajennettiin ja se sidottiin kiinteään 20 %:n nimelliskorkokattoon</li>
+  <li>2020–2021: Koronapandemian aikainen väliaikainen 10 %:n korkokatto</li>
+  <li>1.10.2023: Nykyinen malli — viitekorko + 15 prosenttiyksikköä, kuitenkin enintään 20 %, sekä erillinen muiden kulujen katto (enintään 0,01 % / pv, 150 € / v)</li>
 </ul>
 
-<h3>Mitä korkokatto tarkoittaa käytännössä?</h3>
-<p>Korkokatto suojaa kuluttajia kohtuuttoman kalliilta lainoilta. Ennen korkokattoa joidenkin pikavippien todelliset vuosikorot saattoivat olla satoja prosentteja. Nykyään 20 % on ehdoton yläraja.</p>
-<p>Muista kuitenkin, että <strong>20 % on edelleen korkea korko</strong>. Hyvillä luottotiedoilla sinun pitäisi saada kulutusluottoa selvästi alle 20 %:n todellisella vuosikorolla. Vertailun vuoksi: hyvillä luottotiedoilla kulutusluoton todellinen vuosikorko voi olla 5–10 %, joten 20 %:n korkokatto on lähinnä suoja äärimmäisimpiä tapauksia vastaan.</p>
-
-<h3>Korkokaton laskenta</h3>
-<p>Korkokattoa sovelletaan <strong>todelliseen vuosikorkoon</strong>, ei nimelliskorkoon. Tämä tarkoittaa, että myös lainan kulut huomioidaan. Jos nimelliskorko on 15 % ja avausmaksu + kuukausimaksut nostavat todellisen vuosikoron yli 20 %:n, lainanantajan on alennettava kuluja tai korkoa, jotta 20 %:n raja ei ylity.</p>
+<h3>Mitä tämä tarkoittaa käytännössä?</h3>
+<p>Hyvillä luottotiedoilla kulutusluoton nimelliskorko on tyypillisesti selvästi alle korkokaton. Korkokatto on lähinnä suoja äärimmäisiä hinnoittelutapauksia vastaan. Vertaile aina todellista vuosikorkoa, joka paljastaa myös kulujen vaikutuksen.</p>
 
 <h2 id="hyva-luotonantotapa">Hyvä luotonantotapa</h2>
 <p>Kuluttajansuojalaki velvoittaa lainanantajia noudattamaan <strong>hyvää luotonantotapaa</strong>. Tämä tarkoittaa käytännössä:</p>
@@ -1333,7 +1327,7 @@ export const guides: Guide[] = [
   <li>Ulosmitata omaisuutta (auto, sijoitukset jne.)</li>
   <li>Ulosmitata veronpalautukset</li>
 </ul>
-<p>Ulosotossa velalliselle jätetään aina <strong>suojaosuus</strong>: vuonna 2026 noin 30,76 €/päivä yksinäiselle henkilölle + 11,02 €/päivä per huollettava. Tämän verran palkkaa/tuloa jää aina käyttöön.</p>
+<p>Ulosotossa velalliselle jätetään aina <strong>suojaosuus</strong>, jonka suuruus tarkistetaan vuosittain. Suojaosuus kattaa velallisen ja hänen huollettaviensa välttämättömät elinkustannukset, eikä sitä saa ulosmitata. Ajantasaisen suojaosuuden euromäärän voi tarkistaa Ulosottolaitoksen sivuilta (ulosottolaitos.fi).</p>
 
 <h3>Ulosottomiehen velvollisuudet</h3>
 <p>Ulosottomies ei toimi mielivaltaisesti. Hänellä on lakisääteiset velvollisuudet:</p>
@@ -1389,12 +1383,12 @@ export const guides: Guide[] = [
 <h2 id="yhteenveto">Yhteenveto</h2>
 <p>Suomalainen lainsäädäntö suojaa lainanottajaa monin tavoin. Tärkeimmät oikeutesi:</p>
 <ul>
-  <li><strong>14 päivän peruutusoikeus</strong> kuluttajaluotoissa — voit peruuttaa sopimuksen ilman seuraamuksia.</li>
-  <li><strong>Ennenaikaisen takaisinmaksun oikeus</strong> — voit aina maksaa lainan pois ennen aikojaan.</li>
-  <li><strong>Korkokatto 20 %</strong> — yksikään lainanantaja ei voi periä tätä enempää.</li>
-  <li><strong>Hyvä luotonantotapa</strong> — lainanantajan on toimittava vastuullisesti.</li>
+  <li><strong>14 päivän peruutusoikeus</strong> kuluttajaluotoissa — voit peruuttaa sopimuksen ilman perusteluja.</li>
+  <li><strong>Ennenaikaisen takaisinmaksun oikeus</strong> — voit aina maksaa lainan pois ennen aikojaan. Viitekorkoon sidotussa luotossa takaisinmaksu on maksuton.</li>
+  <li><strong>Korkokatto:</strong> nimelliskorko enintään viitekorko + 15 prosenttiyksikköä (enintään 20 %), muut kulut enintään 0,01 % / päivä, yhteensä enintään 150 € / vuosi.</li>
+  <li><strong>Hyvä luotonantotapa</strong> — lainanantajan on arvioitava maksukykyäsi ja annettava selkeät tiedot lainasta.</li>
   <li><strong>Valituskanavat</strong> — kuluttajaneuvonta, FINE ja kuluttajariitalautakunta ovat maksuttomia.</li>
-  <li><strong>Talous- ja velkaneuvonta</strong> — maksuton valtion palvelu, joka auttaa velkaongelmissa.</li>
+  <li><strong>Talous- ja velkaneuvonta</strong> — oikeusaputoimistojen maksuton palvelu, joka auttaa velkaongelmissa.</li>
 </ul>
 <h3>Usein kysyttyjä kysymyksiä oikeuksista</h3>
 <p><strong>Voiko lainanantaja muuttaa lainaehtoja yksipuolisesti?</strong> Lainanantaja ei voi muuttaa lainasopimuksen keskeisiä ehtoja (korkoa, kuluja, laina-aikaa) yksipuolisesti ilman sopimusperusteista oikeutta. Vaihtuvakorkoisessa lainassa viitekoron muutokset ovat kuitenkin sopimuksen mukaisia — ne eivät ole yksipuolisia muutoksia. Jos saat ilmoituksen ehtomuutoksesta, lue se huolellisesti ja ota tarvittaessa yhteyttä kuluttajaneuvontaan.</p>
@@ -1433,9 +1427,9 @@ export const guides: Guide[] = [
     relatedGuides: ['velkojen-yhdistely', 'kuluttajan-oikeudet', 'lainaamisen-perusteet'],
     content: `
 <h2 id="et-ole-yksin">Et ole yksin</h2>
-<p>Jos velat painavat mieltäsi, haluan sanoa ensin yhden asian selvästi: <strong>et ole yksin, etkä ole epäonnistunut.</strong></p>
-<p>Suomessa on arviolta yli 400 000 henkilöä, joilla on maksuhäiriömerkintä. Velkaongelmat koskettavat ihmisiä kaikista taustoista — korkeasti koulutettuja, hyvätuloisia, nuoria, vanhoja. Velkaantumisen taustalla voi olla työttömyys, sairaus, ero, yrityksen konkurssi tai yksinkertaisesti inhimillinen virhe.</p>
-<p>Tärkeintä on tietää, että <strong>tilanteeseen on aina ratkaisuja</strong>. Ja mitä aikaisemmin toimit, sitä helpompi tilanne on korjata.</p>
+<p>Jos velat painavat, haluamme sanoa yhden asian selvästi: <strong>et ole yksin, etkä ole epäonnistunut.</strong></p>
+<p>Suomessa on arviolta yli 300 000 henkilöä, joilla on maksuhäiriömerkintä. Velkaantumisen taustalla on usein työttömyys, sairaus, ero, yrityksen konkurssi tai vain pitkään jatkunut liian tiukka talous.</p>
+<p>Tilanteeseen on aina ratkaisuja. Mitä aikaisemmin toimit, sitä helpompi tilanne on korjata.</p>
 
 <h2 id="tunnista-merkit">Ylivelkaantumisen merkit</h2>
 <p>Velkaongelmat eivät synny yhdessä yössä. Tyypillisesti tilanne pahenee vähitellen. Tunnista nämä varoitusmerkit:</p>
@@ -1505,13 +1499,13 @@ export const guides: Guide[] = [
 </ol>
 
 <h3>Priorisoi velat</h3>
-<p>Jos rahat eivät riitä kaikkeen, priorisoi velat näin:</p>
+<p>Jos rahat eivät riitä kaikkeen, priorisoi näin:</p>
 <ol>
   <li><strong>Asuminen:</strong> Vuokra tai asuntolaina — asunnon menettäminen vaikeuttaa kaikkea muuta.</li>
   <li><strong>Välttämättömät palvelut:</strong> Sähkö, vesi, lämpö.</li>
   <li><strong>Ruoka:</strong> Peruselinkustannukset.</li>
-  <li><strong>Vakuudellisset velat:</strong> Auto (jos tarvitset sitä töihin), muut vakuudelliset lainat.</li>
-  <li><strong>Muut velat:</strong> Kulutusluotot, luottokortit, pikavpit.</li>
+  <li><strong>Vakuudelliset velat:</strong> Auto (jos tarvitset sitä töihin), muut vakuudelliset lainat.</li>
+  <li><strong>Muut velat:</strong> Kulutusluotot, luottokortit, pikavipit.</li>
 </ol>
 
 <h2 id="talous-ja-velkaneuvonta">Talous- ja velkaneuvonta</h2>
@@ -1635,7 +1629,7 @@ export const guides: Guide[] = [
 </ol>
 
 <h3>Muista nämä</h3>
-<p>Maksuhäiriömerkintä ei ole pysyvä — se poistuu 2–3 vuodessa. Velkajärjestelyn maksuohjelma päättyy. Velat eivät kestä ikuisesti. <strong>Tulevaisuudessa on tilaa paremmalle.</strong></p>
+<p>Maksuhäiriömerkintä ei ole pysyvä — vuoden 2022 lakimuutoksen jälkeen merkintä poistuu pääsääntöisesti kuukauden kuluessa siitä, kun velka on maksettu. Velkajärjestelyn maksuohjelma päättyy. Velat eivät kestä ikuisesti.</p>
 <p>Eräs velkaneuvonnan asiakas kuvasi tilannettaan näin: "Kun vihdoin soitin velkaneuvontaan, tunsin valtavaa helpotusta. En ollut enää yksin asian kanssa. Neuvojan kanssa tehtiin suunnitelma, ja ensimmäistä kertaa vuosiin tunsin, että asiat ovat hallinnassa."</p>
 
 <h3>Käytännön vinkkejä toipumiseen</h3>

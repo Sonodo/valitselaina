@@ -44,6 +44,11 @@ export const providers: LoanProvider[] = [
       'Parhaat ehdot vaativat usein keskittämistä',
     ],
     isAffiliate: false,
+    applyUrls: {
+      asuntolaina: 'https://www.nordea.fi/henkiloasiakkaat/palvelumme/lainat/asuntolainat/asuntolaina.html',
+      kulutusluotto: 'https://www.nordea.fi/henkiloasiakkaat/palvelumme/lainat/kulutusluotot/',
+      autolaina: 'https://www.nordea.fi/henkiloasiakkaat/palvelumme/lainat/kulutusluotot/autolaina.html',
+    },
     products: [
       {
         id: 'nordea-asuntolaina',
@@ -154,6 +159,11 @@ export const providers: LoanProvider[] = [
       'Digitaaliset palvelut kehittyneet mutta eivät aina markkinoiden kärjessä',
     ],
     isAffiliate: false,
+    applyUrls: {
+      asuntolaina: 'https://www.op.fi/henkiloasiakkaat/lainat-ja-asunnot/asuntolaina',
+      kulutusluotto: 'https://www.op.fi/henkiloasiakkaat/lainat-ja-asunnot/kulutusluotot',
+      autolaina: 'https://www.op.fi/henkiloasiakkaat/lainat-ja-asunnot/autolaina',
+    },
     products: [
       {
         id: 'op-asuntolaina',
@@ -262,6 +272,10 @@ export const providers: LoanProvider[] = [
       'Kulutusluottojen enimmäismäärä rajallinen',
     ],
     isAffiliate: false,
+    applyUrls: {
+      asuntolaina: 'https://www.danskebank.fi/sinulle/lainat/asuntolaina',
+      kulutusluotto: 'https://www.danskebank.fi/sinulle/lainat/muut/haavelaina',
+    },
     products: [
       {
         id: 'danske-asuntolaina',
@@ -342,6 +356,10 @@ export const providers: LoanProvider[] = [
       'Parhaat edut vaativat S-Etukorttia ja keskittämistä',
     ],
     isAffiliate: false,
+    applyUrls: {
+      asuntolaina: 'https://www.s-pankki.fi/fi/lainat/asuntolaina/',
+      kulutusluotto: 'https://www.s-pankki.fi/fi/lainat/s-laina/',
+    },
     products: [
       {
         id: 's-pankki-asuntolaina',
@@ -422,6 +440,10 @@ export const providers: LoanProvider[] = [
       'Ei yhtä vahva mobiilipankki kuin kilpailijoilla',
     ],
     isAffiliate: false,
+    applyUrls: {
+      asuntolaina: 'https://www.aktia.fi/fi/asuntolaina',
+      kulutusluotto: 'https://www.aktia.fi/fi/kulutusluotto',
+    },
     products: [
       {
         id: 'aktia-asuntolaina',
@@ -474,91 +496,6 @@ export const providers: LoanProvider[] = [
     ],
   },
 
-  // 6. Handelsbanken ----------------------------------------------------------
-  {
-    id: 'handelsbanken',
-    slug: 'handelsbanken',
-    name: 'Handelsbanken',
-    shortName: 'Handelsbanken',
-    type: 'bank',
-    founded: 1871,
-    headquarters: 'Tukholma',
-    country: 'SE',
-    finFsaRegulated: true,
-    website: 'https://www.handelsbanken.fi',
-    customerServicePhone: '010 444 2442',
-    description:
-      'Handelsbanken on ruotsalainen pankki, joka toimii Suomessa premium-segmentissä. Pankki on tunnettu konservatiivisesta ja vastuullisesta lainanannosta sekä pitkäjänteisestä asiakassuhteesta. Handelsbanken ei markkinoi aggressiivisesti vaan luottaa asiakastyytyväisyyteen.',
-    pros: [
-      'Erinomainen henkilökohtainen palvelu',
-      'Kilpailukykyiset korot hyville asiakkaille',
-      'Vakaa ja konservatiivinen pankki',
-      'Pitkäjänteinen asiakassuhde',
-    ],
-    cons: [
-      'Rajallinen konttoriverkosto Suomessa',
-      'Ei aktiivisesti markkinoi — voi olla tuntemattomampi',
-      'Vaatii yleensä suurempia lainasummia',
-      'Digitaaliset palvelut perustasoa',
-    ],
-    isAffiliate: false,
-    products: [
-      {
-        id: 'handelsbanken-asuntolaina',
-        providerId: 'handelsbanken',
-        name: 'Handelsbanken Asuntolaina',
-        type: 'asuntolaina',
-        minAmount: 30000,
-        maxAmount: 1000000,
-        minTermMonths: 12,
-        maxTermMonths: 360,
-        nominalRate: { min: 0.33, max: 1.1 },
-        effectiveRate: { min: 3.75, max: 5.1 },
-        setupFee: 0,
-        monthlyFee: 0,
-        requiresCollateral: true,
-        requiresGuarantor: false,
-        processingTime: '5–10 arkipäivää',
-        features: [
-          'Euribor 12 kk + marginaali',
-          'Neuvoteltavat ehdot — ei massatuotteita',
-          'Ei kuukausimaksua',
-          'Pitkäaikainen asiakassuhde palkitaan',
-        ],
-        restrictions: [
-          'Edellyttää kokonaisasiakkuutta',
-          'Tiukempi luottopolitiikka',
-        ],
-        lastUpdated: '2026-04-01',
-      },
-      {
-        id: 'handelsbanken-kulutusluotto',
-        providerId: 'handelsbanken',
-        name: 'Handelsbanken Kulutusluotto',
-        type: 'kulutusluotto',
-        minAmount: 5000,
-        maxAmount: 50000,
-        minTermMonths: 12,
-        maxTermMonths: 120,
-        nominalRate: { min: 4.2, max: 10.5 },
-        effectiveRate: { min: 4.9, max: 11.8 },
-        setupFee: 0,
-        monthlyFee: 0,
-        requiresCollateral: false,
-        requiresGuarantor: false,
-        processingTime: '3–5 arkipäivää',
-        features: [
-          'Vakuudeton',
-          'Kilpailukykyiset korot olemassa oleville asiakkaille',
-          'Ei kuukausimaksua',
-          'Joustava takaisinmaksu',
-        ],
-        restrictions: ['Edellyttää Handelsbanken-asiakkuutta'],
-        lastUpdated: '2026-04-01',
-      },
-    ],
-  },
-
   // 7. Säästöpankki -----------------------------------------------------------
   {
     id: 'saastopankki',
@@ -586,6 +523,10 @@ export const providers: LoanProvider[] = [
       'Palvelutaso vaihtelee pankeittain',
     ],
     isAffiliate: false,
+    applyUrls: {
+      asuntolaina: 'https://www.saastopankki.fi/fi-fi/lainat/asuntolaina',
+      kulutusluotto: 'https://www.saastopankki.fi/fi-fi/lainat/kulutusluotto',
+    },
     products: [
       {
         id: 'saastopankki-asuntolaina',
@@ -664,6 +605,10 @@ export const providers: LoanProvider[] = [
       'Palvelutaso ja hinnoittelu vaihtelee pankeittain',
     ],
     isAffiliate: false,
+    applyUrls: {
+      asuntolaina: 'https://www.poppankki.fi/palvelut/asuntolainat/asuntolaina',
+      kulutusluotto: 'https://www.poppankki.fi/palvelut/lainat-ja-luotot/pop-pikalaina',
+    },
     products: [
       {
         id: 'pop-asuntolaina',
@@ -742,6 +687,10 @@ export const providers: LoanProvider[] = [
       'Pörssiyhtiönä fokus voi vaihdella',
     ],
     isAffiliate: false,
+    applyUrls: {
+      asuntolaina: 'https://www.omasp.fi/henkiloasiakas/lainat/hae-lainaa/asuntolaina',
+      kulutusluotto: 'https://www.omasp.fi/henkiloasiakas/lainat/hae-lainaa/kulutusluotto',
+    },
     products: [
       {
         id: 'omasp-asuntolaina',
@@ -822,6 +771,9 @@ export const providers: LoanProvider[] = [
       'Ei edullisimmat lainakorot kaikissa tuotteissa',
     ],
     isAffiliate: false,
+    applyUrls: {
+      asuntolaina: 'https://www.alandsbanken.fi/pankkipalvelut/lainat/asuntolaina',
+    },
     products: [
       {
         id: 'alandsbanken-asuntolaina',
@@ -844,29 +796,6 @@ export const providers: LoanProvider[] = [
           'Kiinteä korko mahdollinen',
           'Kestävän kehityksen asuntolainaetu',
           'Henkilökohtainen neuvonta',
-        ],
-        lastUpdated: '2026-04-01',
-      },
-      {
-        id: 'alandsbanken-kulutusluotto',
-        providerId: 'alandsbanken',
-        name: 'Ålandsbanken Kulutusluotto',
-        type: 'kulutusluotto',
-        minAmount: 3000,
-        maxAmount: 30000,
-        minTermMonths: 12,
-        maxTermMonths: 96,
-        nominalRate: { min: 5.0, max: 12.0 },
-        effectiveRate: { min: 5.8, max: 13.5 },
-        setupFee: 0,
-        monthlyFee: 4.5,
-        requiresCollateral: false,
-        requiresGuarantor: false,
-        processingTime: '2–5 arkipäivää',
-        features: [
-          'Vakuudeton',
-          'Kiinteä korko',
-          'Henkilökohtainen palvelu',
         ],
         lastUpdated: '2026-04-01',
       },
@@ -906,6 +835,10 @@ export const providers: LoanProvider[] = [
       'Korkeampi korko pienemmillä lainasummilla',
     ],
     isAffiliate: false,
+    applyUrls: {
+      kulutusluotto: 'https://www.banknorwegian.fi/laina/kulutusluotto/',
+      yhdistelylaina: 'https://www.banknorwegian.fi/laina/lainojen-yhdistaminen/',
+    },
     products: [
       {
         id: 'bank-norwegian-kulutusluotto',
@@ -987,6 +920,10 @@ export const providers: LoanProvider[] = [
       'Rajalliset tuotteet — vain kulutusluottoja',
     ],
     isAffiliate: false,
+    applyUrls: {
+      kulutusluotto: 'https://www.ferratumbank.fi/joustoluotto',
+      pikavippi: 'https://www.ferratumbank.fi/joustoluotto',
+    },
     products: [
       {
         id: 'ferratum-kulutusluotto',
@@ -1068,6 +1005,10 @@ export const providers: LoanProvider[] = [
       'Asiakaspalvelu pääosin verkossa',
     ],
     isAffiliate: false,
+    applyUrls: {
+      kulutusluotto: 'https://www.resursbank.fi/lainaa/kulutusluotto',
+      yhdistelylaina: 'https://www.resursbank.fi/lainaa/yhdista-lainat',
+    },
     products: [
       {
         id: 'resurs-kulutusluotto',
@@ -1147,6 +1088,10 @@ export const providers: LoanProvider[] = [
       'Tunnetumpi yrityspalveluista kuin kuluttajalainoista',
     ],
     isAffiliate: false,
+    applyUrls: {
+      kulutusluotto: 'https://www.svea.com/fi-fi/kuluttajat/lainat/kulutusluotto',
+      yrityslaina: 'https://www.svea.com/fi-fi/yritykset/yritysrahoitus',
+    },
     products: [
       {
         id: 'svea-kulutusluotto',
@@ -1229,6 +1174,9 @@ export const providers: LoanProvider[] = [
       'Ei yhtä tunnettu kuin suuremmat pankit',
     ],
     isAffiliate: false,
+    applyUrls: {
+      kulutusluotto: 'https://www.tfbank.fi/lainat/laina',
+    },
     products: [
       {
         id: 'tf-bank-kulutusluotto',
@@ -1287,6 +1235,10 @@ export const providers: LoanProvider[] = [
       'Keskittyy autorahoitukseen — muut tuotteet rajallisia',
     ],
     isAffiliate: false,
+    applyUrls: {
+      autolaina: 'https://www.santanderconsumer.fi/laina/autolaina',
+      kulutusluotto: 'https://www.santanderconsumer.fi/laina',
+    },
     products: [
       {
         id: 'santander-autolaina',
@@ -1335,143 +1287,6 @@ export const providers: LoanProvider[] = [
     ],
   },
 
-  // 17. Bigbank ---------------------------------------------------------------
-  {
-    id: 'bigbank',
-    slug: 'bigbank',
-    name: 'Bigbank AS',
-    shortName: 'Bigbank',
-    type: 'fintech',
-    founded: 1992,
-    headquarters: 'Tallinna',
-    country: 'EE',
-    finFsaRegulated: true,
-    website: 'https://www.bigbank.fi',
-    customerServicePhone: '09 6227 1600',
-    description:
-      'Bigbank on virolainen pankki, joka tarjoaa Suomessa kilpailukykyisiä kulutusluottoja ja määräaikaistalletuksia. Pankki on toiminut Suomessa vuodesta 2008 ja on kasvattanut suosiotaan erityisesti edullisten kulutusluottojensa ansiosta.',
-    pros: [
-      'Kilpailukykyiset korot kulutusluotoissa',
-      'Suuri lainakatto — jopa 50 000 euroa',
-      'Pitkä laina-aika jopa 10 vuotta',
-      'Nopea verkkohakemus',
-    ],
-    cons: [
-      'Virolainen pankki — ei konttoreita Suomessa',
-      'Asiakaspalvelu pääosin verkossa',
-      'Ei asuntolainoja tai autolainoja',
-      'Kuukausimaksu korottaa todellista vuosikorkoa',
-    ],
-    isAffiliate: false,
-    products: [
-      {
-        id: 'bigbank-kulutusluotto',
-        providerId: 'bigbank',
-        name: 'Bigbank Kulutusluotto',
-        type: 'kulutusluotto',
-        minAmount: 1000,
-        maxAmount: 50000,
-        minTermMonths: 12,
-        maxTermMonths: 120,
-        nominalRate: { min: 5.5, max: 16.9 },
-        effectiveRate: { min: 6.4, max: 18.8 },
-        setupFee: 0,
-        monthlyFee: 3.9,
-        requiresCollateral: false,
-        requiresGuarantor: false,
-        processingTime: '1 arkipäivä',
-        features: [
-          'Vakuudeton',
-          'Kiinteä korko koko laina-ajalle',
-          'Nopea verkkohakemus',
-          'Lisälyhennykset mahdollisia',
-          'Laina-aika jopa 10 vuotta',
-        ],
-        lastUpdated: '2026-04-01',
-      },
-      {
-        id: 'bigbank-yhdistelylaina',
-        providerId: 'bigbank',
-        name: 'Bigbank Yhdistelylaina',
-        type: 'yhdistelylaina',
-        minAmount: 3000,
-        maxAmount: 50000,
-        minTermMonths: 12,
-        maxTermMonths: 120,
-        nominalRate: { min: 5.5, max: 16.9 },
-        effectiveRate: { min: 6.4, max: 18.8 },
-        setupFee: 0,
-        monthlyFee: 3.9,
-        requiresCollateral: false,
-        requiresGuarantor: false,
-        processingTime: '1 arkipäivä',
-        features: [
-          'Yhdistä vanhat lainat yhdeksi',
-          'Usein halvempi kuin monta erillistä lainaa',
-          'Yksi kuukausierä',
-          'Nopea käsittely',
-        ],
-        lastUpdated: '2026-04-01',
-      },
-    ],
-  },
-
-  // 18. Kraft Bank (ex-Instabank) ---------------------------------------------
-  {
-    id: 'kraft-bank',
-    slug: 'kraft-bank',
-    name: 'Kraft Bank ASA',
-    shortName: 'Kraft Bank',
-    type: 'fintech',
-    founded: 2016,
-    headquarters: 'Bergen',
-    country: 'NO',
-    finFsaRegulated: true,
-    website: 'https://www.kraftbank.fi',
-    customerServicePhone: '09 4245 5700',
-    description:
-      'Kraft Bank (entinen Instabank) on norjalainen verkkopankki, joka tarjoaa Suomessa kulutusluottoja. Pankki nimettiin uudelleen Kraft Bankiksi vuonna 2023. Tunnettu nopeasta hakuprosessista ja digitaalisesta palvelusta.',
-    pros: [
-      'Nopea ja helppokäyttöinen hakuprosessi',
-      'Kilpailukykyiset korot',
-      'Ei avausmaksua',
-      'Täysin digitaalinen palvelu',
-    ],
-    cons: [
-      'Suhteellisen uusi toimija Suomessa',
-      'Ei konttoreita',
-      'Rajoitettu tuotevalikoima',
-      'Kuukausimaksu lisää kustannuksia',
-    ],
-    isAffiliate: false,
-    products: [
-      {
-        id: 'kraft-kulutusluotto',
-        providerId: 'kraft-bank',
-        name: 'Kraft Bank Kulutusluotto',
-        type: 'kulutusluotto',
-        minAmount: 1000,
-        maxAmount: 40000,
-        minTermMonths: 12,
-        maxTermMonths: 144,
-        nominalRate: { min: 5.5, max: 18.9 },
-        effectiveRate: { min: 6.3, max: 20.0 },
-        setupFee: 0,
-        monthlyFee: 3.5,
-        requiresCollateral: false,
-        requiresGuarantor: false,
-        processingTime: '1 arkipäivä',
-        features: [
-          'Ei avausmaksua',
-          'Kiinteä korko',
-          'Nopea verkkohakemus',
-          'Lisälyhennykset mahdollisia',
-        ],
-        lastUpdated: '2026-04-01',
-      },
-    ],
-  },
-
   // 19. GF Money --------------------------------------------------------------
   {
     id: 'gf-money',
@@ -1500,6 +1315,10 @@ export const providers: LoanProvider[] = [
       'Kuukausimaksut nostavat todellista korkoa',
     ],
     isAffiliate: false,
+    applyUrls: {
+      kulutusluotto: 'https://gfcard.fi/lainaa/',
+      pikavippi: 'https://gfcard.fi/pikavippi/',
+    },
     products: [
       {
         id: 'gf-money-kulutusluotto',
@@ -1582,6 +1401,9 @@ export const providers: LoanProvider[] = [
       'Asiakaspalvelu vain verkossa ja puhelimitse',
     ],
     isAffiliate: false,
+    applyUrls: {
+      kulutusluotto: 'https://www.leabank.fi/lainat/kulutusluotto',
+    },
     products: [
       {
         id: 'lea-bank-kulutusluotto',
@@ -1605,88 +1427,6 @@ export const providers: LoanProvider[] = [
           'Kiinteä korko',
           'Nopea verkkohakemus',
           'Lisälyhennykset ilman kuluja',
-        ],
-        lastUpdated: '2026-04-01',
-      },
-    ],
-  },
-
-  // 21. Walley (ent. Collector Bank) -------------------------------------------
-  {
-    id: 'collector-bank',
-    slug: 'collector-bank',
-    name: 'Walley AB (ent. Collector Bank)',
-    shortName: 'Walley',
-    type: 'fintech',
-    founded: 1999,
-    headquarters: 'Göteborg',
-    country: 'SE',
-    finFsaRegulated: true,
-    website: 'https://www.walley.fi',
-    customerServicePhone: '010 322 5500',
-    description:
-      'Walley (ent. Collector Bank) on ruotsalainen rahoitusyhtiö, joka tarjoaa Suomessa maksupalveluja verkkokauppoihin sekä yrityslainoja. Collector Bank jakautui vuonna 2021: kuluttajapuoli jatkaa Walley-brändinä ja yrityspuoli Collector Bankin nimellä.',
-    pros: [
-      'Vahva toimija verkkokaupan maksupalveluissa',
-      'Laskurahoitus yrityksille',
-      'Vakiintunut pohjoismainen rahoitusyhtiö',
-      'Walley-maksupalvelu laajasti käytössä verkkokaupoissa',
-    ],
-    cons: [
-      'Kuluttajatuotteet rajalliset Suomessa',
-      'Korkeammat korot kuin perinteisillä pankeilla',
-      'Pääfokus yrityspalveluissa',
-    ],
-    isAffiliate: false,
-    products: [
-      {
-        id: 'collector-kulutusluotto',
-        providerId: 'collector-bank',
-        name: 'Walley Kulutusluotto',
-        type: 'kulutusluotto',
-        minAmount: 1000,
-        maxAmount: 30000,
-        minTermMonths: 12,
-        maxTermMonths: 96,
-        nominalRate: { min: 7.5, max: 19.5 },
-        effectiveRate: { min: 8.5, max: 20.0 },
-        setupFee: 0,
-        monthlyFee: 3.95,
-        requiresCollateral: false,
-        requiresGuarantor: false,
-        processingTime: '1–2 arkipäivää',
-        features: [
-          'Vakuudeton',
-          'Kiinteä kuukausierä',
-          'Verkkohakemus',
-        ],
-        lastUpdated: '2026-04-01',
-      },
-      {
-        id: 'collector-yrityslaina',
-        providerId: 'collector-bank',
-        name: 'Walley Yrityslaina',
-        type: 'yrityslaina',
-        minAmount: 10000,
-        maxAmount: 500000,
-        minTermMonths: 12,
-        maxTermMonths: 60,
-        nominalRate: { min: 5.0, max: 14.0 },
-        effectiveRate: { min: 6.0, max: 16.0 },
-        setupFee: 300,
-        monthlyFee: 0,
-        requiresCollateral: false,
-        requiresGuarantor: false,
-        processingTime: '2–5 arkipäivää',
-        features: [
-          'Vakuudeton yrityslaina',
-          'Laskurahoitus saatavilla',
-          'Joustava takaisinmaksu',
-          'Nopea päätöksenteko',
-        ],
-        restrictions: [
-          'Vähintään 2 vuoden liiketoiminta',
-          'Positiivinen tulos edellisenä vuonna',
         ],
         lastUpdated: '2026-04-01',
       },
@@ -1721,6 +1461,9 @@ export const providers: LoanProvider[] = [
       'Rajallinen tunnettuus',
     ],
     isAffiliate: false,
+    applyUrls: {
+      kulutusluotto: 'https://www.saldo.com/fi-fi/hae/kulutusluotto/',
+    },
     products: [
       {
         id: 'saldo-kulutusluotto',
@@ -1754,96 +1497,41 @@ export const providers: LoanProvider[] = [
   // P2P / ALTERNATIVE LENDERS (23–26)
   // =========================================================================
 
-  // 23. Fellow Finance --------------------------------------------------------
+  // 23. Alisa Pankki (ent. Fellow Finance) ------------------------------------
   {
     id: 'fellow-finance',
     slug: 'fellow-finance',
-    name: 'Fellow Finance Oyj',
-    shortName: 'Fellow Finance',
-    type: 'p2p',
+    name: 'Alisa Pankki Oyj',
+    shortName: 'Alisa Pankki',
+    type: 'bank',
     founded: 2013,
     headquarters: 'Helsinki',
     country: 'FI',
     finFsaRegulated: true,
-    website: 'https://www.fellowfinance.fi',
+    website: 'https://www.alisapankki.fi',
     customerServicePhone: '010 279 3920',
     description:
-      'Fellow Finance on suomalainen vertaislainauspalvelu (P2P), jossa yksityiset sijoittajat rahoittavat lainoja. Palvelu tarjoaa kulutusluottoja ja yrityslainoja. Fellow Finance on Helsingin pörssiin listattu yhtiö ja Pohjoismaiden johtavia vertaislainaajia.',
+      'Alisa Pankki (entinen Fellow Finance) on suomalainen pankki, joka keskittyy nykyisin yksinomaan yritysrahoitukseen. Yhtiö luopui kuluttajaluottojen myöntämisestä ja muuttui pankiksi. Alisa Pankki tarjoaa pk-yrityksille vakuudettomia yrityslainoja nopealla päätöksenteolla.',
     pros: [
-      'Vertaislainaus voi tuoda kilpailukykyisiä korkoja',
-      'Suomalainen pörssiyhtiö',
-      'Sekä kuluttaja- että yrityslainoja',
-      'Läpinäkyvä toimintamalli',
+      'Suomalainen pankki, joka tuntee kotimaiset pk-yritykset',
+      'Nopea päätöksenteko ja rahoitus',
+      'Vakuudettomat yrityslainat',
+      'Läpinäkyvät ehdot',
     ],
     cons: [
-      'Korot voivat olla korkeammat kuin pankeilla',
-      'Vertaislainauksessa rahoitus ei aina toteudu täysmääräisesti',
-      'Palvelumaksut nostavat todellista korkoa',
-      'Hakuprosessi voi olla hitaampi kuin suoran pankin',
+      'Ei kuluttajatuotteita — vain yritysasiakkaat',
+      'Korot korkeammat kuin perinteisillä pankeilla',
+      'Edellyttää vakiintunutta liiketoimintaa',
     ],
     isAffiliate: false,
+    applyUrls: {
+      yrityslaina: 'https://www.alisapankki.fi/yritysasiakas/yrityslaina',
+    },
     products: [
-      {
-        id: 'fellow-kulutusluotto',
-        providerId: 'fellow-finance',
-        name: 'Fellow Finance Kulutusluotto',
-        type: 'kulutusluotto',
-        minAmount: 500,
-        maxAmount: 15000,
-        minTermMonths: 6,
-        maxTermMonths: 84,
-        nominalRate: { min: 6.9, max: 19.9 },
-        effectiveRate: { min: 8.5, max: 20.0 },
-        setupFee: 0,
-        monthlyFee: 4.0,
-        requiresCollateral: false,
-        requiresGuarantor: false,
-        processingTime: '1–3 arkipäivää',
-        features: [
-          'Vertaislainaus — rahoitus yksityisiltä sijoittajilta',
-          'Verkkohakemus',
-          'Joustava laina-aika',
-          'Kiinteä kuukausierä',
-        ],
-        restrictions: [
-          'Rahoitus riippuu sijoittajien kiinnostuksesta',
-          'Ikäraja 20 vuotta',
-        ],
-        lastUpdated: '2026-04-01',
-      },
-      {
-        id: 'fellow-pikavippi',
-        providerId: 'fellow-finance',
-        name: 'Fellow Finance Pikavippi',
-        type: 'pikavippi',
-        minAmount: 100,
-        maxAmount: 2000,
-        minTermMonths: 1,
-        maxTermMonths: 12,
-        nominalRate: { min: 7.9, max: 19.9 },
-        effectiveRate: { min: 14.0, max: 20.0 },
-        setupFee: 0,
-        monthlyFee: 4.0,
-        requiresCollateral: false,
-        requiresGuarantor: false,
-        processingTime: '1–3 arkipäivää',
-        features: [
-          'Vertaislainaus — rahoitus yksityisiltä sijoittajilta',
-          'Pienet summat 100–2 000 €',
-          'Verkkohakemus',
-          'Kiinteä kuukausierä',
-        ],
-        restrictions: [
-          'Rahoitus riippuu sijoittajien kiinnostuksesta',
-          'Ikäraja 20 vuotta',
-          'Korkokatto 20 %',
-        ],
-        lastUpdated: '2026-04-01',
-      },
       {
         id: 'fellow-yrityslaina',
         providerId: 'fellow-finance',
-        name: 'Fellow Finance Yrityslaina',
+        name: 'Alisa Pankki Yrityslaina',
         type: 'yrityslaina',
         minAmount: 3000,
         maxAmount: 100000,
@@ -1857,10 +1545,10 @@ export const providers: LoanProvider[] = [
         requiresGuarantor: false,
         processingTime: '2–5 arkipäivää',
         features: [
-          'Vertaislainaus yrityksille',
+          'Yrityslaina pk-yrityksille',
           'Vakuudeton',
           'Nopea käsittely',
-          'Sopii pk-yrityksille',
+          'Digitaalinen hakuprosessi',
         ],
         restrictions: [
           'Edellyttää vähintään 1 vuoden liiketoimintaa',
@@ -1899,6 +1587,10 @@ export const providers: LoanProvider[] = [
       'Hakuprosessi voi kestää pidempään',
     ],
     isAffiliate: false,
+    applyUrls: {
+      kulutusluotto: 'https://www.fixura.fi/fi-fi/joustoluotto',
+      pikavippi: 'https://www.fixura.fi/fi-fi/joustoluotto',
+    },
     products: [
       {
         id: 'fixura-kulutusluotto',
@@ -1960,143 +1652,9 @@ export const providers: LoanProvider[] = [
     ],
   },
 
-  // 25. Lainaaja --------------------------------------------------------------
-  {
-    id: 'lainaaja',
-    slug: 'lainaaja',
-    name: 'Lainaaja.fi',
-    shortName: 'Lainaaja',
-    type: 'p2p',
-    founded: 2012,
-    headquarters: 'Helsinki',
-    country: 'FI',
-    finFsaRegulated: true,
-    website: 'https://www.lainaaja.fi',
-    description:
-      'Lainaaja.fi on suomalainen verkkopohjainen lainapalvelu, joka välittää kulutusluottoja. Palvelu on suunnattu kuluttajille, jotka etsivät kilpailukykyisiä lainaehtoja. Lainaaja.fi pyrkii tarjoamaan yksinkertaisen ja nopean hakuprosessin.',
-    pros: [
-      'Suomalainen palvelu',
-      'Yksinkertainen verkkohakemus',
-      'Kilpailukykyiset ehdot',
-      'Nopea käsittely',
-    ],
-    cons: [
-      'Pieni toimija',
-      'Rajoitettu tuotevalikoima',
-      'Ei yhtä tunnettu kuin isommat palvelut',
-    ],
-    isAffiliate: false,
-    products: [
-      {
-        id: 'lainaaja-kulutusluotto',
-        providerId: 'lainaaja',
-        name: 'Lainaaja Kulutusluotto',
-        type: 'kulutusluotto',
-        minAmount: 500,
-        maxAmount: 10000,
-        minTermMonths: 6,
-        maxTermMonths: 60,
-        nominalRate: { min: 7.9, max: 19.9 },
-        effectiveRate: { min: 9.5, max: 20.0 },
-        setupFee: 0,
-        monthlyFee: 4.0,
-        requiresCollateral: false,
-        requiresGuarantor: false,
-        processingTime: '1–3 arkipäivää',
-        features: [
-          'Verkkohakemus',
-          'Kiinteä korko',
-          'Selkeä kuukausierä',
-        ],
-        restrictions: ['Ikäraja 20 vuotta'],
-        lastUpdated: '2026-04-01',
-      },
-      {
-        id: 'lainaaja-pikavippi',
-        providerId: 'lainaaja',
-        name: 'Lainaaja Pikavippi',
-        type: 'pikavippi',
-        minAmount: 100,
-        maxAmount: 1500,
-        minTermMonths: 1,
-        maxTermMonths: 12,
-        nominalRate: { min: 8.9, max: 19.9 },
-        effectiveRate: { min: 15.5, max: 20.0 },
-        setupFee: 0,
-        monthlyFee: 4.0,
-        requiresCollateral: false,
-        requiresGuarantor: false,
-        processingTime: '1–3 arkipäivää',
-        features: [
-          'Pienet summat 100–1 500 €',
-          'Verkkohakemus',
-          'Kiinteä korko',
-          'Selkeä kuukausierä',
-        ],
-        restrictions: ['Ikäraja 20 vuotta', 'Korkokatto 20 %'],
-        lastUpdated: '2026-04-01',
-      },
-    ],
-  },
-
   // =========================================================================
   // OTHER (26–27)
   // =========================================================================
-
-  // 26. LähiTapiola Finance ---------------------------------------------------
-  {
-    id: 'lahitapiola-finance',
-    slug: 'lahitapiola',
-    name: 'LähiTapiola Rahoitus',
-    shortName: 'LähiTapiola',
-    type: 'other',
-    founded: 2012,
-    headquarters: 'Espoo',
-    country: 'FI',
-    finFsaRegulated: true,
-    website: 'https://www.lahitapiola.fi',
-    customerServicePhone: '09 453 8000',
-    description:
-      'LähiTapiola on Suomen johtava keskinäinen vakuutusryhmä, jonka rahoituspalvelut tarjoavat kulutusluottoja vakuutusasiakkaille. LähiTapiolan vahvuus on kattava vakuutus- ja rahoituspalvelujen kokonaisuus. Pankkipalvelut toteutetaan S-Pankin kumppanuuden kautta.',
-    pros: [
-      'Vahva vakuutusryhmä taustalla — kokonaispalvelu',
-      'Laaja konttoriverko vakuutustoimipisteiden kautta',
-      'Luotettava ja tunnettu suomalainen brändi',
-      'Hyvä palvelu olemassa oleville vakuutusasiakkaille',
-    ],
-    cons: [
-      'Rahoituspalvelut pienemmät kuin isojen pankkien',
-      'Korot eivät aina kilpailukykyisimpiä',
-      'Tuotevalikoima rajallinen verrattuna pankkeihin',
-    ],
-    isAffiliate: false,
-    products: [
-      {
-        id: 'lahitapiola-kulutusluotto',
-        providerId: 'lahitapiola-finance',
-        name: 'LähiTapiola Kulutusluotto',
-        type: 'kulutusluotto',
-        minAmount: 2000,
-        maxAmount: 30000,
-        minTermMonths: 12,
-        maxTermMonths: 120,
-        nominalRate: { min: 5.5, max: 14.5 },
-        effectiveRate: { min: 6.5, max: 16.0 },
-        setupFee: 0,
-        monthlyFee: 5.0,
-        requiresCollateral: false,
-        requiresGuarantor: false,
-        processingTime: '1–3 arkipäivää',
-        features: [
-          'Vakuudeton',
-          'Kiinteä korko',
-          'Verkkohakemus',
-          'Mahdollisuus yhdistää vakuutuspalveluihin',
-        ],
-        lastUpdated: '2026-04-01',
-      },
-    ],
-  },
 
   // 27. Avida Finance ---------------------------------------------------------
   {
@@ -2125,6 +1683,10 @@ export const providers: LoanProvider[] = [
       'Palveluvalikoima suppeampi kuin pankeilla',
     ],
     isAffiliate: false,
+    applyUrls: {
+      kulutusluotto: 'https://www.avidafinance.com/fi-fi/henkiloasiakkaat/',
+      yrityslaina: 'https://www.avidafinance.com/fi-fi/yritys-asiakkaat/yritysluotto',
+    },
     products: [
       {
         id: 'avida-kulutusluotto',

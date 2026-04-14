@@ -22,7 +22,7 @@ import {
   INTEREST_RATE_CAP,
   COOLING_OFF_DAYS,
 } from '@/lib/constants';
-import { formatCurrency, formatPercentage } from '@/lib/utils';
+import { formatCurrency, formatPercentage, getApplyUrl } from '@/lib/utils';
 
 // ---------------------------------------------------------------------------
 // Metadata
@@ -305,15 +305,26 @@ export default function KulutusluottoPage() {
                 </div>
 
                 {/* Features */}
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {product.features.slice(0, 4).map((feature) => (
-                    <span
-                      key={feature}
-                      className="inline-block rounded-full bg-blue-50 px-3 py-1 text-xs text-blue-700"
-                    >
-                      {feature}
-                    </span>
-                  ))}
+                <div className="mt-4 flex flex-col sm:flex-row sm:items-center gap-3">
+                  <div className="flex flex-wrap gap-2 flex-1 min-w-0">
+                    {product.features.slice(0, 4).map((feature) => (
+                      <span
+                        key={feature}
+                        className="inline-block rounded-full bg-blue-50 px-3 py-1 text-xs text-blue-700"
+                      >
+                        {feature}
+                      </span>
+                    ))}
+                  </div>
+                  <a
+                    href={getApplyUrl(product.provider, product.type)}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#1a365d] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#2a4a7f] transition-colors whitespace-nowrap"
+                  >
+                    Hae lainaa
+                    <ArrowRight className="h-3.5 w-3.5" />
+                  </a>
                 </div>
 
               </div>

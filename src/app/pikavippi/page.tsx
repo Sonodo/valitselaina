@@ -24,7 +24,7 @@ import {
   INTEREST_RATE_CAP,
   COOLING_OFF_DAYS,
 } from '@/lib/constants';
-import { formatCurrency, formatPercentage } from '@/lib/utils';
+import { formatCurrency, formatPercentage, getApplyUrl } from '@/lib/utils';
 
 // ---------------------------------------------------------------------------
 // Metadata
@@ -472,6 +472,18 @@ export default function PikavippiPage() {
                       </p>
                     </div>
                   </div>
+                </div>
+
+                <div className="mt-4 flex justify-end">
+                  <a
+                    href={getApplyUrl(product.provider, product.type)}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#38a169] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#276749] transition-colors whitespace-nowrap"
+                  >
+                    Hae lainaa
+                    <ArrowRight className="h-3.5 w-3.5" />
+                  </a>
                 </div>
               </div>
             ))}

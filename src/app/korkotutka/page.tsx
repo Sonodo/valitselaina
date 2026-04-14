@@ -22,6 +22,7 @@ import {
 } from '@/lib/constants';
 import StressTestCalculator from '@/components/korkotutka/StressTestCalculator';
 import AlertSignupForm from '@/components/korkotutka/AlertSignupForm';
+import EuriborHistoryChart from '@/components/korkotutka/EuriborHistoryChart';
 
 // ---------------------------------------------------------------------------
 // Metadata
@@ -68,9 +69,6 @@ const euriborHistory = [
   { period: '1/2026', rate: 2.48 },
   { period: '4/2026', rate: 2.49 },
 ];
-
-// Peak rate for the history bar chart calculation
-const maxHistoryRate = Math.max(...euriborHistory.map((r) => r.rate));
 
 // ---------------------------------------------------------------------------
 // FAQ data
@@ -457,7 +455,11 @@ export default function KorkotutkaPage() {
           </p>
 
           <div className="max-w-3xl mx-auto">
-            <div className="overflow-x-auto">
+            <div className="rounded-xl border border-gray-200 bg-white p-4 sm:p-6 shadow-sm">
+              <EuriborHistoryChart data={euriborHistory} />
+            </div>
+
+            <div className="mt-8 overflow-x-auto">
               <table className="w-full">
                 <thead>
                   <tr className="border-b border-gray-200">
@@ -466,9 +468,6 @@ export default function KorkotutkaPage() {
                     </th>
                     <th className="text-right py-3 px-4 text-sm font-semibold text-gray-600">
                       Euribor 12 kk
-                    </th>
-                    <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 hidden sm:table-cell">
-                      Taso
                     </th>
                     <th className="text-right py-3 px-4 text-sm font-semibold text-gray-600">
                       Muutos
@@ -479,7 +478,6 @@ export default function KorkotutkaPage() {
                   {euriborHistory.map((entry, i) => {
                     const prevRate = i > 0 ? euriborHistory[i - 1].rate : null;
                     const change = prevRate !== null ? entry.rate - prevRate : null;
-                    const barWidth = (entry.rate / maxHistoryRate) * 100;
 
                     return (
                       <tr
@@ -491,16 +489,6 @@ export default function KorkotutkaPage() {
                         </td>
                         <td className="py-3 px-4 text-right text-sm font-bold text-gray-900">
                           {entry.rate.toFixed(2).replace('.', ',')} %
-                        </td>
-                        <td className="py-3 px-4 hidden sm:table-cell">
-                          <div className="flex items-center gap-2">
-                            <div className="flex-1 h-3 bg-gray-100 rounded-full overflow-hidden">
-                              <div
-                                className="h-full rounded-full bg-[#1a365d] transition-all"
-                                style={{ width: `${barWidth}%` }}
-                              />
-                            </div>
-                          </div>
                         </td>
                         <td className="py-3 px-4 text-right text-sm">
                           {change === null ? (

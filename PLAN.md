@@ -1,4 +1,4 @@
-# LAINAVERTAILU — Top 0.01% Plan
+# VALITSE LAINA — Top 0.01% Plan
 
 ## Vision
 Finland's most trusted, transparent loan comparison site. The consumer's advocate in a market full of dark patterns and hidden commissions. We show EVERYTHING — even loans from providers who don't pay us. We beat everyone by being the one site consumers can actually trust.

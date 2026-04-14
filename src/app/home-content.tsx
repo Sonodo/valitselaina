@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowRight,
@@ -171,18 +172,21 @@ export default function HomeContent({
 
         <div className="relative mx-auto max-w-7xl px-4 pb-28 pt-20 sm:px-6 sm:pb-36 sm:pt-28 lg:px-8 lg:pt-32">
           <div className="mx-auto max-w-3xl text-center">
-            {/* Animated badge */}
+            {/* Hero logo */}
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease }}
-              className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white/80 backdrop-blur-sm"
+              className="mb-10 flex justify-center"
             >
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-400 opacity-75" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-accent-400" />
-              </span>
-              Lainavertailu
+              <Image
+                src="/logo.png"
+                alt="Valitse Laina"
+                width={590}
+                height={192}
+                priority
+                className="h-20 w-auto sm:h-28 lg:h-36"
+              />
             </motion.div>
 
             {/* Animated heading */}

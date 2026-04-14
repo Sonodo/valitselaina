@@ -26,6 +26,7 @@ export interface LoanProvider {
   cons: string[];
   isAffiliate: boolean;
   logoUrl?: string;
+  applyUrls?: Partial<Record<LoanType, string>>;
   products: LoanProduct[];
 }
 

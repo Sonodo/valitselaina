@@ -149,7 +149,7 @@ export default function LoanDetailsStep({
                   );
                 }
               }}
-              className="w-32 rounded-lg border border-gray-300 px-3 py-2 text-right text-sm font-semibold text-gray-900 focus:border-[#1a365d] focus:ring-1 focus:ring-[#1a365d] focus:outline-none"
+              className="w-36 rounded-lg border border-gray-300 pl-3 pr-8 py-2 text-right text-sm font-semibold text-gray-900 focus:border-[#1a365d] focus:ring-1 focus:ring-[#1a365d] focus:outline-none"
             />
             <span className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-gray-400 pointer-events-none">
               &euro;
@@ -179,7 +179,7 @@ export default function LoanDetailsStep({
             onChange={(e) => onTermChange(Number(e.target.value))}
             className="flex-1 h-2 rounded-full appearance-none bg-gray-200 accent-[#1a365d] cursor-pointer"
           />
-          <div className="w-24">
+          <div className="w-36 shrink-0">
             <select
               value={clampedTerm}
               onChange={(e) => onTermChange(Number(e.target.value))}

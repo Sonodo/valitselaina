@@ -1,4 +1,13 @@
-import { AmortizationRow } from '@/types';
+import { AmortizationRow, LoanProvider, LoanType } from '@/types';
+
+// Resolve the correct "Hae lainaa" URL for a provider + loan type combination.
+// Falls back to the provider's homepage when no type-specific deep link is mapped.
+export function getApplyUrl(provider: LoanProvider, loanType?: LoanType): string {
+  if (loanType && provider.applyUrls?.[loanType]) {
+    return provider.applyUrls[loanType] as string;
+  }
+  return provider.website;
+}
 
 // Calculate monthly annuity payment
 export function calculateMonthlyPayment(
