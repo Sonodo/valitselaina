@@ -25,6 +25,7 @@ import {
   COOLING_OFF_DAYS,
 } from '@/lib/constants';
 import { formatCurrency, formatPercentage, getApplyUrl } from '@/lib/utils';
+import DisclosureBanner from '@/components/layout/DisclosureBanner';
 
 // ---------------------------------------------------------------------------
 // Metadata
@@ -422,6 +423,10 @@ export default function PikavippiPage() {
             </Link>
           </div>
 
+          <div className="mb-4">
+            <DisclosureBanner />
+          </div>
+
           <div className="space-y-4">
             {kulutusluottoProducts.map((product, index) => (
               <div
@@ -478,7 +483,11 @@ export default function PikavippiPage() {
                   <a
                     href={getApplyUrl(product.provider, product.type)}
                     target="_blank"
-                    rel="noopener noreferrer nofollow"
+                    rel={
+                      product.provider.isAffiliate
+                        ? 'noopener noreferrer nofollow sponsored'
+                        : 'noopener noreferrer nofollow'
+                    }
                     className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#38a169] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#276749] transition-colors whitespace-nowrap"
                   >
                     Hae lainaa

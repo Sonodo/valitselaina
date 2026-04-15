@@ -3,6 +3,7 @@
 import { ComparisonResult } from '@/types';
 import ResultCard from './ResultCard';
 import ComparisonSummary from './ComparisonSummary';
+import DisclosureBanner from '@/components/layout/DisclosureBanner';
 
 interface ResultsListProps {
   results: ComparisonResult[];
@@ -89,6 +90,7 @@ export default function ResultsList({
         </div>
       ) : (
         <div className="space-y-4">
+          <DisclosureBanner />
           {results.map((result, index) => (
             <ResultCard
               key={result.product.id}
