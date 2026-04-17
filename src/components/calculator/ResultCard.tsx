@@ -211,11 +211,7 @@ export default function ResultCard({
           <a
             href={getApplyUrl(provider, product.type)}
             target="_blank"
-            rel={
-              provider.isAffiliate
-                ? 'noopener noreferrer nofollow sponsored'
-                : 'noopener noreferrer nofollow'
-            }
+            rel="noopener noreferrer nofollow"
             className="inline-flex items-center gap-2 rounded-lg bg-[#1a365d] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#2a4a7f] transition-colors"
           >
             Hae lainaa

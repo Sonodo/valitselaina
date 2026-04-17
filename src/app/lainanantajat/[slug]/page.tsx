@@ -348,11 +348,7 @@ export default async function ProviderDetailPage({
                 <a
                   href={provider.website}
                   target="_blank"
-                  rel={
-                    provider.isAffiliate
-                      ? 'noopener noreferrer nofollow sponsored'
-                      : 'noopener noreferrer nofollow'
-                  }
+                  rel="noopener noreferrer nofollow"
                   className="text-[#1a365d] hover:underline inline-flex items-center gap-1"
                 >
                   {provider.website.replace(/^https?:\/\//, '').replace(/\/$/, '')}
@@ -444,11 +440,7 @@ export default async function ProviderDetailPage({
           <a
             href={provider.website}
             target="_blank"
-            rel={
-              provider.isAffiliate
-                ? 'noopener noreferrer nofollow sponsored'
-                : 'noopener noreferrer nofollow'
-            }
+            rel="noopener noreferrer nofollow"
             className="inline-flex items-center gap-2 rounded-lg bg-[#1a365d] px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-[#2a4a7f] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1a365d]"
           >
             Siirry lainanantajan sivuille
