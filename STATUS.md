@@ -1,6 +1,6 @@
-# Valitse Laina (valitselaina.fi) — Status
+# Lainavertailu — Status
 
-**Project**: Valitse Laina — Finnish Loan Comparison
+**Project**: Lainavertailu — Finnish Loan Comparison
 **Status**: LIVE at valitselaina.fi
 **Health**: GREEN
 **Domain**: valitselaina.fi (custom domain)

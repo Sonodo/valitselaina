@@ -1,4 +1,4 @@
-# Valitse Laina (valitselaina.fi) — Dev Guide
+# Lainavertailu — Dev Guide
 
 ## Stack
 - Next.js 16 (App Router) + TypeScript + Tailwind CSS v4
