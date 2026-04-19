@@ -8,6 +8,7 @@ import {
   generateAmortizationSchedule,
   getApplyUrl,
 } from '@/lib/utils';
+import { trackAffiliateClick } from '@/lib/analytics';
 
 // Provider type labels (Finnish)
 const PROVIDER_TYPE_LABELS: Record<string, string> = {
@@ -215,6 +216,11 @@ export default function ResultCard({
               provider.isAffiliate
                 ? 'noopener noreferrer nofollow sponsored'
                 : 'noopener noreferrer nofollow'
+            }
+            onClick={() =>
+              trackAffiliateClick(provider.shortName || provider.name, product.type, {
+                isAffiliate: provider.isAffiliate,
+              })
             }
             className="inline-flex items-center gap-2 rounded-lg bg-[#1a365d] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#2a4a7f] transition-colors"
           >
