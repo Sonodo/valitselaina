@@ -117,12 +117,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  const providerPages: MetadataRoute.Sitemap = providers.map((p) => ({
-    url: `${BASE_URL}/lainanantajat/${p.slug}`,
-    lastModified: now,
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }));
+  const providerPages: MetadataRoute.Sitemap = providers.map((p) => {
+    // Use the most recent product lastUpdated as lastModified signal.
+    const productDates = p.products
+      .map((prod) => prod.lastUpdated)
+      .filter((d): d is string => Boolean(d))
+      .sort();
+    const lastModified = productDates.length
+      ? new Date(productDates[productDates.length - 1]).toISOString()
+      : now;
+    return {
+      url: `${BASE_URL}/lainanantajat/${p.slug}`,
+      lastModified,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    };
+  });
 
   // Guide pages
   const guideIndex: MetadataRoute.Sitemap = [
