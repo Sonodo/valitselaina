@@ -288,19 +288,51 @@ export default async function ProviderDetailPage({
     const productLabel = productTypeLabels[p.type] || p.type;
     const variable = isVariableRate(p);
 
-    // interestRate: schema.org accepts either number or string. We use a
-    // descriptive string for variable-rate loans, an explicit numeric range
-    // (as text) for fixed-rate consumer products.
-    const interestRate = variable
-      ? `${p.nominalRate.min.toFixed(2)}–${p.nominalRate.max.toFixed(2)} % (sis. Euribor + marginaali, vaihtuva)`
-      : `${p.nominalRate.min.toFixed(2)}–${p.nominalRate.max.toFixed(2)} %`;
+    // interestRate: numeric QuantitativeValue per schema.org/QuantitativeValue.
+    // For variable-rate (Euribor-linked) loans, the nominalRate range
+    // represents the verifiable margin component; the description field
+    // explains that the total rate is Euribor + margin.
+    // For fixed products, we expose the same numeric range (or single value
+    // when min === max).
+    const isSinglePoint = p.nominalRate.min === p.nominalRate.max;
+    const interestRate = isSinglePoint
+      ? {
+          '@type': 'QuantitativeValue',
+          value: p.nominalRate.min,
+          unitText: 'PERCENT',
+        }
+      : {
+          '@type': 'QuantitativeValue',
+          minValue: p.nominalRate.min,
+          maxValue: p.nominalRate.max,
+          unitText: 'PERCENT',
+        };
+
+    const isAprSinglePoint = p.effectiveRate.min === p.effectiveRate.max;
+    const annualPercentageRate = isAprSinglePoint
+      ? {
+          '@type': 'QuantitativeValue',
+          value: p.effectiveRate.min,
+          unitText: 'PERCENT',
+        }
+      : {
+          '@type': 'QuantitativeValue',
+          minValue: p.effectiveRate.min,
+          maxValue: p.effectiveRate.max,
+          unitText: 'PERCENT',
+        };
+
+    const baseDescription = `${productLabel} — ${p.features.slice(0, 3).join('; ')}`;
+    const description = variable
+      ? `${baseDescription}. Kokonaiskorko = Euribor + marginaali, vaihtuva. Korko-kentässä esitetty numeerinen arvo on marginaali.`
+      : baseDescription;
 
     return {
       '@type': 'LoanOrCredit',
       '@id': `https://valitselaina.fi/lainanantajat/${p0.slug}#${p.id}`,
       name: p.name,
       category: productLabel,
-      description: `${productLabel} — ${p.features.slice(0, 3).join('; ')}`,
+      description,
       provider: { '@id': providerOrgId },
       areaServed: 'FI',
       currency: 'EUR',
@@ -317,7 +349,7 @@ export default async function ProviderDetailPage({
         maxValue: p.maxAmount,
       },
       interestRate,
-      annualPercentageRate: `${p.effectiveRate.min.toFixed(2)}–${p.effectiveRate.max.toFixed(2)} %`,
+      annualPercentageRate,
       requiredCollateral: p.requiresCollateral
         ? 'Vakuus vaaditaan'
         : 'Vakuudeton',

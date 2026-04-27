@@ -11,7 +11,6 @@ import {
   Lightbulb,
   Ban,
   CheckCircle2,
-  GraduationCap,
   ListChecks,
   Building2,
 } from 'lucide-react';
@@ -19,7 +18,7 @@ import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
 const pageTitle = 'Tietoa Valitse Lainasta — Toimitus ja periaatteet';
 const pageDescription =
-  'Valitse Laina on Sonodon (Y-tunnus 2887416-4) ylläpitämä lainavertailupalvelu. Vastaava päätoimittaja Henri Linnainmaa, KTM. Lue toimituksen periaatteet ja vertailumetodologia.';
+  'Valitse Laina on Sonodon (Y-tunnus 2887416-4) ylläpitämä lainavertailupalvelu. Sonodo vastaa palvelun toimituksellisesta sisällöstä ja vertailumetodologiasta. Lue toimituksen periaatteet ja vertailumetodologia.';
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -35,7 +34,6 @@ export const metadata: Metadata = {
 
 // ─── Schema.org structured data ────────────────────────────────────────────
 const ORG_ID = `${SITE_URL}#organization`;
-const HENRI_ID = `${SITE_URL}#henri-linnainmaa`;
 
 const aboutPageJsonLd = {
   '@context': 'https://schema.org',
@@ -56,8 +54,12 @@ const organizationJsonLd = {
   url: SITE_URL,
   taxID: '2887416-4',
   vatID: 'FI28874164',
+  identifier: {
+    '@type': 'PropertyValue',
+    propertyID: 'FI Y-tunnus',
+    value: '2887416-4',
+  },
   description: pageDescription,
-  founder: { '@id': HENRI_ID },
   publishingPrinciples: `${SITE_URL}/tietoa#toimituksen-periaatteet`,
   address: {
     '@type': 'PostalAddress',
@@ -72,28 +74,6 @@ const organizationJsonLd = {
     'Todellinen vuosikorko',
     'Euribor',
   ],
-};
-
-const personJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Person',
-  '@id': HENRI_ID,
-  name: 'Henri Linnainmaa',
-  jobTitle: 'Vastaava päätoimittaja',
-  honorificSuffix: 'KTM',
-  worksFor: { '@id': ORG_ID },
-  alumniOf: {
-    '@type': 'CollegeOrUniversity',
-    name: 'Aalto-yliopisto',
-    sameAs: 'https://www.aalto.fi/',
-  },
-  knowsAbout: [
-    'Lainavertailu',
-    'Tekoäly liiketoiminnassa',
-    'Data-analytiikka',
-    'Automaatiojärjestelmät',
-  ],
-  url: `${SITE_URL}/tietoa#vastaava-paatoimittaja`,
 };
 
 const values = [
@@ -141,10 +121,6 @@ export default function TietoaPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(organizationJsonLd),
         }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
       />
 
       {/* Hero */}
@@ -252,43 +228,29 @@ export default function TietoaPage() {
           </div>
         </section>
 
-        {/* ─── Vastaava päätoimittaja ─────────────────────────────────── */}
+        {/* ─── Toimitus ─────────────────────────────────────────────── */}
         <section
-          id="vastaava-paatoimittaja"
+          id="toimitus"
           className="scroll-mt-24"
         >
           <div className="flex items-center gap-3 mb-4">
-            <GraduationCap className="w-6 h-6 text-[#1a365d]" />
+            <ShieldCheck className="w-6 h-6 text-[#1a365d]" />
             <h2 className="text-2xl font-bold text-gray-900">
-              Vastaava päätoimittaja
+              Toimitus
             </h2>
           </div>
 
           <div className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8">
-            <div className="mb-3">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Henri Linnainmaa
-              </h3>
-              <p className="text-sm text-[#1a365d] font-medium mt-0.5">
-                KTM, Aalto-yliopisto · Vastaava päätoimittaja
-              </p>
-            </div>
-
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                Henri Linnainmaa on kauppatieteiden maisteri Aalto-yliopistosta.
-                Hän on urallaan konsultoinut yrityksiä tekoälyn soveltamisessa
-                liiketoimintaan ja rakentanut kymmeniä tekoälytyökaluja ja
-                automaatioratkaisuja muun muassa raportointiin, analytiikkaan ja
-                markkinointiin liittyen.
+                Sonodo vastaa palvelun toimituksellisesta sisällöstä ja
+                vertailumetodologiasta. Toimitus huolehtii siitä, että jokainen
+                lainanantaja arvioidaan samoilla kriteereillä ja että hinta- ja
+                ehtotiedot pidetään ajan tasalla.
               </p>
               <p>
-                Valitse Lainalla Henri vastaa vertailumetodologiasta ja
-                lainadatan käsittelystä — siitä, että jokainen lainanantaja
-                arvioidaan samoilla kriteereillä ja että hinta- ja
-                ehtotiedot pidetään ajan tasalla. Henrin lähestymistapa
-                yhdistää huolellisen järjestelmäsuunnittelun ja
-                data-analyyttisen työtavan: vertailun tuloksia seurataan
+                Lähestymistapamme yhdistää huolellisen järjestelmäsuunnittelun
+                ja data-analyyttisen työtavan: vertailun tuloksia seurataan
                 mittareiden avulla, poikkeamat tunnistetaan datasta ja
                 kehityspäätökset perustuvat todennettuihin havaintoihin.
               </p>

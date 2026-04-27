@@ -73,7 +73,7 @@ export default function TietosuojaPage() {
           <SectionTitle id="rekisterinpitaja">1. Rekisterinpitäjä</SectionTitle>
           <SubSection>
             <p>
-              <strong>Sonodo — Henri Linnainmaa</strong><br />
+              <strong>Sonodo (toiminimi)</strong><br />
               Y-tunnus: 2887416-4<br />
               Helsinki, Suomi<br />
               Verkkosivusto: https://valitselaina.fi
