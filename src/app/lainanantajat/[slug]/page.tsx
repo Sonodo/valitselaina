@@ -247,31 +247,108 @@ export default async function ProviderDetailPage({
   const provider = getProviderBySlug(slug);
   if (!provider) notFound();
 
-  // JSON-LD FinancialService schema
-  const jsonLd = {
-    '@context': 'https://schema.org',
+  // ─────────────────────────────────────────────────────────────────────
+  // JSON-LD: provider Organization/FinancialService + one LoanOrCredit per
+  // product. We bundle everything into a single @graph so crawlers parse
+  // each entity. Rates that are clearly variable (Euribor + marginaali) are
+  // expressed as a string description rather than a numeric to avoid
+  // implying false precision.
+  // ─────────────────────────────────────────────────────────────────────
+  // Narrow once for TS — `provider` is guaranteed non-null past notFound().
+  const p0 = provider;
+  const providerOrgId = `https://valitselaina.fi/lainanantajat/${p0.slug}#organization`;
+
+  const providerNode = {
     '@type': 'FinancialService',
-    name: provider.name,
-    alternateName: provider.shortName,
-    description: provider.description,
-    url: provider.website,
-    foundingDate: String(provider.founded),
+    '@id': providerOrgId,
+    name: p0.name,
+    alternateName: p0.shortName,
+    description: p0.description,
+    url: p0.website,
+    foundingDate: String(p0.founded),
+    areaServed: 'FI',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: provider.headquarters,
-      addressCountry: provider.country,
+      addressLocality: p0.headquarters,
+      addressCountry: p0.country,
     },
-    ...(provider.customerServicePhone && {
-      telephone: provider.customerServicePhone,
+    ...(p0.customerServicePhone && {
+      telephone: p0.customerServicePhone,
     }),
+  };
+
+  // Heuristic: a product whose features mention "Euribor" or "marginaali"
+  // is variable-rate; describe rate as text rather than QuantitativeValue.
+  function isVariableRate(p: LoanProduct): boolean {
+    const blob = (p.features.join(' ') + ' ' + p.name).toLowerCase();
+    return blob.includes('euribor') || blob.includes('marginaali');
+  }
+
+  function buildLoanOrCreditNode(p: LoanProduct) {
+    const productLabel = productTypeLabels[p.type] || p.type;
+    const variable = isVariableRate(p);
+
+    // interestRate: schema.org accepts either number or string. We use a
+    // descriptive string for variable-rate loans, an explicit numeric range
+    // (as text) for fixed-rate consumer products.
+    const interestRate = variable
+      ? `${p.nominalRate.min.toFixed(2)}–${p.nominalRate.max.toFixed(2)} % (sis. Euribor + marginaali, vaihtuva)`
+      : `${p.nominalRate.min.toFixed(2)}–${p.nominalRate.max.toFixed(2)} %`;
+
+    return {
+      '@type': 'LoanOrCredit',
+      '@id': `https://valitselaina.fi/lainanantajat/${p0.slug}#${p.id}`,
+      name: p.name,
+      category: productLabel,
+      description: `${productLabel} — ${p.features.slice(0, 3).join('; ')}`,
+      provider: { '@id': providerOrgId },
+      areaServed: 'FI',
+      currency: 'EUR',
+      loanTerm: {
+        '@type': 'QuantitativeValue',
+        unitCode: 'MON',
+        minValue: p.minTermMonths,
+        maxValue: p.maxTermMonths,
+      },
+      amount: {
+        '@type': 'MonetaryAmount',
+        currency: 'EUR',
+        minValue: p.minAmount,
+        maxValue: p.maxAmount,
+      },
+      interestRate,
+      annualPercentageRate: `${p.effectiveRate.min.toFixed(2)}–${p.effectiveRate.max.toFixed(2)} %`,
+      requiredCollateral: p.requiresCollateral
+        ? 'Vakuus vaaditaan'
+        : 'Vakuudeton',
+      feesAndCommissionsSpecification: [
+        p.setupFee !== undefined
+          ? `Avausmaksu: ${p.setupFee === 0 ? 'ei avausmaksua' : `${p.setupFee} €`}`
+          : null,
+        p.monthlyFee !== undefined
+          ? `Kuukausimaksu: ${p.monthlyFee === 0 ? 'ei kuukausimaksua' : `${p.monthlyFee.toFixed(2)} €`}`
+          : null,
+      ]
+        .filter(Boolean)
+        .join('. '),
+      dateModified: p.lastUpdated,
+    };
+  }
+
+  const jsonLdGraph = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      providerNode,
+      ...p0.products.map(buildLoanOrCreditNode),
+    ],
   };
 
   return (
     <>
-      {/* JSON-LD structured data */}
+      {/* JSON-LD structured data — provider + LoanOrCredit per product */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdGraph) }}
       />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">

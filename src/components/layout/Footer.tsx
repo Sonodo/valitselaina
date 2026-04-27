@@ -23,6 +23,7 @@ const lainatyypit = [
 const tietoa = [
   { label: 'Tietoa palvelusta', href: '/tietoa' },
   { label: 'Menetelmä', href: '/menetelma' },
+  { label: 'Sanasto', href: '/sanasto' },
   { label: 'Media', href: '/media' },
   { label: 'Yhteystiedot', href: '/yhteystiedot' },
 ];

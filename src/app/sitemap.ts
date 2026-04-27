@@ -68,6 +68,11 @@ const standaloneToolPages = [
   '/korkotutka',
 ];
 
+// Reference / glossary pages
+const referencePages = [
+  '/sanasto',
+];
+
 // Life event pages
 const lifeEventPages = [
   '/elamanmuutokset',
@@ -213,12 +218,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   );
 
+  // Reference / glossary pages
+  const referenceEntries: MetadataRoute.Sitemap = referencePages.map(
+    (path) => ({
+      url: `${BASE_URL}${path}`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    }),
+  );
+
   return [
     ...corePages,
     ...loanTypePages,
     ...lifeEventEntries,
     ...standalonePages,
     ...standaloneToolEntries,
+    ...referenceEntries,
     ...providerIndex,
     ...providerPages,
     ...guideIndex,

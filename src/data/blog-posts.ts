@@ -55,7 +55,7 @@ export const blogPosts: BlogPost[] = [
   <p>Ennen kuin haet lainaa, mieti tarkkaan paljonko rahaa todella tarvitset ja mihin tarkoitukseen. Turha lainanotto on aina kalliimpaa kuin lainaamatta jättäminen. Jos kyseessä on hankinta, joka voi odottaa muutaman kuukauden, säästäminen on lähes aina parempi vaihtoehto.</p>
 
   <h3>2. Vertaa todellista vuosikorkoa</h3>
-  <p>Todellinen vuosikorko (TAV) on ainoa luotettava vertailuluku lainojen välillä. Se sisältää nimelliskoron lisäksi kaikki pakolliset kulut: avausmaksun, kuukausimaksut ja muut palkkiot. Älä anna pelkän nimelliskoron hämätä — matala nimelliskorko yhdistettynä korkeisiin kuluihin voi olla kalliimpi kuin kilpailijan korkeampi nimelliskorko ilman erillisiä kuluja.</p>
+  <p><a href="/sanasto#todellinen-vuosikorko">Todellinen vuosikorko (TVK)</a> on ainoa luotettava vertailuluku lainojen välillä. Se sisältää nimelliskoron lisäksi kaikki pakolliset kulut: avausmaksun, kuukausimaksut ja muut palkkiot. Älä anna pelkän nimelliskoron hämätä — matala <a href="/sanasto#nimelliskorko">nimelliskorko</a> yhdistettynä korkeisiin kuluihin voi olla kalliimpi kuin kilpailijan korkeampi nimelliskorko ilman erillisiä kuluja.</p>
 
   <h3>3. Hae useasta paikasta</h3>
   <p>Lainahakemuksen jättäminen on ilmaista ja ei sido sinua mihinkään. Hae lainatarjous vähintään 3–5 eri lainanantajalta. Jokainen lainanantaja tekee oman riskiarvionsa, ja tarjoukset voivat vaihdella merkittävästi. Luottotietokysely ei vaikuta luottotietoihisi negatiivisesti, joten hakemuksia voi tehdä huoletta.</p>
@@ -94,7 +94,7 @@ export const blogPosts: BlogPost[] = [
   <p><strong>Luottokortti</strong> on jatkuva luottolimiiitti, jota voit käyttää tarpeen mukaan. Korotonta maksuaikaa on tyypillisesti 30–45 päivää. Jos et maksa koko saldoa korottoman maksuajan sisällä, korot alkavat juosta.</p>
 
   <h2>Korkovertailu</h2>
-  <p>Tässä piilee tärkein ero. Kulutusluoton todellinen vuosikorko on tyypillisesti 4–15 % (riippuen lainasummasta, maksuajasta ja lainanhakijan profiilista). Luottokortin korko on sen sijaan usein 15–20 %, mikä on lähellä lain sallimaa maksimia.</p>
+  <p>Tässä piilee tärkein ero. <a href="/sanasto#kulutusluotto">Kulutusluoton</a> <a href="/sanasto#todellinen-vuosikorko">todellinen vuosikorko</a> on tyypillisesti 4–15 % (riippuen lainasummasta, maksuajasta ja lainanhakijan profiilista). Luottokortin korko on sen sijaan usein 15–20 %, mikä on lähellä <a href="/sanasto#korkokatto">korkokattoa</a> eli lain sallimaa maksimia.</p>
   <p>Ero on dramaattinen, jos lainaa takaisinmaksuun menee kuukausia tai vuosia:</p>
   <ul>
     <li><strong>3 000 euroa kulutusluottona</strong> (korko 7 %, maksuaika 2 vuotta): kokonaiskustannus noin 3 220 euroa</li>
@@ -158,7 +158,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['asuntolaina', 'marginaali', 'pankit', 'neuvottelu', '2026'],
     content: `
 <article>
-  <p>Asuntolainan marginaali on pankin oma osuus lainan korosta. Se lisätään viitekoron (tyypillisesti 12 kuukauden euribor) päälle, ja yhdessä ne muodostavat lainan kokonaiskoron. Marginaali on siis se osa, johon voit vaikuttaa neuvottelemalla — viitekorko on kaikille sama.</p>
+  <p><a href="/sanasto#marginaali">Asuntolainan marginaali</a> on pankin oma osuus lainan korosta. Se lisätään viitekoron (tyypillisesti 12 kuukauden <a href="/sanasto#euribor">euribor</a>) päälle, ja yhdessä ne muodostavat lainan <a href="/sanasto#nimelliskorko">nimelliskoron</a>. Marginaali on siis se osa, johon voit vaikuttaa neuvottelemalla — viitekorko on kaikille sama.</p>
 
   <h2>Marginaalitasot alkuvuonna 2026</h2>
   <p>Suomen asuntolainamarkkina on piristynyt vuoden 2025 aikana, kun asuntokauppa on elpynyt korkohuipun jälkeen. Tämä näkyy myös marginaaleissa: pankit kilpailevat jälleen aktiivisemmin hyvistä asiakkaista.</p>
@@ -237,7 +237,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['luottorekisteri', 'luottotiedot', 'lainsäädäntö', 'lainanhaku'],
     content: `
 <article>
-  <p>Suomeen saatiin vuonna 2024 positiivinen luottorekisteri, joka muutti merkittävästi tapaa, jolla lainanantajat arvioivat hakijoiden luottokelpoisuutta. Aiemmin lainanantajat näkivät vain negatiiviset luottotiedot — maksuhäiriömerkinnät — mutta nyt myös olemassa olevat lainat ja niiden hoito näkyvät. Mitä tämä tarkoittaa sinulle käytännössä?</p>
+  <p>Suomeen saatiin vuonna 2024 <a href="/sanasto#positiivinen-luottotietorekisteri">positiivinen luottotietorekisteri</a>, joka muutti merkittävästi tapaa, jolla lainanantajat arvioivat hakijoiden luottokelpoisuutta. Aiemmin lainanantajat näkivät vain negatiiviset luottotiedot — <a href="/sanasto#luottohairiomerkinta">maksuhäiriömerkinnät</a> — mutta nyt myös olemassa olevat lainat ja niiden hoito näkyvät. Mitä tämä tarkoittaa sinulle käytännössä?</p>
 
   <h2>Mikä on positiivinen luottorekisteri?</h2>
   <p>Positiivinen luottorekisteri on Tulorekisteriyksikön ylläpitämä tietokanta, joka sisältää tiedot henkilön kaikista luotoista ja niiden hoidosta. Aiemmasta järjestelmästä poiketen se ei rekisteröi vain ongelmia vaan näyttää kokonaiskuvan henkilön luotoista.</p>
@@ -809,7 +809,7 @@ export const blogPosts: BlogPost[] = [
     <li>Henkilökohtaista takausta</li>
     <li>Vakuuttavan liiketoimintasuunnitelman</li>
   </ul>
-  <p>Käytännössä moni aloittava yrittäjä tarvitsee Finnveran takauksen saadakseen pankin yrityslainan.</p>
+  <p>Käytännössä moni aloittava yrittäjä tarvitsee <a href="/sanasto#finnvera-takaus">Finnvera-takauksen</a> saadakseen pankin <a href="/sanasto#yrityslaina">yrityslainan</a>.</p>
 
   <h2>Finnvera</h2>
   <p>Finnvera on valtion omistama erityisrahoitusyhtiö, jonka tehtävä on nimenomaan täydentää rahoitusmarkkinoita siellä, missä yksityiset rahoittajat eivät yksin riitä. Aloittavalle yrittäjälle Finnvera tarjoaa:</p>

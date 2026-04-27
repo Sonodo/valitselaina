@@ -11,12 +11,15 @@ import {
   Lightbulb,
   Ban,
   CheckCircle2,
+  GraduationCap,
+  ListChecks,
+  Building2,
 } from 'lucide-react';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
-const pageTitle = 'Tietoa Valitse Lainasta — Keitä olemme';
+const pageTitle = 'Tietoa Valitse Lainasta — Toimitus ja periaatteet';
 const pageDescription =
-  'Valitse Laina on suomalainen lainavertailupalvelu. Tehtävämme on tehdä lainojen vertailusta rehellistä ja läpinäkyvää.';
+  'Valitse Laina on Sonodon (Y-tunnus 2887416-4) ylläpitämä lainavertailupalvelu. Vastaava päätoimittaja Henri Linnainmaa, KTM. Lue toimituksen periaatteet ja vertailumetodologia.';
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -30,17 +33,67 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = {
+// ─── Schema.org structured data ────────────────────────────────────────────
+const ORG_ID = `${SITE_URL}#organization`;
+const HENRI_ID = `${SITE_URL}#henri-linnainmaa`;
+
+const aboutPageJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'AboutPage',
   name: 'Tietoa Valitse Lainasta',
   description: pageDescription,
-  mainEntity: {
-    '@type': 'Organization',
-    name: SITE_NAME,
-    url: SITE_URL,
-    description: pageDescription,
+  url: `${SITE_URL}/tietoa`,
+  inLanguage: 'fi',
+  mainEntity: { '@id': ORG_ID },
+};
+
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': ORG_ID,
+  name: SITE_NAME,
+  legalName: 'Sonodo',
+  url: SITE_URL,
+  taxID: '2887416-4',
+  vatID: 'FI28874164',
+  description: pageDescription,
+  founder: { '@id': HENRI_ID },
+  publishingPrinciples: `${SITE_URL}/tietoa#toimituksen-periaatteet`,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Helsinki',
+    addressCountry: 'FI',
   },
+  knowsAbout: [
+    'Lainavertailu',
+    'Kulutusluotto',
+    'Asuntolaina',
+    'Yrityslaina',
+    'Todellinen vuosikorko',
+    'Euribor',
+  ],
+};
+
+const personJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': HENRI_ID,
+  name: 'Henri Linnainmaa',
+  jobTitle: 'Vastaava päätoimittaja',
+  honorificSuffix: 'KTM',
+  worksFor: { '@id': ORG_ID },
+  alumniOf: {
+    '@type': 'CollegeOrUniversity',
+    name: 'Aalto-yliopisto',
+    sameAs: 'https://www.aalto.fi/',
+  },
+  knowsAbout: [
+    'Lainavertailu',
+    'Tekoäly liiketoiminnassa',
+    'Data-analytiikka',
+    'Automaatiojärjestelmät',
+  ],
+  url: `${SITE_URL}/tietoa#vastaava-paatoimittaja`,
 };
 
 const values = [
@@ -81,7 +134,17 @@ export default function TietoaPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(organizationJsonLd),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
       />
 
       {/* Hero */}
@@ -186,6 +249,201 @@ export default function TietoaPage() {
             >
               Lue lisää menetelmästämme →
             </Link>
+          </div>
+        </section>
+
+        {/* ─── Vastaava päätoimittaja ─────────────────────────────────── */}
+        <section
+          id="vastaava-paatoimittaja"
+          className="scroll-mt-24"
+        >
+          <div className="flex items-center gap-3 mb-4">
+            <GraduationCap className="w-6 h-6 text-[#1a365d]" />
+            <h2 className="text-2xl font-bold text-gray-900">
+              Vastaava päätoimittaja
+            </h2>
+          </div>
+
+          <div className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8">
+            <div className="mb-3">
+              <h3 className="text-xl font-semibold text-gray-900">
+                Henri Linnainmaa
+              </h3>
+              <p className="text-sm text-[#1a365d] font-medium mt-0.5">
+                KTM, Aalto-yliopisto · Vastaava päätoimittaja
+              </p>
+            </div>
+
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p>
+                Henri Linnainmaa on kauppatieteiden maisteri Aalto-yliopistosta.
+                Hän on urallaan konsultoinut yrityksiä tekoälyn soveltamisessa
+                liiketoimintaan ja rakentanut kymmeniä tekoälytyökaluja ja
+                automaatioratkaisuja muun muassa raportointiin, analytiikkaan ja
+                markkinointiin liittyen.
+              </p>
+              <p>
+                Valitse Lainalla Henri vastaa vertailumetodologiasta ja
+                lainadatan käsittelystä — siitä, että jokainen lainanantaja
+                arvioidaan samoilla kriteereillä ja että hinta- ja
+                ehtotiedot pidetään ajan tasalla. Henrin lähestymistapa
+                yhdistää huolellisen järjestelmäsuunnittelun ja
+                data-analyyttisen työtavan: vertailun tuloksia seurataan
+                mittareiden avulla, poikkeamat tunnistetaan datasta ja
+                kehityspäätökset perustuvat todennettuihin havaintoihin.
+              </p>
+              <p>
+                Toimitus ei kirjoita lainahakemuksiin liittyviä
+                henkilökohtaisia neuvoja. Sisältömme on yleistä
+                kuluttajavalistusta, joka pohjautuu Finanssivalvonnan ja
+                Suomen Pankin julkaisemiin tietoihin sekä lainanantajien
+                virallisiin lähteisiin.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ─── Toimituksen periaatteet ───────────────────────────────── */}
+        <section
+          id="toimituksen-periaatteet"
+          className="scroll-mt-24"
+        >
+          <div className="flex items-center gap-3 mb-4">
+            <ListChecks className="w-6 h-6 text-[#1a365d]" />
+            <h2 className="text-2xl font-bold text-gray-900">
+              Toimituksen periaatteet
+            </h2>
+          </div>
+
+          <div className="space-y-6 text-gray-700 leading-relaxed">
+            <div>
+              <h3 className="text-base font-semibold text-gray-900 mb-1">
+                1. Vertailujärjestys
+              </h3>
+              <p>
+                Lainanantajat järjestetään aina samalla menetelmällä:
+                ensisijaisesti todellisen vuosikoron ja kokonaiskustannuksen
+                mukaan, käyttäjän valitsemalle lainasummalle ja maksuajalle.
+                Kaupallinen yhteistyö tai mahdollinen affiliate-suhde ei
+                vaikuta järjestykseen. Tutustu tarkemmin{' '}
+                <Link
+                  href="/menetelma"
+                  className="text-[#1a365d] font-semibold hover:underline"
+                >
+                  vertailumenetelmään
+                </Link>
+                .
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-base font-semibold text-gray-900 mb-1">
+                2. Kaupallinen läpinäkyvyys
+              </h3>
+              <p>
+                Sivusto sisältää kaupallisia kumppanuuksia, joista voimme
+                saada palkkion, kun käyttäjä hakee lainaa lainanantajan
+                sivulta. Käytämme kaupallisten linkkien kohdalla{' '}
+                <code className="rounded bg-gray-100 px-1 py-0.5 text-xs font-mono">
+                  rel=&quot;sponsored&quot;
+                </code>{' '}
+                -merkintää ja sivustotason läpinäkyvyysilmoitusta. Lue lisää
+                kohdasta{' '}
+                <Link
+                  href="/sivuston-ansainta"
+                  className="text-[#1a365d] font-semibold hover:underline"
+                >
+                  Sivuston ansainta
+                </Link>
+                .
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-base font-semibold text-gray-900 mb-1">
+                3. Tiedon päivitysrytmi
+              </h3>
+              <p>
+                Lainanantajien hinnasto- ja ehtotiedot tarkistetaan
+                säännöllisesti. Jokaisen tuotteen yhteydessä näkyy päiväys,
+                jolloin tiedot on viimeksi päivitetty. Euribor-viitekorot
+                päivitetään{' '}
+                <a
+                  href="https://www.suomenpankki.fi/fi/tilastot/korot/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#1a365d] font-semibold hover:underline"
+                >
+                  Suomen Pankin tilastoista
+                </a>
+                .
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-base font-semibold text-gray-900 mb-1">
+                4. Sääntely
+              </h3>
+              <p>
+                Suomalaisia kuluttajaluottoja valvoo Finanssivalvonta
+                (FIN-FSA). Kulutusluottojen korkokatto on lain mukaan 20 %
+                ja peruutusoikeus 14 päivää. Emme itse myönnä lainoja emmekä
+                toimi luotonvälittäjinä — olemme tietopalvelu, joka kerää ja
+                vertailee lainanantajien julkisesti ilmoittamia ehtoja.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-base font-semibold text-gray-900 mb-1">
+                5. Virheet ja palaute
+              </h3>
+              <p>
+                Jos havaitset väärän tai vanhentuneen tiedon, ilmoita siitä{' '}
+                <Link
+                  href="/yhteystiedot"
+                  className="text-[#1a365d] font-semibold hover:underline"
+                >
+                  yhteydenottokanavan
+                </Link>{' '}
+                kautta. Käsittelemme virheilmoitukset ensisijaisina ja
+                korjaamme ne mahdollisimman pian.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ─── Sonodo / Yhteystiedot ─────────────────────────────────── */}
+        <section
+          id="yhteystiedot-yritys"
+          className="scroll-mt-24"
+        >
+          <div className="flex items-center gap-3 mb-4">
+            <Building2 className="w-6 h-6 text-[#1a365d]" />
+            <h2 className="text-2xl font-bold text-gray-900">
+              Palvelun ylläpitäjä
+            </h2>
+          </div>
+          <div className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 text-gray-700 leading-relaxed">
+            <p className="mb-2">
+              <strong>Sonodo</strong> (toiminimi)
+            </p>
+            <p className="text-sm text-gray-600">
+              Y-tunnus: 2887416-4
+              <br />
+              Helsinki, Suomi
+              <br />
+              Verkkosivusto: {SITE_URL.replace(/^https?:\/\//, '')}
+            </p>
+            <p className="mt-4 text-sm text-gray-600">
+              Yhteydenotot palvelun{' '}
+              <Link
+                href="/yhteystiedot"
+                className="text-[#1a365d] font-semibold hover:underline"
+              >
+                yhteystietosivun
+              </Link>{' '}
+              kautta.
+            </p>
           </div>
         </section>
 
