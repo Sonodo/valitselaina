@@ -647,7 +647,7 @@ MoneySuperMarket/MONY Group lanseerasi SuperSaveClub-kanta-asiakasohjelman 2023:
 ├── Kulutusluottovertailu (Valitse Laina)
 ├── Henkivakuutus (Valitse Vakuutus)
 ├── Sähkö- ja liittymävertailu (Valitse Sähkö + Liittymä)
-└── Bonus: Oikeusturva tai testamentti (Lakimaatti-kumppanuus!)
+└── Bonus: Oikeusturvavakuutus tai talouden suunnittelutyökalu
 
 🎓 ENSIMMÄINEN OMA ASUNTO -NIPPU
 ├── Ensiasuntolaina (Valitse Laina)
