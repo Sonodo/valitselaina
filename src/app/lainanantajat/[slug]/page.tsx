@@ -227,9 +227,11 @@ function ProductCard({ product }: { product: LoanProduct }) {
         </div>
       )}
 
-      {/* Last updated */}
+      {/* Last updated — show honest "verified periodically" wording instead
+          of a per-row stale date. The lastUpdated field is still emitted as
+          dateModified in the JSON-LD schema below. */}
       <p className="mt-4 text-xs text-gray-400">
-        Päivitetty: {new Date(product.lastUpdated).toLocaleDateString('fi-FI')}
+        Tiedot tarkistetaan kuukausittain
       </p>
     </div>
   );

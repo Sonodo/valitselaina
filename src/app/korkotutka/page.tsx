@@ -234,7 +234,7 @@ export default function KorkotutkaPage() {
             Markkinakorot juuri nyt
           </h2>
           <p className="text-gray-500 text-center mb-10">
-            Päivitetty {EURIBOR_UPDATED}
+            Korot {EURIBOR_UPDATED}
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">

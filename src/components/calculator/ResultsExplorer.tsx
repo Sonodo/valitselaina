@@ -370,7 +370,7 @@ export default function ResultsExplorer() {
             <strong>Huomautus:</strong> Näytettävät korot ovat &quot;alkaen&quot;-korkoja eli lainanantajan
             edullisimpia ilmoitettuja korkoja. Todellinen korkosi voi olla korkeampi luottokelpoisuutesi
             perusteella. Vertailu on suuntaa-antava — pyydä aina virallinen lainatarjous suoraan
-            lainanantajalta. Tiedot päivitetty huhtikuussa 2026.
+            lainanantajalta. Tiedot tarkistetaan kuukausittain.
           </div>
         </>
       ) : (

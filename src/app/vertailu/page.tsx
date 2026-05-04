@@ -2,6 +2,7 @@
 
 import { Suspense } from 'react';
 import ComparisonCalculator from '@/components/calculator/ComparisonCalculator';
+import LoadingTimeout from '@/components/calculator/LoadingTimeout';
 import { ShieldCheck } from 'lucide-react';
 import { SiteDisclosureBar } from '@/components/disclosure';
 
@@ -28,7 +29,7 @@ export default function VertailuPage() {
 
       {/* Calculator section */}
       <section className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 -mt-8 pb-16">
-        <Suspense fallback={<div className="h-96 animate-pulse rounded-xl bg-white/80" />}>
+        <Suspense fallback={<LoadingTimeout />}>
           <ComparisonCalculator />
         </Suspense>
       </section>

@@ -4,10 +4,14 @@ export const COOLING_OFF_DAYS = 14; // 14-day right to cancel consumer credit
 export const MIN_LOAN_AMOUNT_REGULATED = 200; // Consumer credit below €200 exempted from some rules
 
 // Current market reference rates (update periodically)
+// NOTE: These Euribor values are manually maintained — real values fluctuate daily.
+// Update them when refreshing rate data; EURIBOR_UPDATED renders an honest
+// build-time-derived "tarkistettu kuukausittain" label rather than a stale date.
+// TODO (Chairman judgment call): wire to live ECB / Suomen Pankki feed for daily refresh.
 export const EURIBOR_12M = 2.487;
 export const EURIBOR_6M = 2.412;
 export const EURIBOR_3M = 2.356;
-export const EURIBOR_UPDATED = '1.4.2026';
+export const EURIBOR_UPDATED = 'tarkistetaan kuukausittain';
 
 // Tax
 export const INTEREST_DEDUCTION_RATE = 0; // Interest deduction for consumer loans = 0%

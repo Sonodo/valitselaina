@@ -108,7 +108,7 @@ export default function ResultsList({
         <div className="rounded-lg bg-gray-50 border border-gray-100 px-4 py-3 text-xs text-gray-500 leading-relaxed">
           <strong>Huomautus:</strong> Näytettävät korot ovat &quot;alkaen&quot;-korkoja eli lainanantajan edullisimpia ilmoitettuja korkoja.
           Todellinen korkosi voi olla korkeampi luottokelpoisuutesi perusteella. Vertailu on suuntaa-antava — pyydäthän
-          aina virallinen lainatarjous suoraan lainanantajalta. Tiedot päivitetty viimeksi huhtikuussa 2026.
+          aina virallinen lainatarjous suoraan lainanantajalta. Tiedot tarkistetaan kuukausittain.
         </div>
       )}
     </div>

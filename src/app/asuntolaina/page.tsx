@@ -211,7 +211,7 @@ export default function AsuntolainaPage() {
               Euribor-korot juuri nyt
             </h2>
             <span className="text-xs text-gray-400">
-              Päivitetty {EURIBOR_UPDATED}
+              Korot {EURIBOR_UPDATED}
             </span>
           </div>
           <div className="grid grid-cols-3 gap-4 sm:gap-6">
