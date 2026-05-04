@@ -25,7 +25,6 @@ import {
   COOLING_OFF_DAYS,
 } from '@/lib/constants';
 import { formatCurrency, formatPercentage, getApplyUrl } from '@/lib/utils';
-import DisclosureBanner from '@/components/layout/DisclosureBanner';
 
 // ---------------------------------------------------------------------------
 // Metadata
@@ -424,7 +423,6 @@ export default function PikavippiPage() {
           </div>
 
           <div className="mb-4">
-            <DisclosureBanner />
           </div>
 
           <div className="space-y-4">

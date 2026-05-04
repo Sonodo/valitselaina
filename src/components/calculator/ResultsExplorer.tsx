@@ -12,7 +12,6 @@ import { providers as allProviders } from '@/data/providers';
 import { LOAN_TYPE_LABELS } from '@/lib/constants';
 import ResultCard from './ResultCard';
 import ComparisonSummary from './ComparisonSummary';
-import DisclosureBanner from '@/components/layout/DisclosureBanner';
 
 /* ──────────────────────────────────────────────────────────────────
    Direct-to-results loan comparison.
@@ -354,7 +353,6 @@ export default function ResultsExplorer() {
             termMonths={termMonths}
             loanType={loanType}
           />
-          <DisclosureBanner />
           <div className="space-y-4">
             {results.map((result, index) => (
               <ResultCard

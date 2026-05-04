@@ -16,7 +16,6 @@ import {
 import { getProductsSortedByRate } from '@/data/providers';
 import { SITE_URL, SITE_NAME, INTEREST_RATE_CAP } from '@/lib/constants';
 import { formatCurrency, formatPercentage, getApplyUrl } from '@/lib/utils';
-import DisclosureBanner from '@/components/layout/DisclosureBanner';
 
 // ---------------------------------------------------------------------------
 // Metadata
@@ -204,7 +203,6 @@ export default function AutolainaPage() {
           </div>
 
           <div className="mb-4">
-            <DisclosureBanner />
           </div>
 
           <div className="space-y-4">

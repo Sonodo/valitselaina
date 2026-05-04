@@ -40,7 +40,6 @@ const legalLinks = [
   { label: 'Käyttöehdot', href: '/kayttoehdot' },
   { label: 'Evästeet', href: '/evasteet' },
   { label: 'Sivuston ansainta', href: '/sivuston-ansainta' },
-  { label: 'Luotettavuus', href: '/luotettavuus' },
 ];
 
 export default function Footer() {

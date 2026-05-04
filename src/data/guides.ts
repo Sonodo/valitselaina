@@ -1608,10 +1608,10 @@ export const guides: Guide[] = [
 
 <h3>Mistä apua?</h3>
 <ul>
-  <li><strong>Kriisipuhelin:</strong> 09 2525 0111 (vuorokauden ympäri)</li>
   <li><strong>Terveyskeskus:</strong> Ota yhteyttä omaan terveyskeskukseesi ja kerro tilanteestasi. Velkastressin aiheuttamiin oireisiin saa apua.</li>
   <li><strong>Seurakunnat:</strong> Monet seurakunnat tarjoavat diakoniatyötä ja keskusteluapua — uskonnosta riippumatta.</li>
-  <li><strong>Velkalinja:</strong> 0800 9 8009 (maksuton puhelinpalvelu velkaongelmissa)</li>
+  <li><strong>Talous- ja velkaneuvonta:</strong> Kuntien ilmainen talous- ja velkaneuvonta auttaa velkojen järjestelyssä ja maksusuunnitelman laatimisessa.</li>
+  <li><strong>Takuusäätiö:</strong> Tarjoaa neuvontaa, takausta ja sosiaalista luototusta velkaongelmissa.</li>
 </ul>
 <p><strong>Avun hakeminen on vahvuutta, ei heikkoutta.</strong></p>
 
