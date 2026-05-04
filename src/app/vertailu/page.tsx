@@ -3,10 +3,12 @@
 import { Suspense } from 'react';
 import ComparisonCalculator from '@/components/calculator/ComparisonCalculator';
 import { ShieldCheck } from 'lucide-react';
+import { SiteDisclosureBar } from '@/components/disclosure';
 
 export default function VertailuPage() {
   return (
     <div className="min-h-screen bg-[#f7fafc]">
+      <SiteDisclosureBar />
       {/* Hero section */}
       <section className="bg-gradient-to-b from-[#1a365d] to-[#2a4a7f] py-12 sm:py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
